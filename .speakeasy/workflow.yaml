@@ -1,0 +1,21 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    Cloudinary-Provisioning-OAS:
+        inputs:
+            - location: https://cloudinary.github.io/api-schemas/provisioning/schema.yml
+        overlays:
+            - location: cldprovisioning/.speakeasy/speakeasy-modifications-overlay.yaml
+            - location: https://cloudinary.github.io/api-schemas/overlays/security-scheme-account-overlay.yaml
+            - location: https://cloudinary.github.io/api-schemas/permissions/overlays/additional-properties-overlay.yaml
+        registry:
+            location: registry.speakeasyapi.dev/cloudinary/cloudinary/cloudinary-provisioning
+targets:
+    cloudinary:
+        target: go
+        source: Cloudinary-Provisioning-OAS
+        output: cldprovisioning
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/cloudinary/cloudinary/cloudinary-provisioning-go-code-samples
+            blocking: true

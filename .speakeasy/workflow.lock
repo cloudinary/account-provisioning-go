@@ -1,0 +1,39 @@
+speakeasyVersion: 1.761.1
+sources:
+    Cloudinary-Provisioning-OAS:
+        sourceNamespace: cloudinary-provisioning
+        sourceRevisionDigest: sha256:2ce8e6c4c38aa3d480eb065f2d7f1b92a72080f5c80b1120d7d4238f1b72faf1
+        sourceBlobDigest: sha256:fef4b2fab46384b29fca578b28be4a4c303c69c7616906650e3b65c688635781
+        tags:
+            - latest
+            - 0.2.1
+targets:
+    cloudinary:
+        source: Cloudinary-Provisioning-OAS
+        sourceNamespace: cloudinary-provisioning
+        sourceRevisionDigest: sha256:2ce8e6c4c38aa3d480eb065f2d7f1b92a72080f5c80b1120d7d4238f1b72faf1
+        sourceBlobDigest: sha256:fef4b2fab46384b29fca578b28be4a4c303c69c7616906650e3b65c688635781
+        codeSamplesNamespace: cloudinary-provisioning-go-code-samples
+        codeSamplesRevisionDigest: sha256:1e0d7c3afa98607195fec1d74ca568d89f74deed00cd35521278842a753a011c
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        Cloudinary-Provisioning-OAS:
+            inputs:
+                - location: https://cloudinary.github.io/api-schemas/provisioning/schema.yml
+            overlays:
+                - location: cldprovisioning/.speakeasy/speakeasy-modifications-overlay.yaml
+                - location: https://cloudinary.github.io/api-schemas/overlays/security-scheme-account-overlay.yaml
+                - location: https://cloudinary.github.io/api-schemas/permissions/overlays/additional-properties-overlay.yaml
+            registry:
+                location: registry.speakeasyapi.dev/cloudinary/cloudinary/cloudinary-provisioning
+    targets:
+        cloudinary:
+            target: go
+            source: Cloudinary-Provisioning-OAS
+            output: cldprovisioning
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/cloudinary/cloudinary/cloudinary-provisioning-go-code-samples
+                blocking: true

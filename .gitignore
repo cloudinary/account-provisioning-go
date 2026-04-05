@@ -1,0 +1,25 @@
+# Speakeasy
+.speakeasy/reports
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Example binary
+example/example
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+vendor/
+
+# OS
+.DS_Store
+Thumbs.db

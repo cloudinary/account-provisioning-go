@@ -1,0 +1,2631 @@
+lockVersion: 2.0.0
+id: 8900e3f2-787e-4e78-922b-72f4176cdcc8
+management:
+  docChecksum: 6d3050008a4d912a12a94764301c4664
+  docVersion: 0.2.1
+  speakeasyVersion: 1.761.1
+  generationVersion: 2.879.6
+  releaseVersion: 0.1.0
+  configChecksum: 5e7c255e21dc00e809ace6e74f8fb7f6
+persistentEdits:
+  generation_id: 50a47413-b4c8-43a3-9a71-c248fdb4229a
+  pristine_commit_hash: 83d78edfd08d49da082ed3796b7c7bf3890632fe
+  pristine_tree_hash: b0e028155ad06af64a0a407efe194c36d6318764
+features:
+  go:
+    additionalDependencies: 0.1.0
+    constsAndDefaults: 0.1.14
+    core: 3.13.40
+    customSecuritySchemes: 0.1.0
+    defaultEnabledRetries: 0.2.0
+    devContainers: 2.90.0
+    envVarSecurityUsage: 0.3.2
+    flattening: 2.81.2
+    globalSecurity: 2.82.15
+    globalSecurityCallbacks: 0.1.0
+    globalServerURLs: 2.83.1
+    globals: 2.82.2
+    groups: 2.81.3
+    hiddenGlobals: 0.1.0
+    intellisenseMarkdownSupport: 0.1.0
+    methodArguments: 0.1.1
+    nameOverrides: 2.81.4
+    nullables: 0.2.1
+    responseFormat: 0.1.2
+    retries: 2.84.2
+    sdkHooks: 0.3.0
+trackedFiles:
+  .devcontainer/README.md:
+    id: b170c0f184ac
+    last_write_checksum: sha1:2ebe16c00912ca4aac209d1971402135bb8c5391
+    pristine_git_object: a91bc1f02231ad21d4ca00ed865125e612eedc0d
+  .devcontainer/devcontainer.json:
+    id: b34062a34eb1
+    last_write_checksum: sha1:a518b2fc2f92e998593a1dcb935db4ca1eb2e2f1
+    pristine_git_object: 92f5ba5b54156225322fb4b09d2acf4abde9abc9
+  .devcontainer/setup.sh:
+    id: 5f1dfbfeb8eb
+    last_write_checksum: sha1:754b72c07d3b548bf74febd0c72ab58e55f00287
+    pristine_git_object: ad34764d7de90b36da1b47ea7f77dc93ff19dc6a
+  .gitattributes:
+    id: 24139dae6567
+    last_write_checksum: sha1:84b0115789fc3ea52e31df701d8a27f76077e29f
+    pristine_git_object: e6a994416d0f527912d2d272e2583458f4fc9bcb
+  USAGE.md:
+    id: 3aed33ce6e6f
+    last_write_checksum: sha1:79982829029384a39e03818164f61e123379bc7f
+    pristine_git_object: 90c6c60f43c3af2538aec6d6884c6cc1597d05a1
+  accesskeys.go:
+    id: e7307ad4fa9a
+    last_write_checksum: sha1:4d01847176ab56a88d5183de820164339bb7208d
+    pristine_git_object: b0ddda071a50433a928af51026aff055cb338dc1
+  billingusage.go:
+    id: f25d847ebf05
+    last_write_checksum: sha1:5ef5e9e9d1f0314289653943767629c9149f219d
+    pristine_git_object: 943530fd62d5b5716e1095029922821819def05e
+  cldprovisioning.go:
+    id: 4a8fed741ed3
+    last_write_checksum: sha1:49da6788e6b6fe7055f797fd0bba8581705328ef
+    pristine_git_object: a2b2c8971a2a5f224eb863c2d22157951475da2b
+  custompolicies.go:
+    id: 8b53c8dfcfeb
+    last_write_checksum: sha1:a5385cf1ef8a9a8950a7d1db757013c63ea6bd81
+    pristine_git_object: 2bf1315d4d14bebb108f117bdfd876624c09ec50
+  docs/models/components/accesskey.md:
+    id: 0dc79a20af45
+    last_write_checksum: sha1:06147de6cc5b96e006860754d987506d0622211f
+    pristine_git_object: f0e7f01ed9318fdc428f46be592ad24b5242a2bd
+  docs/models/components/accesskeyrequest.md:
+    id: c6844c46b985
+    last_write_checksum: sha1:ad77f8ddc1bf2b8ae92390965d403e137f9dd3b7
+    pristine_git_object: 51887760565738566b54e86df415ea5d393fb9e0
+  docs/models/components/accesskeysresponse.md:
+    id: dc52e696c9c5
+    last_write_checksum: sha1:97faa3958d3786ab24c07c89ffc3ae582422ff12
+    pristine_git_object: 1ebb0036bb74f6367565852a0f2bd8af1ac981a3
+  docs/models/components/accesskeyupdaterequest.md:
+    id: 77b32d36d375
+    last_write_checksum: sha1:be448d2092667095d95d947ccc368d3bdd5d20f5
+    pristine_git_object: e18ed88f6c686daf967f87f422a0a21a4f2839c4
+  docs/models/components/apiaccesskey.md:
+    id: 379ba74b575b
+    last_write_checksum: sha1:9e19ec058d46035b2d29346cbd31f5dda1b35d11
+    pristine_git_object: bcd61965ef40082741c5604aecd9d2497f7f4687
+  docs/models/components/billingusageresponse.md:
+    id: e68e544ef6b2
+    last_write_checksum: sha1:c60b59aed887557767d6db4a74c0270c0630c331
+    pristine_git_object: 1f771ee07f2b7d768f4ed5bd49603efd6e3d899c
+  docs/models/components/billingusageresponsebreakdown.md:
+    id: ae2458458065
+    last_write_checksum: sha1:a85a33d1d27f66239da72dd8816021e50b818fb9
+    pristine_git_object: f097ca11aaed012dc78b3a869422f57ed7de2b9c
+  docs/models/components/breakdown.md:
+    id: d09d793dcc0b
+    last_write_checksum: sha1:206a81976845d0362ba0e35004d7ef1f950e1778
+    pristine_git_object: 73cf95b8e73f7028a106b6039786fea5aa76c509
+  docs/models/components/cedarerror.md:
+    id: 1604e0b48806
+    last_write_checksum: sha1:02d9012ac20e24194dd0a65bb0da3f341b0c5ea8
+    pristine_git_object: 30b21a6c3fc286501709a9b2acba7ee62a348c33
+  docs/models/components/cedarschemaresponse.md:
+    id: 9dfc01652ea0
+    last_write_checksum: sha1:c5b02c5706d38d0436b6ff41924f95b31ecd854a
+    pristine_git_object: 2faed1df58fd4e3181b3cf2b073779e1ea3056e4
+  docs/models/components/cloudassettypebreakdown.md:
+    id: a6e78b6b6a28
+    last_write_checksum: sha1:0179e11dd96e2d75a55f9c036464a6ee3050a5e7
+    pristine_git_object: 46ee303acb052aac92103d3513e742671d33d494
+  docs/models/components/createrole.md:
+    id: f6586354699f
+    last_write_checksum: sha1:8b9306ee7563f216826a8b6b3955e34fd360df25
+    pristine_git_object: 4e709f814983c69e5abc125e0bde028ed3c7f638
+  docs/models/components/customattributes.md:
+    id: 08f2726d62bc
+    last_write_checksum: sha1:eef0087e8072a4cfb5c2a492f0aff1445edeffda
+    pristine_git_object: d89648e7296b536933e2533aa4e22df180032b6d
+  docs/models/components/custompoliciesresponse.md:
+    id: 9d9e3ee95079
+    last_write_checksum: sha1:73018ce471fa7c3fef7b9f9ae9c3e9d734f9ad31
+    pristine_git_object: 2b16ec5921ba6bd8903949828d6a8182b4dc1a2e
+  docs/models/components/custompolicy.md:
+    id: 5bb3ed92b00b
+    last_write_checksum: sha1:e6a6531e53e3f36c172ab6d85a97ed2a42ac435f
+    pristine_git_object: 4187b75afb663e86fa9f487c98e63be85b6df0b6
+  docs/models/components/custompolicyresponse.md:
+    id: 6020c66e37b7
+    last_write_checksum: sha1:e7dc8db2ac33d701eaa6cd7a4894c1ddfd7711c2
+    pristine_git_object: e98939b6fea8d3f08a2da93d5b466bc0b3b9b5dd
+  docs/models/components/custompolicyresponsedata.md:
+    id: 8b3c1ae5dc52
+    last_write_checksum: sha1:4857b9072047208033a728f7f4bdf175cd928423
+    pristine_git_object: 9e402e4c17645bab7fefb8f3b3eba03f8b099b05
+  docs/models/components/cycles.md:
+    id: 1c1a0c8190ae
+    last_write_checksum: sha1:4a3f844e046a02ed82769a0b693e5d037971d5e8
+    pristine_git_object: f2b50a01cfcd53989025e44fd20f9d32f4887d1b
+  docs/models/components/data.md:
+    id: 3f89c52c2b17
+    last_write_checksum: sha1:e6e286696bd7e61caccc93e62ffe66ef3e2f8014
+    pristine_git_object: 9dec9929200c0e95084598e2b853b2dfe47e00cc
+  docs/models/components/dedicatedfor.md:
+    id: 466feeb1ea4f
+    last_write_checksum: sha1:289d673e4411797bbf0db849d6ffdfc71c65704d
+    pristine_git_object: e5591133e1840bf19e41e2bb614f77edf4e904eb
+  docs/models/components/details.md:
+    id: 77e2686696cf
+    last_write_checksum: sha1:9d68e5e29e89a26237f683024419b682a0ea51ff
+    pristine_git_object: e42f90f52c76a656115a5a68442c8ec3d2f16f47
+  docs/models/components/effectivepoliciesresponse.md:
+    id: 5cab61b25910
+    last_write_checksum: sha1:4807c724b960ed054026c2b6394440a2f873c753
+    pristine_git_object: 7d66e126dc2214f7692547b7e2edb2a6d4623966
+  docs/models/components/effectivepolicy.md:
+    id: 7b8781e1e762
+    last_write_checksum: sha1:ec3dd3df824a29bfb127569acc9d03682e620566
+    pristine_git_object: 6d0f5ba1661640402cd379236f60dc70ca941d99
+  docs/models/components/effectiverole.md:
+    id: 25c63ad33580
+    last_write_checksum: sha1:868875622f529199c1dd89e58650831fd51319e2
+    pristine_git_object: 531c41e4494eac9b294a6bf0866b5df1e683b154
+  docs/models/components/emailpreferences.md:
+    id: 067283b0f18f
+    last_write_checksum: sha1:c65839d198ead3d37012b2b08488aa8d61c6a189
+    pristine_git_object: 14a1cf097281644dc760cafdbfe96a97b4683e67
+  docs/models/components/error.md:
+    id: 8ccbea40d025
+    last_write_checksum: sha1:e1b4e5d4dfc2eb7031ac7daafb5424b8eb7c8426
+    pristine_git_object: a2d0e4132008e6a0d9450f182c7a83a9ae8cecc9
+  docs/models/components/inspectrequest.md:
+    id: 4efae9d562be
+    last_write_checksum: sha1:a4a266472d26f581fd44614e4fb3828b20047cf0
+    pristine_git_object: 518056805480081b669c5fdf8f332089ff4761a1
+  docs/models/components/inspectrequestpolicyparameters.md:
+    id: c021acc9ac96
+    last_write_checksum: sha1:4666e4689eec439d6a6a6bc68e230679e404ea47
+    pristine_git_object: d60c1bc376d6bcaf794bd786d0f9fcd5016d6502
+  docs/models/components/managementtypeenum.md:
+    id: 31c009c669ca
+    last_write_checksum: sha1:9b5073bf7fb90c11a87b3684afeed23bf66b4c9a
+    pristine_git_object: 0cf9a86665ea7b059e16e459c56473a0fe42d2d8
+  docs/models/components/metricusage.md:
+    id: dac5d17bc1e5
+    last_write_checksum: sha1:8b5d98acf5b39bad058788e0a270dc13bd5b287c
+    pristine_git_object: 663afca7e6cff4faa3ed0488c4494be4a59cb714
+  docs/models/components/monthlycycles.md:
+    id: 7fa1d472ba5b
+    last_write_checksum: sha1:7613fd2e17bde8d0676219e4b6bdb16f122939b8
+    pristine_git_object: 4b51f7630e7c5b2ffb8aa398798e5be2e3508960
+  docs/models/components/operationenum.md:
+    id: c24cd4db388b
+    last_write_checksum: sha1:a48b6587e8fd4aaa59b1af3ad247429bc8855c8d
+    pristine_git_object: 6e9dcb28fa9438ded2d9c4e0a55aa2cf2e801e01
+  docs/models/components/permissionserror.md:
+    id: 02d965bc3ce4
+    last_write_checksum: sha1:ed00694f628fe3c46187b72faa4fc03d29c01950
+    pristine_git_object: 359242789939c26a0b88cb5dba8ec6dec17db5ca
+  docs/models/components/permissiontypeenum.md:
+    id: 68e6ee13ff2a
+    last_write_checksum: sha1:41d90a9ba73474d5c0b157367f04c46a48e1f1b6
+    pristine_git_object: 9735f6cbbb7df6a71117494cc971f1c10084fa85
+  docs/models/components/policyparameters.md:
+    id: e7f5c0ed17ed
+    last_write_checksum: sha1:0d2c534c81e90bcc4d4d2dc3b945b22299cc9f1e
+    pristine_git_object: 9fcca203c81cb22395af0a03182f4712dfa72a91
+  docs/models/components/principal.md:
+    id: 43dee6c31742
+    last_write_checksum: sha1:1d59bd3ec20b36eeef36bb96f7ae78db17f45f6e
+    pristine_git_object: 04a257820db95889fb72b9a601f6b120175ec268
+  docs/models/components/principalresponsedata.md:
+    id: c4941f5b04bd
+    last_write_checksum: sha1:84309b7b59e1c0cea3375005ffeee76e5af119ee
+    pristine_git_object: 74967dae386d17d2121f0e182498b14651135287
+  docs/models/components/principalresponsedatapolicyparameters.md:
+    id: ef1afd6e61b4
+    last_write_checksum: sha1:e0371bae546766d5379a7f404082c6661aa99dda
+    pristine_git_object: 061413455cb8c08c0f7d052968a838bd0d134e7c
+  docs/models/components/principalrole.md:
+    id: f9d3510f5129
+    last_write_checksum: sha1:7384547d4dff594016a9aa1e47e59cb61cd08c61
+    pristine_git_object: 03d562b428a0067128e4f71378c7c66c1afd752d
+  docs/models/components/principalrolesdata.md:
+    id: 1209b94faf7b
+    last_write_checksum: sha1:84e4c435fdd5fae2d2b4195a5eb9f72d9509f7a5
+    pristine_git_object: 412d677fd3a523a7d3ee099f39118f75658f661f
+  docs/models/components/principalrolesinspectdata.md:
+    id: 992115900eb1
+    last_write_checksum: sha1:256c94ac48a7b7bb899d9f469acf25c44a806245
+    pristine_git_object: d148497c7793ec68864db56e3137920d99686b3a
+  docs/models/components/principalrolesinspectresponse.md:
+    id: 60b63382f266
+    last_write_checksum: sha1:6d17cb6fad5ebb914deb5899d14ab1fece5b4464
+    pristine_git_object: 33a0f4e0a0f920d6dae700a996af050002ae02fe
+  docs/models/components/principalrolesinspectresponsedata.md:
+    id: bd50520a329d
+    last_write_checksum: sha1:f25a25e791bf14037fb53188deaa0fc673d196ba
+    pristine_git_object: c8cb622887e2f5cef26cdeafcf70501e88feebad
+  docs/models/components/principalrolesresponse.md:
+    id: 8b9b88091285
+    last_write_checksum: sha1:a5ee912c2e1df81351c091de0880ab503f1abd02
+    pristine_git_object: dc8b1a48bb82a5f20a87f859dc14e189670587ae
+  docs/models/components/principalsresponse.md:
+    id: 78b287790d5f
+    last_write_checksum: sha1:63bd9d776629e3e662536cc295e92d7b35195465
+    pristine_git_object: 6928fcb73a023f5874e1f671c1376bea8385772d
+  docs/models/components/principaltypeenum.md:
+    id: a9f6e15b9401
+    last_write_checksum: sha1:d152996e9baac35b14c3b89bbd46dec610e726f9
+    pristine_git_object: 8586d05d40b8841543a92b634fe2917677b31caa
+  docs/models/components/productenvironment.md:
+    id: 9e09fbc905c7
+    last_write_checksum: sha1:a1ff2d392950fdd3799f199982ada935bed3928b
+    pristine_git_object: 23ad13a2aa78c68e511a26cf016ce8ffc2f0002a
+  docs/models/components/productenvironmentrequest.md:
+    id: 322cc2a1cf8c
+    last_write_checksum: sha1:314d4246abbfc052e5e5b1f452b8aa859d7f9c60
+    pristine_git_object: d1af380423ad6fff728f2bef4be007124359cb52
+  docs/models/components/productenvironmentsresponse.md:
+    id: 1a8aeab04a06
+    last_write_checksum: sha1:56d7ee33b85af8ac8dde92dd49fcea002fd8912a
+    pristine_git_object: bb35c2182c09d0bc23b2e08bd625376686bde9c0
+  docs/models/components/productenvironmentupdaterequest.md:
+    id: 409bc40dce5c
+    last_write_checksum: sha1:672331ad68af814c091d437e72efd255695c98f6
+    pristine_git_object: cce7aeeb675ed86d4ed6034d64ccd566457df13b
+  docs/models/components/productenvironmentupdaterequestcustomattributes.md:
+    id: 6f6b0b0eab82
+    last_write_checksum: sha1:7875c8a80514ff760f4813bc830d9fce5718d9c3
+    pristine_git_object: f030d28b3f4da29ed403ced21247b2675f01849d
+  docs/models/components/role.md:
+    id: ab26d0e394ad
+    last_write_checksum: sha1:48a6ed010da4e61fd9173c2e8480fced7fae97ec
+    pristine_git_object: 526cff0210030f1d08dd7d5cc98d5bb158661ee1
+  docs/models/components/roleresponse.md:
+    id: 655c1193f06a
+    last_write_checksum: sha1:dfc20953d92204a6b67c5b0a58a44733dc4583b8
+    pristine_git_object: dbb4e54383f0bde0796ec1aa2f313816c87bb465
+  docs/models/components/roleresponsedata.md:
+    id: 57c16c56c969
+    last_write_checksum: sha1:b9091cbe1cb1391a027a0164bcd800c2f69f54aa
+    pristine_git_object: 99cf66f6862360db0be6cce967d7e1c9ce1ab42e
+  docs/models/components/roleresponsedata1.md:
+    id: df02b76fac53
+    last_write_checksum: sha1:e368cae129d4cfa33d090ab511d1800eb51748ae
+    pristine_git_object: ddd57237c7dcccb59908bb5ba462f33bdb63fa7d
+  docs/models/components/rolesresponse.md:
+    id: cbd0fca6d030
+    last_write_checksum: sha1:ba493b3453b98883666a93c7d2cb4132c15f5510
+    pristine_git_object: e0f2311f31e87015cb7f2aa01d9372d157112acb
+  docs/models/components/roletomanage.md:
+    id: 2b93af231321
+    last_write_checksum: sha1:98d1265394e0bd744f3a80c686ca4b7b100c69c4
+    pristine_git_object: 352e4e774ac9da3cfaaf27933ae121b428956166
+  docs/models/components/roletomanagepolicyparameters.md:
+    id: 9f457a440b92
+    last_write_checksum: sha1:dcf4377fd52542c7b44bf74f41904a8af354486f
+    pristine_git_object: bf6c4c506b3afb8eb8b8fd86f9ef8c3c4c411123
+  docs/models/components/scopetypeenum.md:
+    id: f5398289ebd1
+    last_write_checksum: sha1:6e45c88e79aabc6b00e7cd19517259f1b7a1f118
+    pristine_git_object: 276531e9e72f76d06d91b19a068ee793fd32dfd4
+  docs/models/components/security.md:
+    id: 54906b49ea28
+    last_write_checksum: sha1:61be776b14615386c31a9ced9964dda73d00603b
+    pristine_git_object: b9bee62369809421a63eb5faf176018b82799a10
+  docs/models/components/subaccountsummary.md:
+    id: bd90efd8c95d
+    last_write_checksum: sha1:a038c293cc645dcf0e20eae5211e27f9c842ea98
+    pristine_git_object: 2eb39519f4f4f06b10bc6bd6cc47d034e705b846
+  docs/models/components/successresponse.md:
+    id: 1ae417c0a56f
+    last_write_checksum: sha1:e58ac9cbaefdb138cff251bd4162773afdf442eb
+    pristine_git_object: fe42955896d2b0c6232810e1c419f896b61725f6
+  docs/models/components/systempoliciesresponse.md:
+    id: 929f450f908b
+    last_write_checksum: sha1:f036b244cada817cd3d7e685b6222cb27a56dcc6
+    pristine_git_object: 9440d2a018ed891620baa45323599f682d7d9c71
+  docs/models/components/systempolicyresponsedata.md:
+    id: ad31b72d15ee
+    last_write_checksum: sha1:8194d2863ad0ad5357b452afe2b6646a04c329d4
+    pristine_git_object: 9d8131f4a9f56da0d42bff9e02200f2466216745
+  docs/models/components/systemrolesandpoliciescatalogresponse.md:
+    id: 484e95d76af8
+    last_write_checksum: sha1:d3ab74674e59643721f79a1f2706df3c4e7163a8
+    pristine_git_object: a80bfce300fa5d8d8d69469bfca5efdfefe8672b
+  docs/models/components/updatecustompolicy.md:
+    id: 9aa037282e74
+    last_write_checksum: sha1:f58c8085cc868e24a31a8df7fec138d39c103116
+    pristine_git_object: 9ee87e4b101a6503a2d2a46e386f7aa55d7bafab
+  docs/models/components/updateprincipalrolesrequest.md:
+    id: dd19226da57f
+    last_write_checksum: sha1:e6e4f8c2d3b604dce812dc9deb5550fabe87db44
+    pristine_git_object: 446dfc3643f06a3b3774982aea34b4e9b49829c8
+  docs/models/components/updateroleprincipal.md:
+    id: 2d27b3c10ea4
+    last_write_checksum: sha1:2dccf52c26b1fa0d6dd58f9a5bf88933e24f9b02
+    pristine_git_object: 34faedbe9006be363a9cea177fffdac2e262cfa0
+  docs/models/components/updateroleprincipalpolicyparameters.md:
+    id: ba6752515c7a
+    last_write_checksum: sha1:973ee9a2e9503fbb9d56f515538fc56b6af91327
+    pristine_git_object: a07b71ff7195b33cd3d033691e5cff1f22341e9e
+  docs/models/components/updateroleprincipalsrequest.md:
+    id: bcf8184d3156
+    last_write_checksum: sha1:2b62609f5040628bea83f2b8a2e0782b92e62f8f
+    pristine_git_object: 4c9de5caff4c7141a57ac56b5adad3da725b1342
+  docs/models/components/user.md:
+    id: 9615438c874c
+    last_write_checksum: sha1:bcb69642a97a66cde82066aa53b2028e63674da9
+    pristine_git_object: ec2db5aa6875f810cf6d8b32d9205d360815baf5
+  docs/models/components/usergroup.md:
+    id: 2e408200823d
+    last_write_checksum: sha1:128f737a353c019062eec235956acadae4c123fe
+    pristine_git_object: 8f6f449adeb64834a2d792b3e69c8a928fcdf652
+  docs/models/components/usergrouprequest.md:
+    id: 08931d67e56b
+    last_write_checksum: sha1:fe71bbde867a8a4136ebd9fc08ea65f4b1088087
+    pristine_git_object: 1b19679ebd034176dc5b2172ddafa63b8d5ebc98
+  docs/models/components/usergroupslistresponse.md:
+    id: 9cb87e46d00a
+    last_write_checksum: sha1:70c8038e09fffc15c46fd7d71e713d3c4ab7a974
+    pristine_git_object: 8c2d2a59d4e541b4958758b8614729aa57dc1100
+  docs/models/components/usergroupsresponse.md:
+    id: 0f987017d6a9
+    last_write_checksum: sha1:d98544328b31d7c71e4cb98c0b6be001b84c2bcb
+    pristine_git_object: 046f636fcd6735d055bc05fff6996e9d70b6c76f
+  docs/models/components/usergroupsummary.md:
+    id: d6b468c16dc5
+    last_write_checksum: sha1:a58e2f333244e8525092d8eed34aeaafc0b482ba
+    pristine_git_object: 3bae3d6bd37b19f0b5dd512f5f4d7ef06bb74c00
+  docs/models/components/usergroupuser.md:
+    id: 09e5a92b3e20
+    last_write_checksum: sha1:514954b7ee13a0e7ab74e77e8fdc266a97fe3bed
+    pristine_git_object: ad8e0745d2b79497ba0053c41e6c78d0fef61d12
+  docs/models/components/usergroupusersresponse.md:
+    id: 65726c7ffe79
+    last_write_checksum: sha1:c597e73f2d17c19dc1f38b10d0b978641a3bad7c
+    pristine_git_object: 2db8faaea9d53ec421a71ae46d609fc1015ea450
+  docs/models/components/userrequest.md:
+    id: d28a2b38a2fe
+    last_write_checksum: sha1:596379a9592be803022a17b15507724fbe8befc2
+    pristine_git_object: 9331041e51b9cd17da9ca695002e62bd9336d0be
+  docs/models/components/userrequestrole.md:
+    id: ffbfe5f7fd88
+    last_write_checksum: sha1:be88a2db72cec2c8ebbdf8771c8fa4670df7c1f2
+    pristine_git_object: c915b8b0331f9a4258d4986a0f82e46d56470966
+  docs/models/components/usersresponse.md:
+    id: e41a48fcfe47
+    last_write_checksum: sha1:9f4a37e6899608839da6bef114b38ae1e4ad2254
+    pristine_git_object: 186f1905ba14f51520306fe58889916dd01c69df
+  docs/models/components/usersubaccountsresponse.md:
+    id: 54417a0a9520
+    last_write_checksum: sha1:a89a22e4ba3bae8b53c1cba9a45ddd4ab0a0c7dc
+    pristine_git_object: 74c7d2c1ca3b4ffc5c0f32cf285a6e23c251d0bc
+  docs/models/components/validatecedarpolicyrequest.md:
+    id: 64594c221bdd
+    last_write_checksum: sha1:dde32231f08350666570171ba69a601d4787a34a
+    pristine_git_object: d8b859f8afb844b47a4c8a248b8e1dc32c4d6e60
+  docs/models/components/validatecedarpolicyresponse.md:
+    id: 42c9d31dfa89
+    last_write_checksum: sha1:c86deccc787485f0d7892774e690370fc3ad600f
+    pristine_git_object: e795736a87dd43863ab27c1199b5ed47c8c2f644
+  docs/models/operations/addusertousergroupglobals.md:
+    id: 4f2316446935
+    last_write_checksum: sha1:3c4d74143e94168f1f1748dfc7864b9a9ce95a5c
+    pristine_git_object: 45b237fdb5828e2271a1c3617df428d697c72e23
+  docs/models/operations/addusertousergrouprequest.md:
+    id: f1479a0e1ae8
+    last_write_checksum: sha1:50ce313324de2d08fcca483768f54ff48c0be3f0
+    pristine_git_object: 58eefb46ade1a5dc281a533623c1934ae3dbeb1e
+  docs/models/operations/createcustompolicyglobals.md:
+    id: 7780fc0c7938
+    last_write_checksum: sha1:d7662107c2d8c6c9bdfb66d2239c6f43500b92ae
+    pristine_git_object: dfeccbb6d2b9d0a2539dab7f18c9dd2891896156
+  docs/models/operations/createproductenvironmentglobals.md:
+    id: 8407147fe9cb
+    last_write_checksum: sha1:2b10520e733ef696ef815ece0794dcdb4d6fd275
+    pristine_git_object: 27af03304a52a03703ed6b2d92bd85aaffc135cf
+  docs/models/operations/createroleglobals.md:
+    id: eea7ce0c54b5
+    last_write_checksum: sha1:27c7df1de5d0a0740fe7acdb8b4c2c7a75c5b8af
+    pristine_git_object: 8309a866eab91c955675b749de656eb0f2204330
+  docs/models/operations/createuserglobals.md:
+    id: 47066a06a2eb
+    last_write_checksum: sha1:d10266d828b7ce72977510392cecbd9f09b82f62
+    pristine_git_object: 0e51ad2b0dcf516e4c8de77a09bddc34b4b6313a
+  docs/models/operations/createusergroupglobals.md:
+    id: 41003231e801
+    last_write_checksum: sha1:07b7fe234ac9dd019e9b68efb021193ed0a99c3d
+    pristine_git_object: 793078a8e2964a7a32a2852cc6912859196033dd
+  docs/models/operations/createuserrequestbody.md:
+    id: 3b111e59c16a
+    last_write_checksum: sha1:f5ce68ac2335144d5137289bc0c606bd81742063
+    pristine_git_object: 05acf4fab589bf8a0f5f387a50c0c881176f5849
+  docs/models/operations/deleteaccesskeybynameglobals.md:
+    id: 080d0a460060
+    last_write_checksum: sha1:47f6037f2ba55812e83d10b5abef52a8cf49e332
+    pristine_git_object: 7b0225fecb735537f7d4d05af750d8ece8401c0a
+  docs/models/operations/deleteaccesskeybynamerequest.md:
+    id: 89c445509789
+    last_write_checksum: sha1:7815917441860329991566a6b1e85ba90d7ad18f
+    pristine_git_object: 11aaad2aac22053ae80765f01eef1b856cf1c68b
+  docs/models/operations/deleteaccesskeyglobals.md:
+    id: ce842176db58
+    last_write_checksum: sha1:08af7c2018d028adebf0c72708fb85909fb20a82
+    pristine_git_object: 5defd916fbef68affc082d3b6c909854ea67d12e
+  docs/models/operations/deleteaccesskeyrequest.md:
+    id: 2dce9db63f37
+    last_write_checksum: sha1:eee2b449c2f4379e5d5dcd3f624600089bd0570b
+    pristine_git_object: 618947c29fa1c86780012766a1cb5614d3b61b8a
+  docs/models/operations/deletecustompolicyglobals.md:
+    id: 9b9fd10f95d7
+    last_write_checksum: sha1:2fdf46563e8dbb571df17723d02fa4f9f1b5cdb8
+    pristine_git_object: d304e3f2c8d4e0942cc5c85bdbabbc938990ce8e
+  docs/models/operations/deletecustompolicyrequest.md:
+    id: 2073d1f18791
+    last_write_checksum: sha1:d93b08a0c2b913457493b47fd0687d9e13bfb2e8
+    pristine_git_object: e7446bb29170574a9b581f5d1d7590ac3c62b7f5
+  docs/models/operations/deleteproductenvironmentglobals.md:
+    id: 63516adb6e93
+    last_write_checksum: sha1:0e20d779785ddabbb67c67fd84368eb53541e19e
+    pristine_git_object: 6c3199373de06f6f45e8abec53b182926d7b6f04
+  docs/models/operations/deleteproductenvironmentrequest.md:
+    id: e941a1ad2fb4
+    last_write_checksum: sha1:60585a389fd3a93eb6e652718fac9a5438c9c269
+    pristine_git_object: 5918854612def5de250f8342e4f703f80604bdc9
+  docs/models/operations/deleteroleglobals.md:
+    id: 2a545e93131b
+    last_write_checksum: sha1:be479d30a51e77eea19c597896a9704106a2b92a
+    pristine_git_object: 6c3be8491a15166bd547fda9036155d284f4bcf7
+  docs/models/operations/deleterolerequest.md:
+    id: 6612ce22d6ad
+    last_write_checksum: sha1:0e19d4d4c2a9e7f6cd72504a36bd1ddcc963e5a3
+    pristine_git_object: e9f1942b17999722867fcf9a0f20f9ad02c15e58
+  docs/models/operations/deleteuserglobals.md:
+    id: ceed8d49487e
+    last_write_checksum: sha1:1cecf98564c8bbf009fb7b449e862a9e000e5714
+    pristine_git_object: 771801a57d336301feb7ff915581c7f99cc36b1a
+  docs/models/operations/deleteusergroupglobals.md:
+    id: e05d22533e2c
+    last_write_checksum: sha1:c4ec347c6ca8e04c1241d633a255b38008988299
+    pristine_git_object: b74cc8eaf691b422c4d7a6edd31f497f21357296
+  docs/models/operations/deleteusergrouprequest.md:
+    id: a2d290f4656d
+    last_write_checksum: sha1:9090b08c3f3bec46f209b9c6e2b9c8c2120a8ae3
+    pristine_git_object: 22da1acd8fd0179cd2c0f8832e5e2617bf57efa8
+  docs/models/operations/deleteuserrequest.md:
+    id: 638051dc6d48
+    last_write_checksum: sha1:ab2fe99db486452f85d74379633a8d9476f81dd0
+    pristine_git_object: 46e0ce4a6d90a71d26ba3f8bc17483abce950fa1
+  docs/models/operations/generateaccesskeyglobals.md:
+    id: c6dc6d8cb189
+    last_write_checksum: sha1:5dedf6567740358281f7245aaa8704b293fdf2a6
+    pristine_git_object: 2ac561660b564bb7e5f72eb08480955cc76de8ab
+  docs/models/operations/generateaccesskeyrequest.md:
+    id: ee17cc43d884
+    last_write_checksum: sha1:517159d3fb7c5cae8ca00473edf2382072025760
+    pristine_git_object: cce5a0f218f22b7d0f5b5a10eb60398c316c5eef
+  docs/models/operations/getaccesskeysglobals.md:
+    id: 683295e6429c
+    last_write_checksum: sha1:7966b445e095d18934d680ad8b82d8915d361594
+    pristine_git_object: fd342c1276736865068cf190041c56ef23501bec
+  docs/models/operations/getaccesskeysrequest.md:
+    id: d37afbc332cd
+    last_write_checksum: sha1:e8a29ceb541f5d3ca36f59a93d5b8c7aab104690
+    pristine_git_object: ebb343ad71e3d6f06241adb79ccc14df15e97eac
+  docs/models/operations/getbillingusageglobals.md:
+    id: 1ae5397613b6
+    last_write_checksum: sha1:2732a8b7f09eed8dfe2750fa69bee884849da97d
+    pristine_git_object: c6618e69e10a66d3033afe7c56b1c1763e674b6b
+  docs/models/operations/getbillingusagerequest.md:
+    id: fb7072569a18
+    last_write_checksum: sha1:93351afc10dbb22b3e0a3f14cfc92db1ae2762f7
+    pristine_git_object: 7c1aafd1dec6a68dd4fd52eff8701087adcd7dba
+  docs/models/operations/getcustompoliciesglobals.md:
+    id: 8e83cbf44a00
+    last_write_checksum: sha1:7f79e1e82e31e1688fa95e4289463ae87f40485f
+    pristine_git_object: cf1d3f3e0f1b71aaa2e8bcb3b42d5f3478073721
+  docs/models/operations/getcustompoliciesrequest.md:
+    id: 6828f557b580
+    last_write_checksum: sha1:b5b765a2d219947edda44a18be55bf18d71136d2
+    pristine_git_object: 07a398f7ecd10e55044f70146ff5fc59a88924c6
+  docs/models/operations/getcustompolicyglobals.md:
+    id: 47a3255d3e5f
+    last_write_checksum: sha1:94059416b292ffef560bff0d16dd30f71d5a1d9a
+    pristine_git_object: 08d3c915352e532982e3857cd219586436b27e31
+  docs/models/operations/getcustompolicyrequest.md:
+    id: 572031871cfc
+    last_write_checksum: sha1:dd2b8fac7c199ed0ce15ac7e0a27e1883eb35d67
+    pristine_git_object: 036eb9237ad46df5c5c10298e249a1b9fb59987d
+  docs/models/operations/geteffectivepoliciesglobals.md:
+    id: fb050f92f91d
+    last_write_checksum: sha1:8f929829ec695dbbec827ae76e1123a20299aa22
+    pristine_git_object: ab3a774f6b0aa947bbdfbc08b32a31d2ae4fe94d
+  docs/models/operations/geteffectivepoliciesrequest.md:
+    id: 76505825fe43
+    last_write_checksum: sha1:d7f224a8377f4287d51c471ddb68fe7ea16db2c7
+    pristine_git_object: afab73712e1a43a2045308fed53918a4d814062b
+  docs/models/operations/getgroupsforuserglobals.md:
+    id: 87f3568d3487
+    last_write_checksum: sha1:cdb7c29ccbce0ae3ecf80a0949326694d24f4f92
+    pristine_git_object: c7c9489549115045856dd8abe2f41d4beee3e406
+  docs/models/operations/getgroupsforuserrequest.md:
+    id: cf084e44db6a
+    last_write_checksum: sha1:3c3d480db4e5f8c8b0f5528ab3bb85edc9725c6c
+    pristine_git_object: 13471b7257cf07b7711a115d5494be9d3420940a
+  docs/models/operations/getprincipalrolesglobals.md:
+    id: 069b5440ea7c
+    last_write_checksum: sha1:8e66a93ca4a428976239a988575c4fed2e1c5adb
+    pristine_git_object: c4261276e8d259f6552d64ef2a44cf4038bbd8b1
+  docs/models/operations/getprincipalrolesrequest.md:
+    id: 72f80993eb2a
+    last_write_checksum: sha1:7ede28321074add013097277fe5755dc53560718
+    pristine_git_object: a0ae8fdb0894768b4be0761da4de79b874d159da
+  docs/models/operations/getproductenvironmentglobals.md:
+    id: 1f800ef8c75c
+    last_write_checksum: sha1:70ba429b026758e523035ff3ca1fd2febd014841
+    pristine_git_object: 36549c6365f773d9c89d906bd317409479b2912d
+  docs/models/operations/getproductenvironmentrequest.md:
+    id: 27b39dfffcbc
+    last_write_checksum: sha1:58f010366a015aac0c04d1e9dbca47fd5bc73483
+    pristine_git_object: 198c5c7d05bba48c8be309fa5e0d73d312c5437e
+  docs/models/operations/getproductenvironmentsglobals.md:
+    id: 552494e120d3
+    last_write_checksum: sha1:e3ec066068b4ebbc9a09cc833d7e9bad02cd1b0f
+    pristine_git_object: b04d089b5854bd5d261ea35ceeab36e11447dde6
+  docs/models/operations/getproductenvironmentsrequest.md:
+    id: 6085aa412b73
+    last_write_checksum: sha1:ecca64a24c8869789ced72dd73a68a395272022e
+    pristine_git_object: 74d06379ce2b6dd9b6ba8af8c35380266e420e45
+  docs/models/operations/getroleglobals.md:
+    id: 84d6f8f0d2c8
+    last_write_checksum: sha1:48c07ebcc0fda118668a8b7518d6fa3cd071eaae
+    pristine_git_object: 868fed72af268c1aec4dbf8a1024275c474f748e
+  docs/models/operations/getroleprincipalsglobals.md:
+    id: e02da2e60a12
+    last_write_checksum: sha1:d5c4b5c7d0b7313d07d0886e89956afb78f9e5c3
+    pristine_git_object: 1c56e695f0894534e038c746d7b81840a6d83f40
+  docs/models/operations/getroleprincipalsrequest.md:
+    id: 2465380efb8c
+    last_write_checksum: sha1:234796b45ab445ffd74186e35fbfc167494c0c57
+    pristine_git_object: 692d2f9631f48fab1c101d829a6831699db8099b
+  docs/models/operations/getrolerequest.md:
+    id: 86b7b06a0e34
+    last_write_checksum: sha1:7a471c62248ac7b30cbac7893606d098b856f39f
+    pristine_git_object: 9b3be2f04517eb01f10bf3f189548c7d7bd06820
+  docs/models/operations/getrolesglobals.md:
+    id: fa0b3c2df2c3
+    last_write_checksum: sha1:7f02782f79456d638ab5fedd0809eec9a6b0a3e5
+    pristine_git_object: 140a18462720e498025df349142d0f49ae050ca5
+  docs/models/operations/getrolesrequest.md:
+    id: 76521c0c7eb0
+    last_write_checksum: sha1:4c8b15e7a250b593cf9e21417c8ade830389c9d9
+    pristine_git_object: fd7f422129cfc683612a5d61a8e5794dacfaca33
+  docs/models/operations/getsubaccountsforuserglobals.md:
+    id: b837210d6b51
+    last_write_checksum: sha1:99f57c6ee515fa08186892e143cce903b033a732
+    pristine_git_object: dd120f2c189ed7d721c816e3fcacb54888cbdf40
+  docs/models/operations/getsubaccountsforuserrequest.md:
+    id: fc3ad4a6abda
+    last_write_checksum: sha1:f0ffee38a504832c18b89c1d09dd3ed39a0bfdae
+    pristine_git_object: 514b6305b8d9fbc79bb1997b5d90e837e4d952ce
+  docs/models/operations/getsystempoliciesglobals.md:
+    id: 923684ba94de
+    last_write_checksum: sha1:52f00c8a46767173c1d173662227493e525d0c81
+    pristine_git_object: ef43dcd9602e00271f79e2971d033a7c854dd629
+  docs/models/operations/getsystempoliciesrequest.md:
+    id: 67c2bc497753
+    last_write_checksum: sha1:fe953e959d6983213824c07bc05615ab14909742
+    pristine_git_object: 53ba4716ff77c2f9c4d5bc6ab44164bd0d11ea48
+  docs/models/operations/getuserglobals.md:
+    id: 06486c02957a
+    last_write_checksum: sha1:54ef0f2bcb85cf73b612a9cf9def7c5b53064566
+    pristine_git_object: 448a3e3bdd35fa70660e498a9cd7f85116201f1d
+  docs/models/operations/getusergroupglobals.md:
+    id: e0f2d14d5304
+    last_write_checksum: sha1:c5f0e6a7273ceafba082c0439f7bb3675417c3c5
+    pristine_git_object: 3a3b8900c24d27273ad4d35979adf6de9a60d3ab
+  docs/models/operations/getusergrouprequest.md:
+    id: 19be4a7fa23b
+    last_write_checksum: sha1:1fcb129b58531dfbe3db741f46f231a047bc5440
+    pristine_git_object: 818c9074cc498ae4b42ecbe33b8582543b0d7867
+  docs/models/operations/getusergroupsglobals.md:
+    id: dedf178eb6e2
+    last_write_checksum: sha1:f6a5765994f74eb8d8170693cfc80081d69ec3b0
+    pristine_git_object: a5e58c91abd2cda1e4ae963a624cf9d71c3b7fad
+  docs/models/operations/getusergroupsrequest.md:
+    id: 58e0a7d81333
+    last_write_checksum: sha1:18a6741153eaf1afc9e3756e7c166a0d5019f543
+    pristine_git_object: 1ce3bd5d36c94fea312129cb0b951ce1f74969ee
+  docs/models/operations/getuserrequest.md:
+    id: a9d484e15f97
+    last_write_checksum: sha1:bd8dcf214469c8b6f9660867fa34093b94d7606b
+    pristine_git_object: 39ab64d813b7cd7044d6576af807b92878b01275
+  docs/models/operations/getusersglobals.md:
+    id: d86cbac557cb
+    last_write_checksum: sha1:b8c5ca9e2810859ade5293541daaecbcb731b1d3
+    pristine_git_object: 63743cf0e8fde44992157193f5e0b6a5bb840f36
+  docs/models/operations/getusersinusergroupglobals.md:
+    id: f36aa7843ba0
+    last_write_checksum: sha1:4fee1d1b021b45c995fd8ceed5eff437ea3ad808
+    pristine_git_object: 0f3c3a77b36210e2e112a72153621ff34239e978
+  docs/models/operations/getusersinusergrouprequest.md:
+    id: 8c8df949475c
+    last_write_checksum: sha1:7b7398d8a03f2b7fdf84314220a4e7d118d4744f
+    pristine_git_object: 8b96db4ef6386a22639a463e299edae9055f0752
+  docs/models/operations/getusersrequest.md:
+    id: f34be85a7703
+    last_write_checksum: sha1:ace552fd0cdf57754460b4b12ca47a5bc1c07980
+    pristine_git_object: 52286133b391b6d1f279812b7d13cfa6ecad83ce
+  docs/models/operations/inspectglobals.md:
+    id: 38f61a1fe494
+    last_write_checksum: sha1:663ff79efe2e0db8f3b1c70b75a46ba2fa4e1c5b
+    pristine_git_object: 5e67268fc0863c92071cf1fe18fec29e64f6ed46
+  docs/models/operations/inspectmultipleglobals.md:
+    id: 3d4a044c5205
+    last_write_checksum: sha1:308bd72a8ee68b44b97b7fe20b5c426be266ef67
+    pristine_git_object: 13672adaa487adbc8c88a644ea3045477cb01171
+  docs/models/operations/inspectrequest.md:
+    id: be99b187f304
+    last_write_checksum: sha1:685b82c59375b4ae0f106355e07a5d8b162f60ff
+    pristine_git_object: 59fedcce6dbb8b01be84afad5f360e91e721c197
+  docs/models/operations/option.md:
+    id: 2ac1bd52a5fb
+    last_write_checksum: sha1:7e64ae8c64176e60137b96997f9da8af94890cf8
+    pristine_git_object: fd61defe55ee2aee578fa07a102491d13f10e8c7
+  docs/models/operations/queryparamsortby.md:
+    id: da948725b8da
+    last_write_checksum: sha1:376d697c81273768d27e2d852484214071a67544
+    pristine_git_object: 779d9902916e368c4b2af5ee31030ec89d5cdc55
+  docs/models/operations/queryparamsortorder.md:
+    id: 28f401a31fbb
+    last_write_checksum: sha1:64cacf0a3fe1bddfd8cc4f0545c3dad0ebd12cbe
+    pristine_git_object: e278f2f216352604b7e51f19e9e87a67c6717b91
+  docs/models/operations/removeuserfromusergroupglobals.md:
+    id: e2ff63d81bb4
+    last_write_checksum: sha1:75af894d1238e1d88ee28e687dd5a9dc3a717804
+    pristine_git_object: eb2d33db1540724dbf39bc7ed9151b4f05937f43
+  docs/models/operations/removeuserfromusergrouprequest.md:
+    id: 13604182273a
+    last_write_checksum: sha1:8041ea015e58c7090d48a996c022d98cb7274222
+    pristine_git_object: 3de2ceadafeee8250a63bd91a856d4d4099523d2
+  docs/models/operations/role.md:
+    id: da2c36811787
+    last_write_checksum: sha1:ac6fcce02b1c26394494066b0766294142826538
+    pristine_git_object: f31412fb27b4eec06655d449c8727a7b778f1e43
+  docs/models/operations/sortby.md:
+    id: 6e8a73340afa
+    last_write_checksum: sha1:7561b2b45be605761e5e8fcf774c42b2802d502d
+    pristine_git_object: 1bfb16e7b6933e736fca9d433a4f05652799d7c5
+  docs/models/operations/sortorder.md:
+    id: ae43af5a4bbd
+    last_write_checksum: sha1:2c332cb84a0173cdbab4f7868debd315a6effc88
+    pristine_git_object: 67918fa657ad3ce71faf20bacb6f3d83860f7747
+  docs/models/operations/uniontype.md:
+    id: a6a91f458efb
+    last_write_checksum: sha1:c8cdf39a985000363b31aa3f9f68cc723de7fc5d
+    pristine_git_object: 899f95370d09a6da712f0d93a748458c78369b9c
+  docs/models/operations/updateaccesskeyglobals.md:
+    id: d398265e68a9
+    last_write_checksum: sha1:a89aae4d781411cdf9847781b8bbdfb0bdff5f65
+    pristine_git_object: 7cf2b5e73af964682e8ad65e145109229dcdbe13
+  docs/models/operations/updateaccesskeyrequest.md:
+    id: 117342fb47d7
+    last_write_checksum: sha1:503d779737f8b9a8b809632a9962021d74a1b957
+    pristine_git_object: adf629a06ad1ce44f3ff71a4b1b25f3250ecce0e
+  docs/models/operations/updatecustompolicyglobals.md:
+    id: 7b2e934c662d
+    last_write_checksum: sha1:d188e1acdd60f1726fefee8bd18b2c163cececd3
+    pristine_git_object: 4630f94c8ffaae7eb56b0ee3fe98d0290b140da7
+  docs/models/operations/updatecustompolicyrequest.md:
+    id: cf7236bcb75d
+    last_write_checksum: sha1:95e59af8c91622edf7174500dd0d797f53ea423e
+    pristine_git_object: dd41f9b92e442120dad4296814ffc763dc608618
+  docs/models/operations/updateprincipalrolesglobals.md:
+    id: 4118198c29d8
+    last_write_checksum: sha1:a3caaa5f52dc0eb1242344c811fcdb5b0cdafb03
+    pristine_git_object: c4b451c5b96c970e8c4270151fd30bc2048ecd1e
+  docs/models/operations/updateproductenvironmentglobals.md:
+    id: d93a08250752
+    last_write_checksum: sha1:cd7c684953a1f684ea841f222a11acd0c578b0b6
+    pristine_git_object: 4ea4cf8ae30d80072ec80313ccbecec02d58312b
+  docs/models/operations/updateproductenvironmentrequest.md:
+    id: 5adbf160714f
+    last_write_checksum: sha1:b0d83cdedee878ba4a1b38d035ecdefbadd7ae5e
+    pristine_git_object: 699f4f7417ba8de5765643c4e72a76c7e44b7ad2
+  docs/models/operations/updateroleglobals.md:
+    id: a6926befe3b5
+    last_write_checksum: sha1:b297ad3c75594857f3f7b00c2708e8610007871c
+    pristine_git_object: ae60a9bf8a1974439024fb4b80b2e83bc64a0d72
+  docs/models/operations/updateroleprincipalsglobals.md:
+    id: 3be2b844f36f
+    last_write_checksum: sha1:de80eeeb6aba880bef5d23675652e966ef7e4a2a
+    pristine_git_object: adb8c7a881cce5d0177782f6546ac77d7f254502
+  docs/models/operations/updateroleprincipalsrequest.md:
+    id: 40190ab2a1c8
+    last_write_checksum: sha1:c23ef9fd7efdbc89651369958b0ea81f9ee60f68
+    pristine_git_object: 51b64e2220922ed1a7ab491de6796d88ba3e188f
+  docs/models/operations/updaterolerequest.md:
+    id: 1a57a3d99ce9
+    last_write_checksum: sha1:74112c2a3786ce1bf4eef1f325fa86663c8de7f8
+    pristine_git_object: 79cd9bd37862194b1db52008dfaefa64571bc401
+  docs/models/operations/updateuserglobals.md:
+    id: 7a07eb0e022c
+    last_write_checksum: sha1:c487e9af801378ae079636190ab402434f616664
+    pristine_git_object: a7a7239c42d258c4388bf7e2c4613d0dc8438137
+  docs/models/operations/updateusergroupglobals.md:
+    id: 696a519d50c1
+    last_write_checksum: sha1:6f62952490c96bd7fe1e4c377558c7adddc0264f
+    pristine_git_object: c176c95297f452583b52bdb3460d67e02640e560
+  docs/models/operations/updateusergrouprequest.md:
+    id: 1902c467722e
+    last_write_checksum: sha1:2552a0babb6c2f9d3be76cdc2d6ff354152674ab
+    pristine_git_object: 0bf1604b0656686b19ade62e7c30f6c22e12d579
+  docs/models/operations/updateuserrequest.md:
+    id: 5d3d618e0abd
+    last_write_checksum: sha1:c3d884a4db95ee27d656ff6d1d64146f665a1f47
+    pristine_git_object: 305c5801d327f5c278628de3d71479a721a2fb4e
+  docs/models/sdkerrors/errorresponse.md:
+    id: 138a75e08f86
+    last_write_checksum: sha1:84bc1c1d967189a2bf92e3a881ed482840bb9ded
+    pristine_git_object: 26f20c871d5281d26b28f9d90f96de7a42646650
+  docs/models/sdkerrors/permissionserrorresponse.md:
+    id: df7f8a4956f8
+    last_write_checksum: sha1:8efd912ce507744527b08fe0d96bd2c1705d38c7
+    pristine_git_object: 0f3a17ae3c1847090a13baa1e0107c50ebc03d18
+  docs/sdks/accesskeys/README.md:
+    id: 30ccc47e4bef
+    last_write_checksum: sha1:6099e13a0059547d35274999d5dc30a3e8c78ae0
+    pristine_git_object: b02012b043eeb4d1b85a7abc1bee2ca0c5aa3264
+  docs/sdks/billingusage/README.md:
+    id: 27eae6c6f7e8
+    last_write_checksum: sha1:fe213285d52551ebc79f4586a99b313ea7f64926
+    pristine_git_object: 6e903ffa484ff976830f790a42b2180b5fe00102
+  docs/sdks/custompolicies/README.md:
+    id: dcb5fa2aa049
+    last_write_checksum: sha1:1991e4e08b6bb10f50f7af6be46ed3559bc17b71
+    pristine_git_object: e390cc15c6dc4e43d4dbeccfa678e6136211cae7
+  docs/sdks/effectivepolicies/README.md:
+    id: 697f1a263ba6
+    last_write_checksum: sha1:a787dd5e2824f6d5d4b0856879a77d66a52a1d99
+    pristine_git_object: bf64ccf9efc97571db7a8d85991f93397a770500
+  docs/sdks/principals/README.md:
+    id: e5191085ef78
+    last_write_checksum: sha1:48fdd34ea72ac4aada7b23499e2458a3eed394f4
+    pristine_git_object: 9d3982deabf1e2288d64ce96ed7ed1291b5b15b8
+  docs/sdks/productenvironments/README.md:
+    id: 05b22c3fa791
+    last_write_checksum: sha1:bd244a7db846c27de3d889005d5a010c221700d5
+    pristine_git_object: 51d94e8598340c423af05f1f6eb738900db33638
+  docs/sdks/public/README.md:
+    id: 0901bebc0d17
+    last_write_checksum: sha1:2cc0ae47dd93cfcd6cee3e1ff3a5edb9fd4ada93
+    pristine_git_object: 86ab3e626394a053a84916bb602608c10abf99a5
+  docs/sdks/roles/README.md:
+    id: 69204c99730f
+    last_write_checksum: sha1:a7d340528a468a29c56b1edfcd245c8a45cf3aac
+    pristine_git_object: b7d65f9788ef18c6ddea710215bf2ce4a7d5490e
+  docs/sdks/systempolicies/README.md:
+    id: 850062c637e0
+    last_write_checksum: sha1:d86902036278738d9462acfbd62dd6bdb7f75ab2
+    pristine_git_object: 34b61cb6307f89729f204db33e60bd8bae917a85
+  docs/sdks/usergroups/README.md:
+    id: 4d749df7a4f1
+    last_write_checksum: sha1:84fed3a1ae80e484c56546a84bc55a966e915af7
+    pristine_git_object: 4075f928654d70d67c0d92a8148a63a3a11af6a2
+  docs/sdks/users/README.md:
+    id: 5d80027045fe
+    last_write_checksum: sha1:8e6a67e38e0f9fb17e32b64dcce5c757f8f2976c
+    pristine_git_object: 70711a0cb4d41a3230c4898d44c766869535d034
+  docs/types/date.md:
+    id: 3a10eb495943
+    last_write_checksum: sha1:45ab0675ea1c52ce29e9b5c70c4ef5c0ae29f2bf
+    pristine_git_object: 3d83ed2f48ff36968042694693ec08d892ef94fe
+  effectivepolicies.go:
+    id: 9c16c0f7cd3f
+    last_write_checksum: sha1:c56ce5bedf662a5b025f08086b8fc9b38ae6f0cd
+    pristine_git_object: 7092f1ca239ef6269b75e9dc5111b8925f035651
+  go.mod:
+    id: c47645c391ad
+    last_write_checksum: sha1:385346c85e2dc8befc7871a71290ad0de3a4e624
+    pristine_git_object: 93c721aa394a94f0dc3c437bae8c07db8b5d5fae
+  internal/config/sdkconfiguration.go:
+    id: 33b8bfac5265
+    last_write_checksum: sha1:7efe4fdb42798da7f0e68761e0241ee363322113
+    pristine_git_object: 9bdce19ac2235ba68d0f6b2ab6175595f4b37f0c
+  internal/globals/globals.go:
+    id: 9b8514db7dc7
+    last_write_checksum: sha1:f2f95bedc6ca2903b91bed24ac36f61dcae66eef
+    pristine_git_object: 2092e8346f3f28bbd29bcdfd5cf88be9ebe9d03a
+  internal/hooks/hooks.go:
+    id: 336be70ed5c0
+    last_write_checksum: sha1:d16c3c78bbf7f8f8baa29ba60feee626c41a2c98
+    pristine_git_object: 58f49314133ce1ac4efc4245958ee8f34545de19
+  internal/utils/contenttype.go:
+    id: 928a56fe6755
+    last_write_checksum: sha1:ab5cfd860d02c6e6a37f89e2b5649a9859947fb1
+    pristine_git_object: f6487e01eb987c0aa49e7aa50b5ff24830314c63
+  internal/utils/env.go:
+    id: ac8bab30c73d
+    last_write_checksum: sha1:1e0bcb2d2caed9f3657f1dbc99b55811bed0298c
+    pristine_git_object: 110d464eacf2387b347bad1cb903666354a339e9
+  internal/utils/form.go:
+    id: 8ea133d76535
+    last_write_checksum: sha1:64604cf6095bc55d2563ae26b03f6237fb9df9cf
+    pristine_git_object: b10f036e53d8bf548696586b40e681bdfdfe2de9
+  internal/utils/headers.go:
+    id: 90d4f18d4adf
+    last_write_checksum: sha1:eebe2e5ee3abf8eaf28b52c79d50b22b6b960be0
+    pristine_git_object: fa505060af3e1116eeb6fc09953a02f19df2c3e1
+  internal/utils/json.go:
+    id: ad03e3c502d8
+    last_write_checksum: sha1:39f4c9b84a46fe06538c83826c6a45f788255c18
+    pristine_git_object: 76344a4aebb9d4658fc46afb34c4c917224228b0
+  internal/utils/pathparams.go:
+    id: 1f3e0c30fd90
+    last_write_checksum: sha1:4d418c16962aff853437f260249611cb1947ca33
+    pristine_git_object: b47a8dda1fd19b1129e3df9bee38b47d7c32500d
+  internal/utils/queryparams.go:
+    id: e7f604e65a58
+    last_write_checksum: sha1:e955a1432dec2d572cc3e8d20160165345695a45
+    pristine_git_object: c1e9aefe5fc5dbd44339831c00fc74c68f712fed
+  internal/utils/requestbody.go:
+    id: 22445ec1c044
+    last_write_checksum: sha1:207df2e4a0857d8da69942c717632e97eee4cead
+    pristine_git_object: dba1e8d7ebf0cb28a5c51afa6c46fbe967432519
+  internal/utils/retries.go:
+    id: b5e011d15c2d
+    last_write_checksum: sha1:ba69e653ec3240cdf7c7a10322e73fdca8103561
+    pristine_git_object: fc92132341f61e15ebc80c49f14cdef5f79b0ca7
+  internal/utils/security.go:
+    id: eeb54c55241b
+    last_write_checksum: sha1:1c0b332b3cf0fa405df0c5bf4e03f335139566b6
+    pristine_git_object: 7c1a372ae314a9d82ab82c3db610e7ffe67ecfab
+  internal/utils/union.go:
+    id: db86c85746b6
+    last_write_checksum: sha1:1deec82bbecf43f4ac7ee1f013ee4e89688976bc
+    pristine_git_object: 28c804a86cf2ea1a00fddfbacb7b087e4544795f
+  internal/utils/union_test.go:
+    id: 4b56247171bd
+    last_write_checksum: sha1:83ac73c1901de4c6db90f65cf5879163f3d47a00
+    pristine_git_object: f66814c73ace94d8e71d785fd6161fb405745754
+  internal/utils/utils.go:
+    id: 1133b2a27019
+    last_write_checksum: sha1:36a3e6fb95d71868d1755dbb3b924a37340c7ea7
+    pristine_git_object: b32a14db51857aafab25498ba32fa2905c92b5d8
+  models/components/accesskey.go:
+    id: 828d64c786d7
+    last_write_checksum: sha1:db5646dd0bdaf8ac545bfc9e9e91e4c4364c3ba6
+    pristine_git_object: fe36d9bee1392e53b1c73458cb4ecdd023540b62
+  models/components/accesskeyrequest.go:
+    id: ee37de82d34c
+    last_write_checksum: sha1:0cc6da5b39e6183264dadeb00e809c7aa5c74608
+    pristine_git_object: c83846f5607301aeaaf5bbd73fa52c2dc2bce6e4
+  models/components/accesskeysresponse.go:
+    id: dc2a16af8148
+    last_write_checksum: sha1:71d08602e95ff0e5d3f68176950ee74627bccaed
+    pristine_git_object: 6a4894323b5f3570a959779917b77b5c88d3b523
+  models/components/accesskeyupdaterequest.go:
+    id: 603fa22995ab
+    last_write_checksum: sha1:b9fc049e1c3e2b65b108074bbd0638680c16e334
+    pristine_git_object: 5f219398a0fc46107416dd39434d85ede29fa626
+  models/components/apiaccesskey.go:
+    id: 189d2d22a5ad
+    last_write_checksum: sha1:8641450e4cdbf9ca1c91acb99177978012a92594
+    pristine_git_object: 2e93f2e424c66cf643fd11e62015a7abff7c8403
+  models/components/billingusageresponse.go:
+    id: 2437d2619b6e
+    last_write_checksum: sha1:5fa05dd22e60f13dacc861ef5504e174184bf755
+    pristine_git_object: 49a1a673911ec496f3f08b364a4a823159233941
+  models/components/cedarerror.go:
+    id: ddbae4e5d1fc
+    last_write_checksum: sha1:02883cfda9b54e9d7ee9b2cc5c2a5f0fdb43bd82
+    pristine_git_object: 2b5854180148bd5bc712244853a98402650e9c2b
+  models/components/cedarschemaresponse.go:
+    id: 71c7957cf7a3
+    last_write_checksum: sha1:0535234ff16a0e701709ed3a2eb8e422c0683966
+    pristine_git_object: efc63372f1c4da8f11357c5cf2b47afb68d4d793
+  models/components/cloudassettypebreakdown.go:
+    id: 2cbd41b3c0fd
+    last_write_checksum: sha1:29c3664254f7e7af1b537299f7c67d6fb740632d
+    pristine_git_object: 5582411c3200de706018472e65abab5bd53493a3
+  models/components/createrole.go:
+    id: d97f64c77132
+    last_write_checksum: sha1:1ebaf436b40a36972956b72185f557a8c236c490
+    pristine_git_object: cc344fc2647cf86ed3553dbca195c76c63f9524c
+  models/components/custompoliciesresponse.go:
+    id: ed0444a1ff0d
+    last_write_checksum: sha1:7314a4675f7c856e4fc5ad52b90ce88776f65739
+    pristine_git_object: f6b0b049d28d7ef93afaf6e09ea01f4553c99b91
+  models/components/custompolicy.go:
+    id: 7721d2b26232
+    last_write_checksum: sha1:7df1387b8676c7d600602954cbfffa483aee1406
+    pristine_git_object: 182c1bda172c1e90248bd534e3a8e2e3e504c01e
+  models/components/custompolicyresponse.go:
+    id: 18c4597dd0e4
+    last_write_checksum: sha1:9cc5b897703dafd6ab18dfd7915f97c78a48137a
+    pristine_git_object: d37672d5ed39792f9e5ad59e00ea33f772325416
+  models/components/custompolicyresponsedata.go:
+    id: b49811ad1a9b
+    last_write_checksum: sha1:a5bcbde7c612ebb274de80c75bbef3c2bd2add75
+    pristine_git_object: 3fcfdb33bfe39f55c0a857ec6c1262dc38171269
+  models/components/effectivepoliciesresponse.go:
+    id: c6544e76fbc9
+    last_write_checksum: sha1:112e87da0d2178bff5d5e6011d029f5e53d1a158
+    pristine_git_object: 989bc0304c4bb4c604bed8c26412051e3505eb14
+  models/components/effectivepolicy.go:
+    id: 841592c29cb7
+    last_write_checksum: sha1:c7e97572620f8f2c095943ed321c339471c15dcf
+    pristine_git_object: 5508513acb7731b1835ed596c7af157eaed1dde2
+  models/components/effectiverole.go:
+    id: 6467169efaee
+    last_write_checksum: sha1:ede60d0b140c78a3b5fdc9777ebbcb67d1b548c2
+    pristine_git_object: 2376a88ac7342b3c7aa3e9b5be5508fcf8645def
+  models/components/errorresponse.go:
+    id: 789ac133631c
+    last_write_checksum: sha1:3bcf8057a2c4c056804e08573a01a18bad76fe19
+    pristine_git_object: e626db4cfcab06c9c77ca3a4fbd0b83377281a16
+  models/components/inspectrequest.go:
+    id: db515d4d46e7
+    last_write_checksum: sha1:8f5a66446dcd43b4dd0876fa488ca7e096b9fa3e
+    pristine_git_object: 7a2fdf01132d03cde11ff4ebdb886f0b14064878
+  models/components/managementtypeenum.go:
+    id: cb45b7fe9715
+    last_write_checksum: sha1:031c35819003be74934b814c63c64f2e4e1e1135
+    pristine_git_object: edd8e72fbdf19b5176094a96a2d0f64ba37b8f44
+  models/components/operationenum.go:
+    id: 5b4940979019
+    last_write_checksum: sha1:a5a307074177739eac6f07436dd7969f20822048
+    pristine_git_object: 695a077f463277ee03802000e8aba8eb5a439115
+  models/components/permissionserror.go:
+    id: 358729a1375f
+    last_write_checksum: sha1:85d7d67f8017273d6a7dc7d9e4a29e09612476de
+    pristine_git_object: b8e7570704da5a9fa5cdee686e35ae16060f49ce
+  models/components/permissiontypeenum.go:
+    id: b3a56ef9ad20
+    last_write_checksum: sha1:0b3dd4b5af00398f7caf1afc6ce85824bfff8f93
+    pristine_git_object: f1e2d38c77c6415b53b26a6b1126577cb6ca4c5f
+  models/components/principal.go:
+    id: 6df33179df54
+    last_write_checksum: sha1:0861c628908572f972d4a76d66c7af84d4f1cf46
+    pristine_git_object: d6a7fd28dec2c506bdef859a4fcbe5745b9cde39
+  models/components/principalresponsedata.go:
+    id: 6c190ceaacd9
+    last_write_checksum: sha1:345aa4e725c24a8875eb3305283231606553e223
+    pristine_git_object: bd1281798712a832f78a00a84dd685b6f2613b81
+  models/components/principalrole.go:
+    id: 9d8eb6fae3c3
+    last_write_checksum: sha1:4da0ce1dbb37caa0d4c1cb2af646651fcbaaff25
+    pristine_git_object: 3621534a2d3e80980b1f1786096a6daa802316a8
+  models/components/principalrolesdata.go:
+    id: eadfce6501db
+    last_write_checksum: sha1:f3a5a531d1ef695b82a73336d2e89789667d2623
+    pristine_git_object: eb9f499853c55a909e7c245f2b90d98ac82e4cc3
+  models/components/principalrolesinspectdata.go:
+    id: 8871e172e614
+    last_write_checksum: sha1:97404bbb3fdf78be60268405f76db5287854602d
+    pristine_git_object: 846b27222a449bda7efc40095a0b7af1c94bceea
+  models/components/principalrolesinspectresponse.go:
+    id: a4a13f5a27f8
+    last_write_checksum: sha1:caa7b33ec8c3139691ab2aae44510ee59a77ed1d
+    pristine_git_object: dbeb3de5cca1e0af6f065c3550055b2a20724205
+  models/components/principalrolesresponse.go:
+    id: 569d2f285ae5
+    last_write_checksum: sha1:c7e3cb075b7dd2cc1b2fe3cfe8c8a6c05331c022
+    pristine_git_object: 3758bc232a2b5b1b31884696510af09add905c6d
+  models/components/principalsresponse.go:
+    id: 825d5bc8648b
+    last_write_checksum: sha1:29e5a6067bda1ce8631a669ea758f81d121153b4
+    pristine_git_object: 68fef03390ec0b9162cfa7799c61a15d96bd51b6
+  models/components/principaltypeenum.go:
+    id: 4382552ebbb8
+    last_write_checksum: sha1:6b788e517a876a103a5a92eccd5d1c37dcb99b12
+    pristine_git_object: 8d51d73274e1b9abe0f31ff11bde3316889d512e
+  models/components/productenvironment.go:
+    id: 15e085cd449e
+    last_write_checksum: sha1:c9bd23cd32d0a3f4b19906436efc7bc2ff9eb3a0
+    pristine_git_object: 212a130a22bc85ee4401fe58818522f0c3923822
+  models/components/productenvironmentrequest.go:
+    id: a0c40e5d7935
+    last_write_checksum: sha1:8b16a972cae5989d0b8da1f4eb80bb383b66d907
+    pristine_git_object: 8e4daf858d737dd4df6cbe3c4a4da1262618480b
+  models/components/productenvironmentsresponse.go:
+    id: 3c96ec191889
+    last_write_checksum: sha1:7237a83914c299544e82f9e9a365c0942bc46834
+    pristine_git_object: 6b0bcc35f9dcd333785da3d80e8a2fad231c6ff3
+  models/components/productenvironmentupdaterequest.go:
+    id: 80c19d54ec8c
+    last_write_checksum: sha1:ef1d934cca67516cdb46f046a4f0bf84892db861
+    pristine_git_object: 995911ef4f03e8979993acb235b9f449856597d6
+  models/components/role.go:
+    id: 11301c7b0524
+    last_write_checksum: sha1:6ea0a3294369043d0dd30d0419d4c5fbda64d3cc
+    pristine_git_object: 79f9c6f1f8abae27b919d5028299258776b04d34
+  models/components/roleresponse.go:
+    id: ab5ac9fd6a6f
+    last_write_checksum: sha1:e1822804c92622b376e75da69a9322169824d72e
+    pristine_git_object: e7189ac139404146a3dbd57b2fea85c81890722d
+  models/components/roleresponsedata.go:
+    id: de001ef8024f
+    last_write_checksum: sha1:9c000e28bd221edaa653fb77827102f006389e39
+    pristine_git_object: 50d868bd4a7bb12ff4e87c1591208eda0a450fb5
+  models/components/rolesresponse.go:
+    id: 73dd0268ecaa
+    last_write_checksum: sha1:d323b670c35e1c5d71c97be35fcaf161072c0a41
+    pristine_git_object: 70f6dfed47098a81789b0a565edcd4ecb56acd76
+  models/components/roletomanage.go:
+    id: 39fe6a379974
+    last_write_checksum: sha1:f207bc9cf300bebcf777a002a0566e88fd7f4584
+    pristine_git_object: 5b8b8fba8fa5d7e43aaaf4d352509bc3d8848ffa
+  models/components/scopetypeenum.go:
+    id: bcd85e5b251c
+    last_write_checksum: sha1:a5ed42865a934ea3f83748c87569b7e9c4cb5ccf
+    pristine_git_object: dd960852da01cb1171840dee3b4e210d971e0f89
+  models/components/security.go:
+    id: 3a5eba5fe9e0
+    last_write_checksum: sha1:7e2f84ecc5884d702356b76b365e59f774eefcfd
+    pristine_git_object: 90525b1b40ee14cce530f98c8f0982706aaca74f
+  models/components/subaccountsummary.go:
+    id: f2b88d3f4ecc
+    last_write_checksum: sha1:951642116e04caf0ea52ecdbfac762d1b86fe40c
+    pristine_git_object: 3bc01d0472624e14da6e013de4870a720b728182
+  models/components/successresponse.go:
+    id: 43b43fb7692b
+    last_write_checksum: sha1:d2bafce8864e6682f63454bf40dae2aec409f144
+    pristine_git_object: 867976d6a4b6ece360ce49d80de157942797f9cf
+  models/components/systempoliciesresponse.go:
+    id: 2675550ef610
+    last_write_checksum: sha1:29e3fff0c29bf6589c8d7bd85e150683d625c51b
+    pristine_git_object: 8d99881d8e8c9ec88d842d73cca47ac9f7cc544e
+  models/components/systempolicyresponsedata.go:
+    id: a812f2023f58
+    last_write_checksum: sha1:fcc31fbbd7dc837109e7638fece058c3b927e466
+    pristine_git_object: cc1ce6591a346db0da3230117221f4432002dacb
+  models/components/systemrolesandpoliciescatalogresponse.go:
+    id: 3b4de37991b2
+    last_write_checksum: sha1:a5780f3b86a6ba3b0c48ae004f377fe85db28b18
+    pristine_git_object: edc1d58d1153a0b8a97cb5dad1b6f438a8450e60
+  models/components/updatecustompolicy.go:
+    id: 17102a7275ee
+    last_write_checksum: sha1:a3037dc13ce83bd247f0fc6baed53ea809c231ff
+    pristine_git_object: 0eca092042f1c0735fdc4296951af5276b0ecc1d
+  models/components/updateprincipalrolesrequest.go:
+    id: d958b99845b7
+    last_write_checksum: sha1:813462d55a5ff4053d773852c4985cb333a0614d
+    pristine_git_object: a7aaff31ad2e315e1674c1cf0c56265521d01861
+  models/components/updateroleprincipal.go:
+    id: ce20bb8910c2
+    last_write_checksum: sha1:1115777e4474de04a31facd60500f3372d60495c
+    pristine_git_object: 1615728832902243963eb769e46858693a5bb6e0
+  models/components/updateroleprincipalsrequest.go:
+    id: 5fc2b07142d4
+    last_write_checksum: sha1:8b22dc42ba98a2c12404ada20257cf83f3724317
+    pristine_git_object: fa656e15e82a69652fec4cd7c92472dce3babe80
+  models/components/user.go:
+    id: 972e0ca973c7
+    last_write_checksum: sha1:e46266425fb99519c52caf646f2018da4e05ec65
+    pristine_git_object: 60a34d674ea4d49d1a97fe78e6a799d93d62d73e
+  models/components/usergroup.go:
+    id: 8807e965367f
+    last_write_checksum: sha1:1241d7ed3a13ee9fa4a9fe401d7cdd6450c29182
+    pristine_git_object: b19c82a2c548932cde55f8af8b0d4ba39fcb9219
+  models/components/usergrouprequest.go:
+    id: de892de98125
+    last_write_checksum: sha1:7b7f5fb5668c07d09d3939c490120b84764f100c
+    pristine_git_object: 1794d41edd486c57bee3efe95ded56af2b217e76
+  models/components/usergroupslistresponse.go:
+    id: e9c4935f74d4
+    last_write_checksum: sha1:c7813bc7d2d20df93f0d261609a9e8d8a149f29e
+    pristine_git_object: 21ca417c8ea51de0e1485c0a1f4e87addeae5c8c
+  models/components/usergroupsresponse.go:
+    id: 0538ab914d52
+    last_write_checksum: sha1:dcdb159d7fdf540e730753a0e05f5e9476f282f1
+    pristine_git_object: bc803a6c11d0279a45e079100af561501ad43278
+  models/components/usergroupsummary.go:
+    id: a4875fedd4d2
+    last_write_checksum: sha1:a3f7686671e5b53a4b7d269e8ba0f3f8b0015ffc
+    pristine_git_object: 03961d894f490a0e74f4559b938c53f906035af6
+  models/components/usergroupuser.go:
+    id: f2f823220883
+    last_write_checksum: sha1:00b81cc3997efcd45e7c0913c8117fa21966238b
+    pristine_git_object: 6a55fd39e54f3a552dc3e7803b26d79114f99ae8
+  models/components/usergroupusersresponse.go:
+    id: 9d0a40c745da
+    last_write_checksum: sha1:f5d9f7e18fe15ea11e8b58d37deb13fe00d16594
+    pristine_git_object: 358c1d544cb7dc099f8f62e4d2cc8f4adc8a5e93
+  models/components/userrequest.go:
+    id: 48f79c211599
+    last_write_checksum: sha1:74d5d25b6ff1bcca75dbe7f341f0c0f5b9931dcf
+    pristine_git_object: 30eb313240c80a23e3b3e0e481956054fbaabb24
+  models/components/usersresponse.go:
+    id: 701445e36098
+    last_write_checksum: sha1:56a561f9abfc48f1455a050a66321c6ffd898e8c
+    pristine_git_object: c62392fdca6edccbcfd25c609cf3804ec3e43ab5
+  models/components/usersubaccountsresponse.go:
+    id: a6255dc700a0
+    last_write_checksum: sha1:e2491358a92a1cd5c751a91411812fbf40edbe02
+    pristine_git_object: 00cd628b851a5a42dd97021cdcc58cd7bcb17e77
+  models/components/validatecedarpolicyrequest.go:
+    id: b1476a58bb5d
+    last_write_checksum: sha1:0581a0ccdee2b9db395617819f6079b529dd66a3
+    pristine_git_object: 902bfee381c1905f23afd1a79e14549e6d3180f7
+  models/components/validatecedarpolicyresponse.go:
+    id: 7b201ba66b01
+    last_write_checksum: sha1:72a9d77140075b539a1cdb147821847c4bdd8389
+    pristine_git_object: 3bc4f7fed38876433a3a2eb27bf942600026c023
+  models/operations/addusertousergroup.go:
+    id: 7786c29ba571
+    last_write_checksum: sha1:e4e951188006fc7ec221e762d72686483795f0a1
+    pristine_git_object: 0cd6989d50ede81f2726efbd6cdff5a53f620a6c
+  models/operations/createcustompolicy.go:
+    id: 25f12c6967d4
+    last_write_checksum: sha1:bf947cf6662bed1833d213f54520ae68038e9a16
+    pristine_git_object: 7bc2bd45b8ca5c0f5b898f2e719aba98e0deaf5d
+  models/operations/createproductenvironment.go:
+    id: 1d8f40ebda28
+    last_write_checksum: sha1:4f5c770f99ac1bfc13bee299ccb462b8489ba85e
+    pristine_git_object: c4aa0cd43604121b74aeca4dd352ad689227fd86
+  models/operations/createrole.go:
+    id: 13790cce6cf1
+    last_write_checksum: sha1:4a169449a6743cae72b8055a1b2d2fbfc1e12004
+    pristine_git_object: 565206be0383989ea89cd6f5608d2feef13ae35a
+  models/operations/createuser.go:
+    id: d87bb8734894
+    last_write_checksum: sha1:1e773b38989b7286e8bcf4803e6f5203415c21b4
+    pristine_git_object: 2c7f4cb8bf6a9d5e2ccdcb8ebead3149b7ff5e0e
+  models/operations/createusergroup.go:
+    id: 351da3f125e8
+    last_write_checksum: sha1:76d933caa4bc25cdf531e66a90d6e521fdb9e05a
+    pristine_git_object: ff5639246ce8c30f8fb6f97c799aab8ab85150fb
+  models/operations/deleteaccesskey.go:
+    id: a322790717d3
+    last_write_checksum: sha1:90dd5f20f0bb75ed76565c994b95baec36e95dbc
+    pristine_git_object: 13e52fce06a314bd9c4a893ef323b24f0e16c730
+  models/operations/deleteaccesskeybyname.go:
+    id: 440c1f7663e7
+    last_write_checksum: sha1:b809eb0affe28adf24f8cce7c7330e29dfd0683c
+    pristine_git_object: a14807be99ba863701bd10c53af10ad4ce0b398e
+  models/operations/deletecustompolicy.go:
+    id: 36195e5fdd81
+    last_write_checksum: sha1:09e0a653b211c0121f47e861436a259d33345ef8
+    pristine_git_object: be1a132645839f20efbe6a019d73040190cef6ed
+  models/operations/deleteproductenvironment.go:
+    id: c96702b7f55f
+    last_write_checksum: sha1:7d0cfc1bd0fd5048f4b58562c007ca2277ccf1bb
+    pristine_git_object: 6aa8106d1bf8df5172335511f3d829e812199f17
+  models/operations/deleterole.go:
+    id: fcf841341708
+    last_write_checksum: sha1:79c04f3ba42e31c2b7fe8b8b4dc2893a335a0ac5
+    pristine_git_object: e3baa3ea79c2ed118deb2f48191046e0b7fa230c
+  models/operations/deleteuser.go:
+    id: 6e23ce1ee8aa
+    last_write_checksum: sha1:ccdbc273e2b53808dce1fca1f14255f1e9b874fd
+    pristine_git_object: 9f4f7c5cf7676b2ae0bfbac785ebf708f7427134
+  models/operations/deleteusergroup.go:
+    id: 5f3b8561e8c9
+    last_write_checksum: sha1:baa76e52610c8a9582eaea000d9b863ac818d3e6
+    pristine_git_object: 90b70d8206d1eaf9c8ede6b4849cbcb2f5745d46
+  models/operations/generateaccesskey.go:
+    id: 7c3b21d1c0ae
+    last_write_checksum: sha1:a73963e41d990e9ead0e540e50ea02855cedac69
+    pristine_git_object: 72911fb75ee0c4a84e23b3cc01f32596c366b275
+  models/operations/getaccesskeys.go:
+    id: eb92ac73ea9b
+    last_write_checksum: sha1:298918a241fe00997e003fdded0fd5d7409db342
+    pristine_git_object: bdd77c6dbfb1211d34de67ec05085cc9d703fb17
+  models/operations/getbillingusage.go:
+    id: ba663e21fbba
+    last_write_checksum: sha1:33843a48d3217cc0a9a42f63d970cf3ac64b8604
+    pristine_git_object: b1cb0cd6e1448c63493c2c72acc28520bd8c27aa
+  models/operations/getcustompolicies.go:
+    id: 543f9ea3dd0c
+    last_write_checksum: sha1:6dba0ccdc8683d22e4d8879ab7b87e67eb1bf1c7
+    pristine_git_object: b83892f02b962e1465ce2f1b88e3b3127ab3cef5
+  models/operations/getcustompolicy.go:
+    id: b6fa32332fc2
+    last_write_checksum: sha1:9eeb1d7fd1fd0f602ae60d33dc85d24a576cc5e2
+    pristine_git_object: e4792923426741cb7b65197e1ae46e3fc8300cc4
+  models/operations/geteffectivepolicies.go:
+    id: 9fa9dc0c33f5
+    last_write_checksum: sha1:e1f69b72e4412b1444bb4279c14b14471b8c1f4d
+    pristine_git_object: 31fc16a3d55bc55503992892f8208061cf450e33
+  models/operations/getgroupsforuser.go:
+    id: 46ddaf72e5f8
+    last_write_checksum: sha1:ae5fe89eb8fcba52204289deae9f34e420b707ac
+    pristine_git_object: 5890f3d919828e43eedbe3818bfa8de3603c07bb
+  models/operations/getprincipalroles.go:
+    id: b4c09fec166c
+    last_write_checksum: sha1:73fb3518d4123de08c529fe8f443fa90a5c665c4
+    pristine_git_object: fdac24b06c6594f8a93a68505ea0f348814d3f6f
+  models/operations/getproductenvironment.go:
+    id: 2233733681cf
+    last_write_checksum: sha1:5b6898f79a37c22126fd3ab44b2182bfe4e1c181
+    pristine_git_object: a4d04348e4ed62e25926ec65fb9dffa9ac2d9105
+  models/operations/getproductenvironments.go:
+    id: ae93d3baa9b3
+    last_write_checksum: sha1:5de394059a9322bf200a0e9a822951c524318f09
+    pristine_git_object: 52fb5bd087e3c3a46a491ccde60a3666e837c572
+  models/operations/getrole.go:
+    id: 6f57f9a26cef
+    last_write_checksum: sha1:8e2a64145d19be173df4a758e75c248652cf39b4
+    pristine_git_object: aa83629c0ff5b32fd1cac3f2caa6601d29cb6b5c
+  models/operations/getroleprincipals.go:
+    id: 20e0d827d9b1
+    last_write_checksum: sha1:da6a8c14dc8d7ce8f0c24ce1eed86c75d2a6864a
+    pristine_git_object: 02992385705aa17a7012785ada94aee9ea2fa395
+  models/operations/getroles.go:
+    id: 66db4579e447
+    last_write_checksum: sha1:4b16e8fd8e1993b67b0d5ee963baff7ff9149bb4
+    pristine_git_object: 4bb372151c8aa44a86706b8cbc7da9682867858a
+  models/operations/getsubaccountsforuser.go:
+    id: 8e9ec8e58d85
+    last_write_checksum: sha1:b0da14285b39fa6797a057262919179ab3cc469d
+    pristine_git_object: b92c1e6088e1db05f996d8abfbda39c7d491cf04
+  models/operations/getsystempolicies.go:
+    id: f09f446734de
+    last_write_checksum: sha1:17cb71feffa4c1de5993ed5410e4f51b9c1d6a76
+    pristine_git_object: a6b6a696a60a8e17191fb910f42896aba7b98936
+  models/operations/getuser.go:
+    id: d284e3af9c60
+    last_write_checksum: sha1:a097440d7b7224ca2a752b9a24c3c17e0a4d5b69
+    pristine_git_object: 90125403e932d1f4791395245b1951b73a3a6e5c
+  models/operations/getusergroup.go:
+    id: 19cf2ec73973
+    last_write_checksum: sha1:ab04b515ade291586d709eab7a6acb9da2b636bb
+    pristine_git_object: a8891a6e155d5f8ba7e57f0c9d329aac1bd2a18c
+  models/operations/getusergroups.go:
+    id: 4a0ebad15c8d
+    last_write_checksum: sha1:687d2d5657dcc5a57e08f41f251d16121af66e57
+    pristine_git_object: 845d8e8bd82c0d412a5bc08abe096430c198da76
+  models/operations/getusers.go:
+    id: 7f28a6cdfd6e
+    last_write_checksum: sha1:032e6d1e213840b6c997b7c70fc9e8e7f0e3aa31
+    pristine_git_object: e58e04cbcdbdfbf1e44e3f3f252c65afb42ff093
+  models/operations/getusersinusergroup.go:
+    id: df8af9b39f39
+    last_write_checksum: sha1:4aa434ab7a31ceaf32426a82bb538b2bb1a060fd
+    pristine_git_object: 3c3da015252ac1154cb1b92878f5b63d6d54601e
+  models/operations/inspect.go:
+    id: 3affe55e990b
+    last_write_checksum: sha1:15d4986c9ebb0061cf1a6d9e3f6d9242d24cefa3
+    pristine_git_object: 0c1f1eabe1a51f020a7c293adeef6b93e4973f57
+  models/operations/inspectmultiple.go:
+    id: 5f32d1d8b17f
+    last_write_checksum: sha1:8461814ad48bc2599c6a4275bfed2ba5fc96a51a
+    pristine_git_object: 4f02c220b0c19f848d75dbc4402c3e29617e3a6b
+  models/operations/options.go:
+    id: d20dd4db9865
+    last_write_checksum: sha1:c3e6678f1227d8873d65f9803b55294ad6af78b8
+    pristine_git_object: c9782eaccb7a40f749d543ea1a37273fb109bf6a
+  models/operations/removeuserfromusergroup.go:
+    id: 14452c45610b
+    last_write_checksum: sha1:5d7a4c818365aad17d11369ac3f5d29af96983c6
+    pristine_git_object: 52c5a90f7b308681316da91249d7fa96f2b05f70
+  models/operations/updateaccesskey.go:
+    id: f6038c1bef77
+    last_write_checksum: sha1:335114dd85b01b47c7093969349d2ac080ed71cd
+    pristine_git_object: 66d399fdcbe07a7af98b0059ae7a02166b4e64b4
+  models/operations/updatecustompolicy.go:
+    id: 8daef6d3b40a
+    last_write_checksum: sha1:3da527533d094f375f9c8ff3b9da8d3e2f82e4b5
+    pristine_git_object: 84b4d0ed334d653a3cf672c107f3140de205556d
+  models/operations/updateprincipalroles.go:
+    id: 39385e46c8a1
+    last_write_checksum: sha1:3e31f0838e31a57c33feb268cfb525a1fdc6f75d
+    pristine_git_object: ce2777c740db311b44535fac9e668672baf2e588
+  models/operations/updateproductenvironment.go:
+    id: 48c37f9595f9
+    last_write_checksum: sha1:e4fa2181b5a246d885abf370343e684fdfded340
+    pristine_git_object: 80107c4eb52264aea46c7bf038b3880c0857c2df
+  models/operations/updaterole.go:
+    id: e5ccffd6f610
+    last_write_checksum: sha1:c15229941a6eb33538e1d7b540bdfaae1ee39f55
+    pristine_git_object: 33b8de8fc2d63b08d0025291ad1f8c39a7e9b97f
+  models/operations/updateroleprincipals.go:
+    id: 9d627db1a857
+    last_write_checksum: sha1:f87d9e4ef3e3adc0c854614092a86585f45af117
+    pristine_git_object: e22f8cc08fa9855dfde6e6d166983cc4d3b06611
+  models/operations/updateuser.go:
+    id: 11181bdabe9f
+    last_write_checksum: sha1:8c9efa5d7e6e6f037bf735601c4281c29cc4f53a
+    pristine_git_object: 599b906dcf00caa8545d009e5ce6e7c2041fbb6f
+  models/operations/updateusergroup.go:
+    id: f9ea648af8e5
+    last_write_checksum: sha1:2406c36c2f5d6941f7c876af0f15de27ebd3615c
+    pristine_git_object: a5e3dc4d6e9380fe644110352a8be66f41e884eb
+  models/sdkerrors/apierror.go:
+    id: 6571d980f036
+    last_write_checksum: sha1:ceb1673e00bedaaf6b3f1f986bdc68d7f2ea2a71
+    pristine_git_object: 4f63ad9ecfce56db61c17e16fee42c2889615fe2
+  models/sdkerrors/errorresponse.go:
+    id: c1160e8fb5d3
+    last_write_checksum: sha1:e82e6341968523fcb87e8c84bbe53d8156abd80f
+    pristine_git_object: 8a9f49f6cf315ceac5050ea4263d41ac8ad1940d
+  models/sdkerrors/permissionserrorresponse.go:
+    id: 3c8517678246
+    last_write_checksum: sha1:597dec1ad82e18a2f42dff5f8c779375c9372453
+    pristine_git_object: 473cbc9a0e59ccee28ca4aff2e376e85a46bc0da
+  optionalnullable/optionalnullable.go:
+    id: ce60f259ead3
+    last_write_checksum: sha1:d6aff1a420c31e025ea21d46cf056e305ae76fe8
+    pristine_git_object: c6739be0619b6726565e0f11855ffe44b0e5607e
+  optionalnullable/optionalnullable_test.go:
+    id: ad67101ebca3
+    last_write_checksum: sha1:2e9433eff1651ac77d6678ea76880d9a4980cbc2
+    pristine_git_object: e6e5a01c6e721e879e24a38a1f97e3e27d4686d4
+  principals.go:
+    id: 9904ce237de6
+    last_write_checksum: sha1:76ed623872e85040288e28eef4d53979be01c98b
+    pristine_git_object: ba5a340664411b3c01a588ee81a8eb713cdd55a6
+  productenvironments.go:
+    id: bb0f3e3a450d
+    last_write_checksum: sha1:e9215b2777fc52170b470da6e7bc4db4b4ec16ad
+    pristine_git_object: 70ba3d15cd9da2f3ea2d866b210e5f9972621a1b
+  public.go:
+    id: 37e56f8222dc
+    last_write_checksum: sha1:81d64673982b0f9c28f6d5f03f99f5601370362c
+    pristine_git_object: 27f64ebe60589032e834efdf9d324d177e9f3e78
+  retry/config.go:
+    id: 82d673cb0389
+    last_write_checksum: sha1:7f7d96b59a18e95bac847ae09c63bbd911ee8432
+    pristine_git_object: 5b3dc7c122d8ab08905485342d7474f8f163888d
+  roles.go:
+    id: b00f842f5ed3
+    last_write_checksum: sha1:e47fc50d22f848e718353c243022aab243619de7
+    pristine_git_object: ff7235c39e6db4bb0c4fd6a1d54584d2fd6ca10e
+  systempolicies.go:
+    id: a6c9d9a28dba
+    last_write_checksum: sha1:00a9685b2d0b997f13831f3b95b89299ec9f7e6b
+    pristine_git_object: 96323325436d3a8269b6b2bac7be014306f70e13
+  types/bigint.go:
+    id: 6f911e1a03c3
+    last_write_checksum: sha1:49b004005d0461fb04b846eca062b070b0360b31
+    pristine_git_object: 9c6a086d51595888a6ff787ebcb8693559afee95
+  types/date.go:
+    id: 231a623ce1b7
+    last_write_checksum: sha1:3036a2e1ed15a1d484c093367eba000c38f384d0
+    pristine_git_object: 5b2782f219efe6bfbce46fc2dec68998eb759438
+  types/datetime.go:
+    id: 5023aac30a47
+    last_write_checksum: sha1:196d050af6450669214e9ae4fd28e56263ae2b5d
+    pristine_git_object: 3eff332daa04e34cec5ffb10add670bafd8ac454
+  types/pointers.go:
+    id: 6d0d0a6cb6f3
+    last_write_checksum: sha1:fc2275ea006257ba9ba4ff6f2a2cdb6205371eef
+    pristine_git_object: 35c439d2661e08fcb6a854096fd7b9a8561b3938
+  usergroups.go:
+    id: a38dd38a9a16
+    last_write_checksum: sha1:9cbd7d6a9d832023feaffcb7f2088829d7b162fb
+    pristine_git_object: 23c7fecf38daef81e669f1a65d9433a55538809b
+  users.go:
+    id: 7e42b6a24db6
+    last_write_checksum: sha1:332659ab5cacc28c8742acfadaf7d25d742f62c0
+    pristine_git_object: b40e503d6e060f306f711560be4e589770ed8e08
+examples:
+  getProductEnvironments:
+    speakeasy-default-get-product-environments:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          enabled: true
+          prefix: "product"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {"error": {"message": "error"}}
+    ProductEnvironments:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          enabled: true
+          prefix: "product"
+      responses:
+        "200":
+          application/json: {"sub_accounts": [{"cloud_name": "product1", "name": "Product1 Application", "enabled": true, "id": "abcde1fghij2klmno3pqrst4uvwxy5z", "api_access_keys": [{"key": "123456789012345", "secret": "asdf1JKL2xyz3ABc4s3c5reT01DfaKez", "enabled": true}], "created_at": "2016-09-27T08:00:16Z", "updated_at": "2016-09-27T08:00:16Z"}, {"cloud_name": "product2", "name": "Product2 Application", "enabled": true, "id": "0aaaaa1bbbbb2ccccc3ddddd4eeeee5f", "api_access_keys": [{"key": "543210987654321", "secret": "T415i5mYs3cr3TkeYN0tR3a77y0o0", "enabled": true}], "created_at": "2016-03-15T11:44:48Z", "updated_at": "2016-03-15T11:44:48Z"}]}
+  createProductEnvironment:
+    ProductEnvironment3:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"name": "Product3 Application", "cloud_name": "product3", "base_sub_account_id": "0aaaaa1bbbbb2ccccc3ddddd4eeeee5f"}
+      responses:
+        "200":
+          application/json: {"cloud_name": "product3", "name": "Product3 Application", "enabled": false, "id": "555asdf0000zxcvb3456qwerty", "api_access_keys": [{"key": "135792468054321", "secret": "w4aTi5Y0u6k3YN0773lL1nGyUt0Da8", "enabled": true}], "created_at": "2016-09-27T11:15:35Z", "updated_at": "2016-09-27T11:15:35Z"}
+  getProductEnvironment:
+    speakeasy-default-get-product-environment:
+      parameters:
+        path:
+          account_id: "<id>"
+          sub_account_id: "abcde1fghij2klmno3pqrst4uvwxy5z"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {"error": {"message": "error"}}
+    ProductEnvironment1:
+      parameters:
+        path:
+          account_id: "<id>"
+          sub_account_id: "abcde1fghij2klmno3pqrst4uvwxy5z"
+      responses:
+        "200":
+          application/json: {"cloud_name": "product1", "name": "Product1 Application", "enabled": true, "id": "abcde1fghij2klmno3pqrst4uvwxy5z", "api_access_keys": [{"key": "123456789012345", "secret": "asdf1JKL2xyz3ABc4s3c5reT01DfaKez", "enabled": true}], "created_at": "2016-09-27T08:00:16Z", "updated_at": "2016-09-27T08:00:16Z"}
+    ProductEnvironment2:
+      parameters:
+        path:
+          account_id: "<id>"
+          sub_account_id: "abcde1fghij2klmno3pqrst4uvwxy5z"
+      responses:
+        "200":
+          application/json: {"cloud_name": "product2", "name": "Product2 Application", "enabled": true, "id": "0aaaaa1bbbbb2ccccc3ddddd4eeeee5f", "api_access_keys": [{"key": "543210987654321", "secret": "T415i5mYs3cr3TkeYN0tR3a77y0o0", "enabled": true}], "created_at": "2016-03-15T11:44:48Z", "updated_at": "2016-03-15T11:44:48Z"}
+  updateProductEnvironment:
+    speakeasy-default-update-product-environment:
+      parameters:
+        path:
+          account_id: "<id>"
+          sub_account_id: "abcde1fghij2klmno3pqrst4uvwxy5z"
+      requestBody:
+        application/json: {"name": "Product3 Application", "cloud_name": "product3"}
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {"error": {"message": "error"}}
+    ProductEnvironment1:
+      parameters:
+        path:
+          account_id: "<id>"
+          sub_account_id: "abcde1fghij2klmno3pqrst4uvwxy5z"
+      requestBody:
+        application/json: {"name": "Product3 Application", "cloud_name": "product3"}
+      responses:
+        "200":
+          application/json: {"cloud_name": "product1", "name": "Product1 Application", "enabled": true, "id": "abcde1fghij2klmno3pqrst4uvwxy5z", "api_access_keys": [{"key": "123456789012345", "secret": "asdf1JKL2xyz3ABc4s3c5reT01DfaKez", "enabled": true}], "created_at": "2016-09-27T08:00:16Z", "updated_at": "2016-09-27T08:00:16Z"}
+  deleteProductEnvironment:
+    speakeasy-default-delete-product-environment:
+      parameters:
+        path:
+          account_id: "<id>"
+          sub_account_id: "abcde1fghij2klmno3pqrst4uvwxy5z"
+      responses:
+        "200":
+          application/json: {"message": "ok"}
+        "400":
+          application/json: {"error": {"message": "error"}}
+  getAccessKeys:
+    speakeasy-default-get-access-keys:
+      parameters:
+        path:
+          account_id: "<id>"
+          sub_account_id: "abcde1fghij2klmno3pqrst4uvwxy5z"
+        query:
+          sort_by: "created_at"
+          sort_order: "asc"
+      responses:
+        "200":
+          application/json: {}
+        "401":
+          application/json: {"error": {"message": "error"}}
+    AccessKeys:
+      parameters:
+        path:
+          account_id: "<id>"
+          sub_account_id: "abcde1fghij2klmno3pqrst4uvwxy5z"
+        query:
+          sort_by: "created_at"
+          sort_order: "asc"
+      responses:
+        "200":
+          application/json: {"access_keys": [{"name": "main_key", "api_key": "814814814814814", "api_secret": "QcsQcsQcsQcsQcsQcsQcsQcsQcs", "created_at": "2022-03-15T11:44:48Z", "updated_at": "2023-08-10T09:23:45Z", "enabled": true}, {"name": "secondary_key", "api_key": "418418418418418", "api_secret": "scQscQscQscQscQscQscQscQscQ", "created_at": "2023-09-10T09:23:45Z", "updated_at": "2023-09-10T09:45:57Z", "enabled": false}], "total": 2}
+  generateAccessKey:
+    speakeasy-default-generate-access-key:
+      parameters:
+        path:
+          account_id: "<id>"
+          sub_account_id: "abcde1fghij2klmno3pqrst4uvwxy5z"
+      requestBody:
+        application/json: {"name": "main_key", "enabled": true}
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {"error": {"message": "error"}}
+    MainAccessKey:
+      parameters:
+        path:
+          account_id: "<id>"
+          sub_account_id: "abcde1fghij2klmno3pqrst4uvwxy5z"
+      requestBody:
+        application/json: {"name": "main_key", "enabled": true}
+      responses:
+        "200":
+          application/json: {"name": "main_key", "api_key": "814814814814814", "api_secret": "QcsQcsQcsQcsQcsQcsQcsQcsQcs", "created_at": "2022-03-15T11:44:48Z", "updated_at": "2023-08-10T09:23:45Z", "enabled": true}
+  deleteAccessKeyByName:
+    speakeasy-default-delete-access-key-by-name:
+      parameters:
+        path:
+          account_id: "<id>"
+          sub_account_id: "abcde1fghij2klmno3pqrst4uvwxy5z"
+        query:
+          name: "main_key"
+      responses:
+        "200":
+          application/json: {"message": "ok"}
+        "400":
+          application/json: {"error": {"message": "error"}}
+  updateAccessKey:
+    speakeasy-default-update-access-key:
+      parameters:
+        path:
+          account_id: "<id>"
+          sub_account_id: "abcde1fghij2klmno3pqrst4uvwxy5z"
+          key: "814814814814814"
+      requestBody:
+        application/json: {"name": "main_key", "enabled": true, "dedicated_for": "webhooks"}
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {"error": {"message": "error"}}
+    MainAccessKey:
+      parameters:
+        path:
+          account_id: "<id>"
+          sub_account_id: "abcde1fghij2klmno3pqrst4uvwxy5z"
+          key: "814814814814814"
+      requestBody:
+        application/json: {"name": "main_key", "enabled": true, "dedicated_for": "webhooks"}
+      responses:
+        "200":
+          application/json: {"name": "main_key", "api_key": "814814814814814", "api_secret": "QcsQcsQcsQcsQcsQcsQcsQcsQcs", "created_at": "2022-03-15T11:44:48Z", "updated_at": "2023-08-10T09:23:45Z", "enabled": true}
+  deleteAccessKey:
+    speakeasy-default-delete-access-key:
+      parameters:
+        path:
+          account_id: "<id>"
+          sub_account_id: "abcde1fghij2klmno3pqrst4uvwxy5z"
+          key: "814814814814814"
+      responses:
+        "200":
+          application/json: {"message": "ok"}
+        "400":
+          application/json: {"error": {"message": "error"}}
+  getUsers:
+    speakeasy-default-get-users:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          pending: false
+          prefix: "john"
+          from: "2023-01-01T00:00:00Z"
+          to: "2024-12-31T00:00:00Z"
+      responses:
+        "200":
+          application/json: {}
+        "401":
+          application/json: {"error": {"message": "error"}}
+    Users:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          pending: false
+          prefix: "john"
+          from: "2023-01-01T00:00:00Z"
+          to: "2024-12-31T00:00:00Z"
+      responses:
+        "200":
+          application/json: {"users": [{"id": "139147faa12ce11f22cfaffa84b307", "name": "john_smith", "role": "media_library_user", "email": "john_smith@example.com", "pending": true, "enabled": true, "created_at": "2020-01-13T05:16:06Z", "updated_at": "2020-01-13T05:16:06Z", "last_login": "2022-01-11T15:11:04Z", "all_sub_accounts": true}, {"id": "28c84b2aa7924a5e64f949b5403981", "name": "john_jones", "role": "master_admin", "email": "john_jones@example.com", "pending": true, "enabled": true, "created_at": "2019-01-13T05:16:05Z", "updated_at": "2019-01-13T05:16:05Z", "last_login": "2021-11-12T15:11:02Z", "all_sub_accounts": true}]}
+  createUser:
+    CreateUserExample:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"name": "jenny_bar", "email": "jenny_bar@example.com", "role": "master_admin"}
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {"error": {"message": "error"}}
+    UserResponseExample:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"name": "John", "email": "john@example.com", "role": "technical_admin", "enabled": true}
+      responses:
+        "200":
+          application/json: {"id": "7f08f1f1fc910bf1f25274aef11d27", "name": "jenny_bar", "role": "master_admin", "email": "jenny_bar@example.com", "pending": true, "enabled": true, "created_at": "2019-09-12T11:53:57Z", "updated_at": "2019-09-12T11:53:57Z", "last_login": "2022-01-11T15:11:04Z", "all_sub_accounts": true}
+  getUser:
+    speakeasy-default-get-user:
+      parameters:
+        path:
+          account_id: "<id>"
+          user_id: "0abed8dfcc039ea05e2a1d494fd442"
+      responses:
+        "200":
+          application/json: {}
+        "401":
+          application/json: {"error": {"message": "error"}}
+    UserResponseExample:
+      parameters:
+        path:
+          account_id: "<id>"
+          user_id: "0abed8dfcc039ea05e2a1d494fd442"
+      responses:
+        "200":
+          application/json: {"id": "7f08f1f1fc910bf1f25274aef11d27", "name": "jenny_bar", "role": "master_admin", "email": "jenny_bar@example.com", "pending": true, "enabled": true, "created_at": "2019-09-12T11:53:57Z", "updated_at": "2019-09-12T11:53:57Z", "last_login": "2022-01-11T15:11:04Z", "all_sub_accounts": true}
+  updateUser:
+    speakeasy-default-update-user:
+      parameters:
+        path:
+          account_id: "<id>"
+          user_id: "0abed8dfcc039ea05e2a1d494fd442"
+      requestBody:
+        application/json: {"name": "John", "email": "john@example.com", "role": "technical_admin", "enabled": true}
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {"error": {"message": "error"}}
+    UserJohn:
+      parameters:
+        path:
+          account_id: "<id>"
+          user_id: "0abed8dfcc039ea05e2a1d494fd442"
+      requestBody:
+        application/json: {"name": "John", "email": "john@example.com", "role": "technical_admin", "enabled": true}
+      responses:
+        "200":
+          application/json: {"id": "0abed8dfcc039ea05e2a1d494fd442", "name": "John", "role": "technical_admin", "email": "john@example.com", "pending": true, "enabled": true, "created_at": "2020-09-03T13:33:25Z", "updated_at": "2020-09-03T13:33:25Z", "all_sub_accounts": true}
+  deleteUser:
+    speakeasy-default-delete-user:
+      parameters:
+        path:
+          account_id: "<id>"
+          user_id: "0abed8dfcc039ea05e2a1d494fd442"
+      responses:
+        "200":
+          application/json: {"message": "ok"}
+        "400":
+          application/json: {"error": {"message": "error"}}
+  getGroupsForUser:
+    speakeasy-default-get-groups-for-user:
+      parameters:
+        path:
+          account_id: "<id>"
+          user_id: "0abed8dfcc039ea05e2a1d494fd442"
+      responses:
+        "200":
+          application/json: {}
+        "401":
+          application/json: {"error": {"message": "error"}}
+    UserGroupsList:
+      parameters:
+        path:
+          account_id: "<id>"
+          user_id: "0abed8dfcc039ea05e2a1d494fd442"
+      responses:
+        "200":
+          application/json: {"groups": [{"id": "7f08f1f1fc910bf1f25274aef11d27", "name": "user_group_1"}, {"id": "1cc3808888154263ac1e5eb2e5c52d61", "name": "user_group_2"}]}
+  getSubAccountsForUser:
+    speakeasy-default-get-sub-accounts-for-user:
+      parameters:
+        path:
+          account_id: "<id>"
+          user_id: "0abed8dfcc039ea05e2a1d494fd442"
+      responses:
+        "200":
+          application/json: {}
+        "401":
+          application/json: {"error": {"message": "error"}}
+    UserSubAccounts:
+      parameters:
+        path:
+          account_id: "<id>"
+          user_id: "0abed8dfcc039ea05e2a1d494fd442"
+      responses:
+        "200":
+          application/json: {"sub_accounts": [{"id": "abcde1fghij2klmno3pqrst4uvwxy5z", "name": "Product1 Application", "description": "Main product environment", "cloud_name": "product1", "enabled": true}, {"id": "0aaaaa1bbbbb2ccccc3ddddd4eeeee5f", "name": "Product2 Application", "description": "Secondary product environment", "cloud_name": "product2", "enabled": true}]}
+  getUserGroups:
+    speakeasy-default-get-user-groups:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          extended_details: true
+      responses:
+        "200":
+          application/json: {}
+        "401":
+          application/json: {"error": {"message": "error"}}
+    UserGroups:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          extended_details: true
+      responses:
+        "200":
+          application/json: {"user_groups": [{"id": "7f08f1f1fc910bf1f25274aef11d27", "name": "user_group_1"}, {"id": "1cc3808888154263ac1e5eb2e5c52d61", "name": "user_group_2"}]}
+    UserGroupsExtendedDetails:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          extended_details: true
+      responses:
+        "200":
+          application/json: {"user_groups": [{"id": "7f08f1f1fc910bf1f25274aef11d27", "name": "user_group_1", "users": [{"id": "0abed8dfcc039ea05e2a1d494fd442", "name": "John Doe", "email": "john.doe@example.com"}, {"id": "asdf1234uiopjkl7890wernmjlcaeg", "name": "Harry Potts", "email": "harry.potts@example.com"}], "created_at": "2016-09-27T08:00:16Z", "updated_at": "2016-09-27T08:00:16Z"}, {"id": "1cc3808888154263ac1e5eb2e5c52d61", "name": "user_group_2", "users": [{"id": "asdl23uioejafmckowpuafdaghjajw", "name": "Beth Poppins", "email": "beth.poppins@example.com"}, {"id": "iwejfjiwl83882kkswionvnnlxloow", "name": "Mike Smith", "email": "mike.smith@example.com"}], "created_at": "2016-09-27T08:00:16Z", "updated_at": "2016-09-27T08:00:16Z"}]}
+  createUserGroup:
+    UserGroupDesigners:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"name": "Designers", "extended_details": false}
+      responses:
+        "200":
+          application/json: {"id": "7f08f1f1fc910bf1f25274aef11d27", "name": "Designers"}
+  getUserGroup:
+    speakeasy-default-get-user-group:
+      parameters:
+        path:
+          account_id: "<id>"
+          group_id: "7f08f1f1fc910bf1f25274aef11d27"
+        query:
+          extended_details: true
+      responses:
+        "200":
+          application/json: {}
+        "401":
+          application/json: {"error": {"message": "error"}}
+    UserGroupDesigners:
+      parameters:
+        path:
+          account_id: "<id>"
+          group_id: "7f08f1f1fc910bf1f25274aef11d27"
+        query:
+          extended_details: true
+      responses:
+        "200":
+          application/json: {"id": "7f08f1f1fc910bf1f25274aef11d27", "name": "Designers"}
+    UserGroupDesignersExtendedDetails:
+      parameters:
+        path:
+          account_id: "<id>"
+          group_id: "7f08f1f1fc910bf1f25274aef11d27"
+        query:
+          extended_details: true
+      responses:
+        "200":
+          application/json: {"id": "7f08f1f1fc910bf1f25274aef11d27", "name": "Designers", "users": [{"id": "0abed8dfcc039ea05e2a1d494fd442", "name": "John Doe", "email": "john.doe@example.com"}, {"id": "asdf1234uiopjkl7890wernmjlcaeg", "name": "Harry Potts", "email": "harry.potts@example.com"}], "created_at": "2016-09-27T08:00:16Z", "updated_at": "2016-09-27T08:00:16Z"}
+  updateUserGroup:
+    UserGroupDesignersRequest:
+      parameters:
+        path:
+          account_id: "<id>"
+          group_id: "7f08f1f1fc910bf1f25274aef11d27"
+      requestBody:
+        application/json: {"name": "Designers and Creatives"}
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {"error": {"message": "error"}}
+    speakeasy-default-update-user-group:
+      parameters:
+        path:
+          account_id: "<id>"
+          group_id: "7f08f1f1fc910bf1f25274aef11d27"
+      requestBody:
+        application/json: {"name": "Designers", "extended_details": false}
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {"error": {"message": "error"}}
+    UserGroupUpdate:
+      parameters:
+        path:
+          account_id: "<id>"
+          group_id: "7f08f1f1fc910bf1f25274aef11d27"
+      requestBody:
+        application/json: {"name": "Designers", "extended_details": false}
+      responses:
+        "200":
+          application/json: {"id": "7f08f1f1fc910bf1f25274aef11d27", "name": "Designers and Creatives"}
+  deleteUserGroup:
+    speakeasy-default-delete-user-group:
+      parameters:
+        path:
+          account_id: "<id>"
+          group_id: "7f08f1f1fc910bf1f25274aef11d27"
+      responses:
+        "200":
+          application/json: {"message": "ok"}
+        "400":
+          application/json: {"error": {"message": "error"}}
+  getUsersInUserGroup:
+    speakeasy-default-get-users-in-user-group:
+      parameters:
+        path:
+          account_id: "<id>"
+          group_id: "7f08f1f1fc910bf1f25274aef11d27"
+      responses:
+        "200":
+          application/json: {}
+        "401":
+          application/json: {"error": {"message": "error"}}
+    UserGroupUsers:
+      parameters:
+        path:
+          account_id: "<id>"
+          group_id: "7f08f1f1fc910bf1f25274aef11d27"
+      responses:
+        "200":
+          application/json: {"users": [{"id": "0abed8dfcc039ea05e2a1d494fd442", "name": "John", "email": "john@example.com"}]}
+  addUserToUserGroup:
+    speakeasy-default-add-user-to-user-group:
+      parameters:
+        path:
+          account_id: "<id>"
+          group_id: "7f08f1f1fc910bf1f25274aef11d27"
+          user_id: "0abed8dfcc039ea05e2a1d494fd442"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {"error": {"message": "error"}}
+    UserGroupUserJohn:
+      parameters:
+        path:
+          account_id: "<id>"
+          group_id: "7f08f1f1fc910bf1f25274aef11d27"
+          user_id: "0abed8dfcc039ea05e2a1d494fd442"
+      responses:
+        "200":
+          application/json: {"id": "0abed8dfcc039ea05e2a1d494fd442", "name": "John Doe", "email": "john.doe@example.com"}
+  removeUserFromUserGroup:
+    speakeasy-default-remove-user-from-user-group:
+      parameters:
+        path:
+          account_id: "<id>"
+          group_id: "7f08f1f1fc910bf1f25274aef11d27"
+          user_id: "0abed8dfcc039ea05e2a1d494fd442"
+      responses:
+        "200":
+          application/json: {}
+        "400":
+          application/json: {"error": {"message": "error"}}
+    UserGroupUsers:
+      parameters:
+        path:
+          account_id: "<id>"
+          group_id: "7f08f1f1fc910bf1f25274aef11d27"
+          user_id: "0abed8dfcc039ea05e2a1d494fd442"
+      responses:
+        "200":
+          application/json: {"users": []}
+  getBillingUsage:
+    speakeasy-default-get-billing-usage:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          year: 2024
+      responses:
+        "200":
+          application/json: [{"metric_usage": [{"cycles": [{"from_day": "2024-08-21", "to_day": "2024-09-20", "usage": 25641.55}]}]}]
+        "400":
+          application/json: {"error": {"message": "error"}}
+    ProPAYG:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          year: 2024
+      responses:
+        "200":
+          application/json: [{"plan_name": "Pro PAYG", "metric_usage": [{"metric": "credit", "limit": 2750, "cycles": [{"from_day": "2024-08-21", "to_day": "2024-09-20", "usage": 25641.55, "breakdown": {"storage_image": 7971.55, "storage_video": 1575.58, "storage_raw": 0, "transformations_image": 9603.73, "transformations_video": 2290.76, "bandwidth_image": 2972.57, "bandwidth_video": 1227.22, "bandwidth_raw": 0.14}, "product_environment_breakdown": [{"storage_image": 0.04, "storage_video": 0.09, "storage_raw": 0, "transformations_image": 0, "transformations_video": 0, "bandwidth_image": 0, "bandwidth_video": 0, "bandwidth_raw": 0, "cloud_name": "myproduct"}]}]}]}]
+    AdvancedExtraPAYG:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          year: 2024
+      responses:
+        "200":
+          application/json: [{"plan_name": "Advanced Extra PAYG +", "metric_usage": [{"metric": "credit", "limit": 1350, "cycles": [{"from_day": "2025-02-05", "to_day": "2025-03-04", "usage": 2300, "breakdown": {"storage_image": 517.71, "storage_video": 0.22, "storage_raw": 0, "transformations_image": 59.39, "transformations_video": 0, "bandwidth_raw": 0, "image_impressions": 932.46, "video_seconds": 790.21}, "product_environment_breakdown": [{"storage_image": 0.04, "storage_video": 0.11, "storage_raw": 0, "transformations_image": 0, "transformations_video": 0, "bandwidth_raw": 0, "image_impressions": 0, "video_seconds": 0, "cloud_name": "myproduct1"}, {"storage_image": 517.67, "storage_video": 0.11, "storage_raw": 0, "transformations_image": 59.39, "transformations_video": 0, "bandwidth_raw": 0, "image_impressions": 932.46, "video_seconds": 790.21, "cloud_name": "myproduct2"}]}]}]}]
+    AdvancedPAYG:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          year: 2024
+      responses:
+        "200":
+          application/json: [{"plan_name": "Advanced PAYG", "metric_usage": [{"metric": "credit", "limit": 600, "cycles": [{"from_day": "2024-08-26", "to_day": "2024-09-18", "usage": 1830.25, "breakdown": {"storage_image": 1.98, "storage_video": 0.43, "storage_raw": 0.01, "transformations_image": 0.4, "transformations_video": 0, "bandwidth_image": 1827.43, "bandwidth_video": 0, "bandwidth_raw": 0}, "product_environment_breakdown": [{"storage_image": 1.98, "storage_video": 0.43, "storage_raw": 0.01, "transformations_image": 0.4, "transformations_video": 0, "bandwidth_image": 1827.43, "bandwidth_video": 0, "bandwidth_raw": 0, "cloud_name": "myproduct"}]}]}]}]
+    ProPAYGPlus:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          year: 2024
+      responses:
+        "200":
+          application/json: [{"plan_name": "Pro PAYG +", "metric_usage": [{"metric": "credit", "limit": 2750, "cycles": [{"from_day": "2025-01-14", "to_day": "2025-02-04", "usage": 1718.16, "breakdown": {"storage_image": 642.18, "storage_video": 0.24, "storage_raw": 0, "transformations_image": 59.66, "transformations_video": 0, "bandwidth_raw": 0, "image_impressions": 1016.06, "video_seconds": 0.02}, "product_environment_breakdown": [{"storage_image": 0.05, "storage_video": 0.14, "storage_raw": 0, "transformations_image": 0, "transformations_video": 0, "bandwidth_raw": 0, "image_impressions": 0, "video_seconds": 0, "cloud_name": "myproduct1"}, {"storage_image": 642.13, "storage_video": 0.1, "storage_raw": 0, "transformations_image": 59.66, "transformations_video": 0, "bandwidth_raw": 0, "image_impressions": 1016.06, "video_seconds": 0.02, "cloud_name": "myproduct2"}]}]}]}]
+    MultiPlan:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          year: 2024
+      responses:
+        "200":
+          application/json: [{"plan_name": "Advanced PAYG", "metric_usage": [{"metric": "credit", "limit": 600, "cycles": [{"from_day": "2024-08-26", "to_day": "2024-09-18", "usage": 1830.25, "breakdown": {"storage_image": 1.98, "storage_video": 0.43, "storage_raw": 0.01, "transformations_image": 0.4, "transformations_video": 0, "bandwidth_image": 1827.43, "bandwidth_video": 0, "bandwidth_raw": 0}, "product_environment_breakdown": [{"storage_image": 1.98, "storage_video": 0.43, "storage_raw": 0.01, "transformations_image": 0.4, "transformations_video": 0, "bandwidth_image": 1827.43, "bandwidth_video": 0, "bandwidth_raw": 0, "cloud_name": "myproduct"}]}]}]}, {"plan_name": "Advanced Extra PAYG", "metric_usage": [{"metric": "credit", "limit": 1350, "cycles": [{"from_day": "2024-09-19", "to_day": "2024-09-25", "usage": 1133.49, "breakdown": {"storage_image": 4.25, "storage_video": 0.91, "storage_raw": 0.02, "transformations_image": 0.27, "transformations_video": 0, "bandwidth_image": 1128.03, "bandwidth_video": 0, "bandwidth_raw": 0}, "product_environment_breakdown": [{"storage_image": 4.25, "storage_video": 0.91, "storage_raw": 0.02, "transformations_image": 0.27, "transformations_video": 0, "bandwidth_image": 1128.03, "bandwidth_video": 0, "bandwidth_raw": 0, "cloud_name": "myproduct"}]}]}]}]
+  getSystemRolesAndPoliciesCatalog:
+    speakeasy-default-get-system-roles-and-policies-catalog:
+      responses:
+        "200":
+          application/json: {"catalog": {}}
+  validateCedarPolicy:
+    ValidateCedarPolicyResponseExample:
+      requestBody:
+        application/json: {"policy": "permit(principal == Cloudinary::APIKy::\"1234\", action == Cloudinary::Action::\"read\", resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\"asdfjkl12347890\")} ;"}
+      responses:
+        "200":
+          application/json: {"valid": false, "errors": [{"cedar_message": "invalid_principal", "cedar_code": "ACCOUNTS_00002"}]}
+  getCedarSchema:
+    speakeasy-default-get-cedar-schema:
+      responses:
+        "200":
+          application/json: {"schema": {}}
+  getSystemPolicies:
+    SystemPoliciesExample:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          permission_type: "global"
+          scope_type: "prodenv"
+      responses:
+        "200":
+          application/json: {"data": [{"id": "cld::policy::global::assets::moderate", "name": "Moderate all assets", "description": "Approve and reject all assets in moderation. To perform these actions from the Moderation page, pair this permission with 'Access the Moderation page'. To view assets on the page, pair it with the 'View all folders and assets' global permission.", "scope_type": "prodenv", "permission_type": "global", "policy_statement": "permit(principal, action == Cloudinary::Action::\"moderate\", resource is Cloudinary::Asset);", "created_at": 1719475216, "updated_at": 1719475216}, {"id": "cld::policy::content::folder::view_download", "name": "View all assets", "description": "View all assets in the folder and its nested subfolders.", "scope_type": "prodenv", "permission_type": "content", "policy_statement": "permit(principal, action == Cloudinary::Action::\"read\", resource is Cloudinary::Folder) when { resource.ancestor_ids.contains(\"<folder_id>\") };\npermit(principal, action == Cloudinary::Action::\"read\", resource is Cloudinary::Asset) when { resource.ancestor_ids.contains(\"<folder_id>\") };\n", "policy_parameters": ["folder_id"], "created_at": 1719475216, "updated_at": 1719475216}], "next_cursor": "3"}
+    AuthorizationErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          permission_type: "global"
+          scope_type: "prodenv"
+      responses:
+        "401":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00006", "message": "invalid credentials"}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00006", "message": "invalid credentials"}}
+  getCustomPolicies:
+    CustomPoliciesExample:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          scope_type: "prodenv"
+      responses:
+        "200":
+          application/json: {"data": [{"id": "12jf789l12hwiuencl7aaqey", "policy_statement": "permit(principal == Cloudinary::APIKey::\"1234\",action==Cloudinary::Action::\"read\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\"asdfjkl12347890\")} ;", "description": "Permit read access to the Clothing folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "name": "Read access to Clothing folder", "enabled": true, "created_at": 1719475216, "updated_at": 1719475216}, {"id": "13890asdhjfqyewiurzbxn273", "policy_statement": "permit(principal == Cloudinary::APIKey::\"1234\",action==Cloudinary::Action::\"update\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\"asdfjkl12347890\")} ;", "description": "Permit updating the Clothing folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "name": "Update access to Clothing folder", "enabled": true, "created_at": 1719475216, "updated_at": 1719475216}]}
+    authorizationErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          scope_type: "prodenv"
+      responses:
+        "401":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00006", "message": "invalid credentials"}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00006", "message": "invalid credentials"}}
+  createCustomPolicy:
+    createCustomPolicyExample:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"policy_statement": "permit(principal == Cloudinary::APIKey::\"1234\",action==Cloudinary::Action::\"read\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\"asdfjkl12347890\")} ;", "description": "Permit read access to the Clothing folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "name": "Read access to Clothing folder", "enabled": true}
+      responses:
+        "201":
+          application/json: {"data": {"id": "12jf789l12hwiuencl7aaqey", "policy_statement": "permit(principal == Cloudinary::APIKey::\"1234\",action==Cloudinary::Action::\"read\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\"asdfjkl12347890\")} ;", "description": "Permit read access to the Clothing folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "name": "Read access to Clothing folder", "enabled": true, "created_at": 1719475216, "updated_at": 1719475216}}
+        "400":
+          application/json: {}
+        "500":
+          application/json: {}
+    createPolicyResponse:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"policy_statement": "permit(principal == Cloudinary::APIKey::\\\"1234\\\",action==Cloudinary::Action::\\\"read\\\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\\\"asdfjkl12347890\\\")} ;\n", "description": "Permit read access to the Clothing folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "name": "Read access to Clothing folder", "enabled": true}
+      responses:
+        "201":
+          application/json: {"data": {"id": "12jf789l12hwiuencl7aaqey", "policy_statement": "permit(principal == Cloudinary::APIKey::\"1234\",action==Cloudinary::Action::\"read\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\"asdfjkl12347890\")} ;", "description": "Permit read access to the Clothing folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "name": "Read access to Clothing folder", "enabled": true, "created_at": 1719475216, "updated_at": 1719475216}}
+    missingFieldsErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"policy_statement": "permit(principal == Cloudinary::APIKey::\\\"1234\\\",action==Cloudinary::Action::\\\"read\\\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\\\"asdfjkl12347890\\\")} ;\n", "description": "Permit read access to the Clothing folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "name": "Read access to Clothing folder", "enabled": true}
+      responses:
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "missing fields", "details": {}}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "missing fields", "details": {}}}
+    invalidFieldErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"policy_statement": "permit(principal == Cloudinary::APIKey::\\\"1234\\\",action==Cloudinary::Action::\\\"read\\\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\\\"asdfjkl12347890\\\")} ;\n", "description": "Permit read access to the Clothing folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "name": "Read access to Clothing folder", "enabled": true}
+      responses:
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "invalid request", "details": {}}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "invalid request", "details": {}}}
+    cedarErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"policy_statement": "permit(principal == Cloudinary::APIKey::\\\"1234\\\",action==Cloudinary::Action::\\\"read\\\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\\\"asdfjkl12347890\\\")} ;\n", "description": "Permit read access to the Clothing folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "name": "Read access to Clothing folder", "enabled": true}
+      responses:
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00002", "message": "invalid request", "details": {}}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00002", "message": "invalid request", "details": {}}}
+  getCustomPolicy:
+    CustomPolicyExample:
+      parameters:
+        path:
+          account_id: "<id>"
+          policy_id: "<id>"
+      responses:
+        "200":
+          application/json: {"data": {"id": "12jf789l12hwiuencl7aaqey", "policy_statement": "permit(principal == Cloudinary::APIKey::\"1234\",action==Cloudinary::Action::\"read\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\"asdfjkl12347890\")} ;", "description": "Permit read access to the Clothing folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "name": "Read access to Clothing folder", "enabled": true, "created_at": 1719475216, "updated_at": 1719475216}}
+    authorizationErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+          policy_id: "<id>"
+      responses:
+        "401":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00006", "message": "invalid credentials"}}
+  updateCustomPolicy:
+    updateCustomPolicyExample:
+      parameters:
+        path:
+          account_id: "<id>"
+          policy_id: "<id>"
+      requestBody:
+        application/json: {"policy_statement": "permit(principal == Cloudinary::APIKey::\"1234\",action==Cloudinary::Action::\"read\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\"asdfjkl12347890\")} ;", "description": "Permit read access to the Accessories folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "name": "Read access to Accessories folder", "enabled": true}
+      responses:
+        "200":
+          application/json: {"data": {"id": "12jf789l12hwiuencl7aaqey", "policy_statement": "permit(principal == Cloudinary::APIKey::\"1234\",action==Cloudinary::Action::\"read\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\"asdfjkl12347890\")} ;", "description": "Permit read access to the Clothing folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "name": "Read access to Clothing folder", "enabled": true, "created_at": 1719475216, "updated_at": 1719475216}}
+        "400":
+          application/json: {}
+        "500":
+          application/json: {}
+    updatePolicyResponse:
+      parameters:
+        path:
+          account_id: "<id>"
+          policy_id: "<id>"
+      requestBody:
+        application/json: {"policy_statement": "permit(principal == Cloudinary::APIKey::\\\"1234\\\",action==Cloudinary::Action::\\\"read\\\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\\\"asdfjkl12347890\\\")} ;\n", "description": "Permit read access to the Clothing folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "name": "Read access to Clothing folder", "enabled": true}
+      responses:
+        "200":
+          application/json: {"data": {"id": "12jf789l12hwiuencl7aaqey", "policy_statement": "permit(principal == Cloudinary::APIKey::\"1234\",action==Cloudinary::Action::\"read\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\"asdfjkl12347890\")} ;", "description": "Permit read access to the Accessories folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "name": "Read access to Accessories folder", "enabled": true, "created_at": 1719475216, "updated_at": 1719475216}}
+    missingFieldsUpdateErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+          policy_id: "<id>"
+      requestBody:
+        application/json: {"policy_statement": "permit(principal == Cloudinary::APIKey::\\\"1234\\\",action==Cloudinary::Action::\\\"read\\\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\\\"asdfjkl12347890\\\")} ;\n", "description": "Permit read access to the Clothing folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "name": "Read access to Clothing folder", "enabled": true}
+      responses:
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "missing fields", "details": {}}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "missing fields", "details": {}}}
+    invalidFieldErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+          policy_id: "<id>"
+      requestBody:
+        application/json: {"policy_statement": "permit(principal == Cloudinary::APIKey::\\\"1234\\\",action==Cloudinary::Action::\\\"read\\\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\\\"asdfjkl12347890\\\")} ;\n", "description": "Permit read access to the Clothing folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "name": "Read access to Clothing folder", "enabled": true}
+      responses:
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "invalid request", "details": {}}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "invalid request", "details": {}}}
+    cedarErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+          policy_id: "<id>"
+      requestBody:
+        application/json: {"policy_statement": "permit(principal == Cloudinary::APIKey::\\\"1234\\\",action==Cloudinary::Action::\\\"read\\\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\\\"asdfjkl12347890\\\")} ;\n", "description": "Permit read access to the Clothing folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "name": "Read access to Clothing folder", "enabled": true}
+      responses:
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00002", "message": "invalid request", "details": {}}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00002", "message": "invalid request", "details": {}}}
+  deleteCustomPolicy:
+    authorizationErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+          policy_id: "<id>"
+      responses:
+        "401":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00006", "message": "invalid credentials"}}
+    speakeasy-default-delete-custom-policy:
+      parameters:
+        path:
+          account_id: "<id>"
+          policy_id: "<id>"
+      responses:
+        "401":
+          application/json: {}
+  getEffectivePolicies:
+    EffectivePoliciesExample:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          scope_type: "prodenv"
+          principal_type: "user"
+      responses:
+        "200":
+          application/json: {"data": {"principals": [{"principal_type": "user", "principal_id": "1234abc", "roles": [{"id": "upload_manager_12334565", "system_policies": [{"id": "cld::policy::global::upload_presets::manage", "policy_statement": "permit (principal == Cloudinary::user::\"1234abc\", action == Cloudinary::Action::\"read\", resource is Cloudinary::UploadPreset);"}, {"id": "cld::policy::global::folder_and_asset_management::create_asset", "policy_statement": "permit(principal == Cloudinary::user::\\\"1234abc\\\", action, resource is Cloudinary::UploadPreset);\npermit(principal == Cloudinary::user::\\\"1234abc\\\", action, resource is Cloudinary::UploadMapping);\npermit(principal == Cloudinary::user::\\\"1234abc\\\", action == Cloudinary::Action::\"update_settings\", resource is Cloudinary::ProductEnvironment);\npermit(principal == Cloudinary::user::\\\"1234abc\\\", action, resource == Cloudinary::Feature::\"cld::global::upload_settings::manage\");\npermit(principal == Cloudinary::user::\\\"1234abc\\\", action, resource == Cloudinary::Feature::\"cld::global::upload_settings::access\");\n"}]}, {"id": "cld::role::prodenv::reports", "system_policies": [{"id": "cld::policy::global::reports::delivery::view", "policy_statement": "permit(principal == Cloudinary::user::\\\"1234abc\\\", action, resource == Cloudinary::Feature::\"cld::global::reports::delivery::view\");\npermit(principal == Cloudinary::user::\\\"1234abc\\\", action == Cloudinary::Action::\"read\", resource is Cloudinary::Report) when {resource.type == \"delivery\"};\n"}, {"id": "cld::policy::global::reports::errors::view", "policy_statement": "permit (pprincipal == Cloudinary::user::\"1234abc\", action, resource == Cloudinary::Feature::\"cld::global::reports::errors::view\");"}, {"id": "cld::policy::global::reports::usage::view", "policy_statement": "permit (principal == Cloudinary::user::\\\"1234abc\\\", action, resource == Cloudinary::Feature::\"cld::global::reports::usage::view\");\npermit (principal == Cloudinary::user::\\\"1234abc\\\", action == Cloudinary::Action::\"read\", resource is Cloudinary::Report) when { resource.type == \"env_usage\" };\n"}]}]}], "custom_policies": [{"id": "12jf789l12hwiuencl7aaqey", "policy_statement": "permit(principal == Cloudinary::user::\"1234abc\", action == Cloudinary::Action::\"read\", resource is Cloudinary::Folder) when {resource.ancestor_ids.contains(\"asdfjkl12347890\")};"}, {"id": "12jf789l12hwiuencl7aaqey", "policy_statement": "permit(principal == Cloudinary::user::\"1234abc\", action == Cloudinary::Action::\"update\", resource is Cloudinary::Folder) when {resource.ancestor_ids.contains(\"asdfjkl12347890\")};"}]}}
+    invalidFieldErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          scope_type: "prodenv"
+          principal_type: "user"
+      responses:
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "invalid request", "details": {}}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "invalid request", "details": {}}}
+  getRoles:
+    GetRolesExample:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          scope_type: "prodenv"
+          permission_type: "global"
+          management_type: "system"
+      responses:
+        "200":
+          application/json: {"data": [{"id": "cld::role::account::master_admin", "name": "Master Admin", "description": "Manage all account-level settings and features.", "management_type": "system", "permission_type": "global", "scope_type": "account", "created_at": 1719475216, "updated_at": 1719475216}, {"id": "cld::role::account::admin", "name": "Admin", "description": "Manage roles, users, and groups, and access Cloudinary products.", "management_type": "system", "permission_type": "global", "scope_type": "account", "created_at": 1719475216, "updated_at": 1719475216}, {"id": "custom::role::account::admin_assist", "name": "Admin", "description": "View roles, users and groups, and account-level reports.", "management_type": "custom", "permission_type": "global", "scope_type": "account", "created_at": 1719475216, "updated_at": 1719475216}, {"id": "cld::role::prodenv::ml_user", "name": "Media Library User", "description": "Access specific folders and collections according to assigned permissions.", "management_type": "system", "permission_type": "global", "scope_type": "prodenv", "created_at": 1719475216, "updated_at": 1719475216}]}
+    authorizationErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          scope_type: "prodenv"
+          permission_type: "global"
+          management_type: "system"
+      responses:
+        "401":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00006", "message": "invalid credentials"}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00006", "message": "invalid credentials"}}
+  createRole:
+    createGlobalRoleExample:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"id": "upload_manager_12334565", "permission_type": "global", "scope_type": "prodenv", "name": "Upload manager", "description": "Responsible for managing uploads and uploading new assets.", "system_policy_ids": ["cld::policy::global::upload_presets::manage", "cld::policy::global::folder_and_asset_management::create_asset"]}
+      responses:
+        "201":
+          application/json: {"data": {"policies": [{"id": "12jf789l12hwiuencl7aaqey", "name": "Read access to Clothing folder", "description": "Permit read access to the Clothing folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "permission_type": "global", "policy_statement": "permit(principal == Cloudinary::APIKey::\"1234\",action==Cloudinary::Action::\"read\",resource is Cloudinary::Folder ) when { resource.ancestor_ids.contains(\"\\<folder_id\\>\") };", "policy_parameters": ["folder_id"], "category": "Management", "sub_category": "General operations", "created_at": 1719475216, "updated_at": 1719475216}], "id": "cld::role::prodenv::master_admin", "name": "Master admin", "description": "Full access.", "management_type": "system", "permission_type": "global", "policy_parameters": ["folder_id"], "scope_type": "prodenv", "created_at": 1719475216, "updated_at": 1719475216}}
+        "400":
+          application/json: {}
+        "500":
+          application/json: {}
+    createContentRoleExample:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"id": "marketing_content_contributor_1357fhe", "permission_type": "content", "scope_type": "prodenv", "name": "Marketing content contributor", "description": "View all assets in selected folders and contribute to those folders, without permission to download.", "system_policy_ids": ["cld::policy::content::folder::view_download", "cld::policy::content::folder::add_assets"]}
+      responses:
+        "201":
+          application/json: {"data": {"policies": [{"id": "12jf789l12hwiuencl7aaqey", "name": "Read access to Clothing folder", "description": "Permit read access to the Clothing folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "permission_type": "global", "policy_statement": "permit(principal == Cloudinary::APIKey::\"1234\",action==Cloudinary::Action::\"read\",resource is Cloudinary::Folder ) when { resource.ancestor_ids.contains(\"\\<folder_id\\>\") };", "policy_parameters": ["folder_id"], "category": "Management", "sub_category": "General operations", "created_at": 1719475216, "updated_at": 1719475216}], "id": "cld::role::prodenv::master_admin", "name": "Master admin", "description": "Full access.", "management_type": "system", "permission_type": "global", "policy_parameters": ["folder_id"], "scope_type": "prodenv", "created_at": 1719475216, "updated_at": 1719475216}}
+        "400":
+          application/json: {}
+        "500":
+          application/json: {}
+    createAcctRoleExample:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"id": "sensitive_account_details_manager_88825hl", "permission_type": "global", "scope_type": "account", "name": "Sensitive account details manager", "description": "Responsible for managing users and account security.", "system_policy_ids": ["cld::global::users_and_groups::manage", "cld::policy::global::account_security::manage"]}
+      responses:
+        "201":
+          application/json: {"data": {"policies": [{"id": "12jf789l12hwiuencl7aaqey", "name": "Read access to Clothing folder", "description": "Permit read access to the Clothing folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "permission_type": "global", "policy_statement": "permit(principal == Cloudinary::APIKey::\"1234\",action==Cloudinary::Action::\"read\",resource is Cloudinary::Folder ) when { resource.ancestor_ids.contains(\"\\<folder_id\\>\") };", "policy_parameters": ["folder_id"], "category": "Management", "sub_category": "General operations", "created_at": 1719475216, "updated_at": 1719475216}], "id": "cld::role::prodenv::master_admin", "name": "Master admin", "description": "Full access.", "management_type": "system", "permission_type": "global", "policy_parameters": ["folder_id"], "scope_type": "prodenv", "created_at": 1719475216, "updated_at": 1719475216}}
+        "400":
+          application/json: {}
+        "500":
+          application/json: {}
+    createGlobalRoleResponseExample:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"id": "upload_manager_12334565", "permission_type": "global", "scope_type": "prodenv", "name": "Upload manager", "description": "Responsible for managing upload presets and uploading new assets.", "system_policy_ids": ["cld::policy::global::upload_presets::manage", "cld::policy::global::folder_and_asset_management::create_asset"]}
+      responses:
+        "201":
+          application/json: {"data": {"policies": [{"id": "cld::policy::global::upload_presets::manage", "name": "Manage upload settings", "description": "View, create, modify, or delete upload settings, such as upload presets, upload mappings, and upload defaults.", "scope_type": "prodenv", "permission_type": "global", "policy_statement": "permit (principal, action in [Cloudinary::Action::\"create\", Cloudinary::Action::\"read\", Cloudinary::Action::\"update\", Cloudinary::Action::\"delete\"], resource is Cloudinary::UploadPreset);", "category": "Settings", "sub_category": "Upload Settings", "created_at": 1719475215, "updated_at": 1719475215}, {"id": "cld::policy::global::folder_and_asset_management::create_asset", "name": "Upload assets", "description": "Upload assets to any folder, including the root, without requiring specific folder permissions. Includes the option to select an upload preset and apply tags and metadata. ", "scope_type": "prodenv", "permission_type": "global", "policy_statement": "permit ( principal, action in [Cloudinary::Action::\"create\", Cloudinary::Action::\"read\"], resource is Cloudinary::Asset) permit ( principal, action in [Cloudinary::Action::\"create\", Cloudinary::Action::\"read\"], resource is Cloudinary::Folder)", "category": "Management", "sub_category": "Folder and asset management", "created_at": 1719475215, "updated_at": 1719475215}], "id": "upload_manager_12334565", "name": "Upload manager", "description": "Responsible for managing upload presets and uploading new assets.", "management_type": "custom", "permission_type": "global", "scope_type": "prodenv", "created_at": 1719475216, "updated_at": 1719475216}}
+    createContentRoleResponseExample:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"id": "upload_manager_12334565", "permission_type": "global", "scope_type": "prodenv", "name": "Upload manager", "description": "Responsible for managing upload presets and uploading new assets.", "system_policy_ids": ["cld::policy::global::upload_presets::manage", "cld::policy::global::folder_and_asset_management::create_asset"]}
+      responses:
+        "201":
+          application/json: {"data": {"policies": [{"id": "cld::policy::content::folder::view_download", "name": "View all assets", "description": "View all assets in the folder and its nested subfolders.", "scope_type": "prodenv", "permission_type": "content", "policy_statement": "permit(principal, action == Cloudinary::Action::\"read\", resource is Cloudinary::Folder) when { resource.ancestor_ids.contains(\"<folder_id>\") }; permit(principal, action == Cloudinary::Action::\"read\", resource is Cloudinary::Asset) when { resource.ancestor_ids.contains(\"<folder_id>\") };\n", "policy_parameters": ["folder_id"], "category": "Folder", "sub_category": "View and download", "created_at": 1719475215, "updated_at": 1719475215}, {"id": "cld::policy::content::folder::add_assets", "name": "Add assets", "description": "Add assets to the folder by uploading new files, saving an asset as new, or moving existing assets from other folders. Tags and structured metadata can be applied during upload.", "scope_type": "prodenv", "permission_type": "content", "policy_statement": "permit(principal, action == Cloudinary::Action::\"create\", resource is Cloudinary::Asset) when { resource.ancestor_ids.contains(\"<folder_id>\")};\n", "policy_parameters": ["folder_id"], "category": "Folder", "sub_category": "Contribute", "created_at": 1719475215, "updated_at": 1719475215}], "id": "marketing_content_contributor_1357fhe", "name": "Marketing content contributor", "description": "View all assets in selected folders and contribute to those folders, without permission to download.", "management_type": "custom", "permission_type": "content", "policy_parameters": ["folder_id"], "scope_type": "prodenv", "created_at": 1719475216, "updated_at": 1719475216}}
+    createAcctRoleResponseExample:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"id": "upload_manager_12334565", "permission_type": "global", "scope_type": "prodenv", "name": "Upload manager", "description": "Responsible for managing upload presets and uploading new assets.", "system_policy_ids": ["cld::policy::global::upload_presets::manage", "cld::policy::global::folder_and_asset_management::create_asset"]}
+      responses:
+        "201":
+          application/json: {"data": {"policies": [{"id": "cld::policy::global::users_and_groups::manage", "name": "Manage users and groups", "description": "View, add, and remove users and groups in the account, and manage group memberships.", "scope_type": "account", "permission_type": "global", "policy_statement": "permit (principal, action , resource is Cloudinary::User); permit (principal, action, resource is Cloudinary::Group); permit (principal, action, resource == Cloudinary::Feature::\"cld::global::users::view\"); permit (principal, action, resource == Cloudinary::Feature::\"cld::global::users::create\"); permit (principal, action, resource == Cloudinary::Feature::\"cld::global::users::update\"); permit (principal, action, resource == Cloudinary::Feature::\"cld::global::users::delete\"); permit (principal, action, resource == Cloudinary::Feature::\"cld::global::groups::view\"); permit (principal, action, resource == Cloudinary::Feature::\"cld::global::groups::create\"); permit (principal, action, resource == Cloudinary::Feature::\"cld::global::groups::update\"); permit (principal, action, resource == Cloudinary::Feature::\"cld::global::groups::delete\");\n", "category": "Settings", "sub_category": "User Management", "created_at": 1719475215, "updated_at": 1719475215}, {"id": "cld::policy::global::account_security::manage", "name": "Manage account security settings", "description": "Define account-wide security settings related to authentication, access control, and user privacy.", "scope_type": "account", "policy_statement": "permit (principal, action, resource == Cloudinary::Feature::\"cld::global::account::view\"); permit (principal, action, resource == Cloudinary::Feature::\"cld::global::account::update\"); permit (principal, action == Cloudinary::Action::\"read\", resource is Cloudinary::Account); permit (principal, action == Cloudinary::Action::\"update\", resource is Cloudinary::Account);\n", "category": "Settings", "sub_category": "Account Security", "created_at": 1719475215, "updated_at": 1719475215}], "id": "sensitive_account_details_manager_88825hl", "name": "Sensitive account details manager", "description": "Responsible for managing users and account security.", "management_type": "custom", "permission_type": "global", "scope_type": "account", "created_at": 1719475216, "updated_at": 1719475216}}
+    missingFieldsErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"id": "upload_manager_12334565", "permission_type": "global", "scope_type": "prodenv", "name": "Upload manager", "description": "Responsible for managing upload presets and uploading new assets.", "system_policy_ids": ["cld::policy::global::upload_presets::manage", "cld::policy::global::folder_and_asset_management::create_asset"]}
+      responses:
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "missing fields", "details": {}}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "missing fields", "details": {}}}
+    invalidFieldErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"id": "upload_manager_12334565", "permission_type": "global", "scope_type": "prodenv", "name": "Upload manager", "description": "Responsible for managing upload presets and uploading new assets.", "system_policy_ids": ["cld::policy::global::upload_presets::manage", "cld::policy::global::folder_and_asset_management::create_asset"]}
+      responses:
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "invalid request", "details": {}}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "invalid request", "details": {}}}
+  getRole:
+    GetRoleExample:
+      parameters:
+        path:
+          account_id: "<id>"
+          role_id: "<id>"
+        query:
+          param_key: ["folder_id"]
+          param_value: ["asdfjkl12347890"]
+      responses:
+        "200":
+          application/json: {"data": {"policies": [{"id": "cld::policy::global::upload_presets::manage", "name": "Manage upload settings", "description": "View, create, modify, or delete upload settings, such as upload presets, upload mappings, and upload defaults.", "scope_type": "prodenv", "permission_type": "global", "policy_statement": "permit(principal, action, resource is Cloudinary::UploadPreset);\npermit(principal, action, resource is Cloudinary::UploadMapping);\npermit(principal, action == Cloudinary::Action::\"update_settings\", resource is Cloudinary::ProductEnvironment);\npermit(principal, action, resource == Cloudinary::Feature::\"cld::global::upload_settings::manage\");\npermit(principal, action, resource == Cloudinary::Feature::\"cld::global::upload_settings::access\");\n", "category": "Settings", "sub_category": "Upload Settings", "created_at": 1719475215, "updated_at": 1719475215}, {"id": "cld::policy::global::folder_and_asset_management::create_asset", "name": "Upload assets", "description": "Upload assets to any folder, including the root, without requiring specific folder permissions. Includes the option to select an upload preset and apply tags and metadata.", "scope_type": "prodenv", "permission_type": "global", "policy_statement": "permit(principal, action in [Cloudinary::Action::\"create\"], resource is Cloudinary::Asset);", "category": "Management", "sub_category": "Folder and asset management", "created_at": 1719475215, "updated_at": 1719475215}], "id": "upload_manager_12334565", "name": "Upload manager", "description": "Responsible for managing upload settings and uploading new assets.", "management_type": "custom", "permission_type": "global", "scope_type": "prodenv", "created_at": 1719475216, "updated_at": 1719475216}}
+    authorizationErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+          role_id: "<id>"
+        query:
+          param_key: ["folder_id"]
+          param_value: ["asdfjkl12347890"]
+      responses:
+        "401":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00006", "message": "invalid credentials"}}
+  updateRole:
+    updateRoleExample:
+      parameters:
+        path:
+          account_id: "<id>"
+          role_id: "<id>"
+      requestBody:
+        application/json: {"name": "Upload manager", "description": "Responsible for managing uploads and uploading new assets.", "system_policy_ids": ["cld::policy::global::upload_presets::manage", "cld::policy::global::folder_and_asset_management::create_asset"]}
+      responses:
+        "200":
+          application/json: {"data": {"policies": [{"id": "12jf789l12hwiuencl7aaqey", "name": "Read access to Clothing folder", "description": "Permit read access to the Clothing folder with external ID asdfjkl12347890.", "scope_type": "prodenv", "permission_type": "global", "policy_statement": "permit(principal == Cloudinary::APIKey::\"1234\",action==Cloudinary::Action::\"read\",resource is Cloudinary::Folder ) when { resource.ancestor_ids.contains(\"\\<folder_id\\>\") };", "policy_parameters": ["folder_id"], "category": "Management", "sub_category": "General operations", "created_at": 1719475216, "updated_at": 1719475216}], "id": "cld::role::prodenv::master_admin", "name": "Master admin", "description": "Full access.", "management_type": "system", "permission_type": "global", "policy_parameters": ["folder_id"], "scope_type": "prodenv", "created_at": 1719475216, "updated_at": 1719475216}}
+        "400":
+          application/json: {}
+        "500":
+          application/json: {}
+    updatePolicyResponse:
+      parameters:
+        path:
+          account_id: "<id>"
+          role_id: "<id>"
+      requestBody:
+        application/json: {"name": "Upload manager", "description": "Responsible for managing upload presets and uploading new assets.", "system_policy_ids": ["cld::policy::global::upload_presets::manage", "cld::policy::global::folder_and_asset_management::create_asset"]}
+      responses:
+        "200":
+          application/json: {"data": {"policies": [{"id": "cld::policy::global::upload_presets::manage", "name": "Manage upload settings", "description": "View, create, modify, or delete upload settings, such as upload presets, upload mappings, and upload defaults.", "scope_type": "prodenv", "permission_type": "global", "policy_statement": "permit(principal, action, resource is Cloudinary::UploadPreset);\npermit(principal, action, resource is Cloudinary::UploadMapping);\npermit(principal, action == Cloudinary::Action::\"update_settings\", resource is Cloudinary::ProductEnvironment);\npermit(principal, action, resource == Cloudinary::Feature::\"cld::global::upload_settings::manage\");\npermit(principal, action, resource == Cloudinary::Feature::\"cld::global::upload_settings::access\");\n", "category": "Settings", "sub_category": "Upload Settings", "created_at": 1719475215, "updated_at": 1719475215}, {"id": "cld::policy::global::folder_and_asset_management::create_asset", "name": "Upload assets", "description": "Upload assets to any folder, including the root, without requiring specific folder permissions. Includes the option to select an upload preset and apply tags and metadata.", "scope_type": "prodenv", "permission_type": "global", "policy_statement": "permit(principal, action in [Cloudinary::Action::\"create\"], resource is Cloudinary::Asset);", "category": "Management", "sub_category": "Folder and asset management", "created_at": 1719475215, "updated_at": 1719475215}], "id": "upload_manager_12334565", "name": "Upload manager", "description": "Responsible for managing uploads and uploading new assets.", "management_type": "custom", "permission_type": "global", "scope_type": "prodenv", "created_at": 1719475216, "updated_at": 1719475216}}
+    missingFieldsErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+          role_id: "<id>"
+      requestBody:
+        application/json: {"name": "Upload manager", "description": "Responsible for managing upload presets and uploading new assets.", "system_policy_ids": ["cld::policy::global::upload_presets::manage", "cld::policy::global::folder_and_asset_management::create_asset"]}
+      responses:
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "missing fields", "details": {}}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "missing fields", "details": {}}}
+    invalidPolicyIDFieldErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+          role_id: "<id>"
+      requestBody:
+        application/json: {"name": "Upload manager", "description": "Responsible for managing upload presets and uploading new assets.", "system_policy_ids": ["cld::policy::global::upload_presets::manage", "cld::policy::global::folder_and_asset_management::create_asset"]}
+      responses:
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "invalid request", "details": {}}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "invalid request", "details": {}}}
+  deleteRole:
+    authorizationErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+          role_id: "<id>"
+      responses:
+        "401":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00006", "message": "invalid credentials"}}
+    speakeasy-default-delete-role:
+      parameters:
+        path:
+          account_id: "<id>"
+          role_id: "<id>"
+      responses:
+        "401":
+          application/json: {}
+  getRolePrincipals:
+    GetRolePrincipalsExample:
+      parameters:
+        path:
+          account_id: "<id>"
+          role_id: "<id>"
+        query:
+          scope_type: "prodenv"
+          param_key: ["folder_id"]
+          param_value: ["asdfjkl12347890"]
+      responses:
+        "200":
+          application/json: {"data": [{"id": "1234abc", "type": "user", "role_id": "marketing_content_contributor_1357fhe", "policy_parameters": {}, "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "created_at": 1719475216, "updated_at": 1719475216}, {"id": "akwut728390anvy52sxgti", "type": "apiKey", "role_id": "marketing_content_contributor_1357fhe", "policy_parameters": {}, "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "created_at": 1719475216, "updated_at": 1719475216}]}
+    GetRolePrincipalsWithParamKeyValueExample:
+      parameters:
+        path:
+          account_id: "<id>"
+          role_id: "<id>"
+        query:
+          scope_type: "prodenv"
+          param_key: ["folder_id"]
+          param_value: ["asdfjkl12347890"]
+      responses:
+        "200":
+          application/json: {"data": [{"id": "1234abc", "type": "user", "role_id": "marketing_content_contributor_1357fhe", "policy_parameters": {}, "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "created_at": 1719475216, "updated_at": 1719475216}]}
+    authorizationErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+          role_id: "<id>"
+        query:
+          scope_type: "prodenv"
+          param_key: ["folder_id"]
+          param_value: ["asdfjkl12347890"]
+      responses:
+        "401":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00006", "message": "invalid credentials"}}
+  updateRolePrincipals:
+    missingFieldsErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+          role_id: "<id>"
+      requestBody:
+        application/json: {"operation": "add", "principals": [{"principal_type": "user", "principal_id": "1234abc", "scope_id": "975l29lz02jt0836fhwi", "policy_parameters": {}}]}
+      responses:
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "missing fields", "details": {}}}
+    invalidOperationFieldErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+          role_id: "<id>"
+      requestBody:
+        application/json: {"operation": "add", "principals": [{"principal_type": "user", "principal_id": "1234abc", "scope_id": "975l29lz02jt0836fhwi", "policy_parameters": {}}]}
+      responses:
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "invalid request", "details": {}}}
+    speakeasy-default-update-role-principals:
+      parameters:
+        path:
+          account_id: "<id>"
+          role_id: "<id>"
+      requestBody:
+        application/json: {"operation": "add", "principals": [{"principal_type": "user", "principal_id": "1234abc", "scope_id": "975l29lz02jt0836fhwi", "policy_parameters": {}}]}
+      responses:
+        "400":
+          application/json: {}
+  getPrincipalRoles:
+    GetPrincipalRolesExample:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          principal_type: "user"
+          principal_id: "<id>"
+          permission_type: "global"
+          management_type: "system"
+          scope_type: "prodenv"
+          param_key: ["folder_id"]
+          param_value: ["asdfjkl12347890"]
+      responses:
+        "200":
+          application/json: {"data": [{"id": "cld::role::account::reports", "name": "Reports", "description": "View account-level reports and usage metrics, including audit logs, dashboard usage summaries, and account-wide activity reports.", "management_type": "system", "permission_type": "global", "scope_type": "account", "created_at": 1719475216, "updated_at": 1719475216}, {"id": "upload_manager_12334565", "name": "Upload manager", "description": "Responsible for managing upload presets and uploading new assets.", "management_type": "custom", "permission_type": "global", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "created_at": 1719475216, "updated_at": 1719475216}, {"id": "marketing_content_contributor_1357fhe", "name": "Marketing content contributor", "description": "View all assets in selected folders and contribute to those folders, without permission to download.", "management_type": "custom", "permission_type": "content", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "policy_parameters": {}, "created_at": 1719475215, "updated_at": 1719475215}]}
+    GetPrincipalRolesWithParamKeyValueExample:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          principal_type: "user"
+          principal_id: "<id>"
+          permission_type: "global"
+          management_type: "system"
+          scope_type: "prodenv"
+          param_key: ["folder_id"]
+          param_value: ["asdfjkl12347890"]
+      responses:
+        "200":
+          application/json: {"data": [{"id": "marketing_content_contributor_1357fhe", "name": "Marketing content contributor", "description": "View all assets in selected folders and contribute to those folders, without permission to download.", "management_type": "custom", "permission_type": "content", "scope_type": "prodenv", "policy_parameters": {}, "created_at": 1719475215, "updated_at": 1719475215}]}
+    missingPrincipalFieldsErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          principal_type: "user"
+          principal_id: "<id>"
+          permission_type: "global"
+          management_type: "system"
+          scope_type: "prodenv"
+          param_key: ["folder_id"]
+          param_value: ["asdfjkl12347890"]
+      responses:
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "missing fields", "details": {}}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "missing fields", "details": {}}}
+    invalidFieldErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          principal_type: "user"
+          principal_id: "<id>"
+          permission_type: "global"
+          management_type: "system"
+          scope_type: "prodenv"
+          param_key: ["folder_id"]
+          param_value: ["asdfjkl12347890"]
+      responses:
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "invalid request", "details": {}}}
+        "500":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "invalid request", "details": {}}}
+  updatePrincipalRoles:
+    missingPrincipalFieldsErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"operation": "add", "principal": {"type": "user", "id": "1234abc"}, "roles": [{"id": "marketing_content_contributor_1357fhe", "scope_id": "975l29lz02jt0836fhwi", "policy_parameters": {}}]}
+      responses:
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "missing fields", "details": {}}}
+    InvalidOperationFieldErrorExample:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"operation": "add", "principal": {"type": "user", "id": "1234abc"}, "roles": [{"id": "marketing_content_contributor_1357fhe", "scope_id": "975l29lz02jt0836fhwi", "policy_parameters": {}}]}
+      responses:
+        "400":
+          application/json: {"error": {"category": "user_error", "code": "ACCOUNTS_00005", "message": "invalid request", "details": {}}}
+    speakeasy-default-update-principal-roles:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"operation": "add", "principal": {"type": "user", "id": "1234abc"}, "roles": [{"id": "marketing_content_contributor_1357fhe", "scope_id": "975l29lz02jt0836fhwi", "policy_parameters": {}}]}
+      responses:
+        "400":
+          application/json: {}
+  inspect:
+    InspectExampleFolder:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          scope_type: "prodenv"
+          principal_type: "user"
+          param_key: ["folder_id"]
+          param_value: ["asdfjkl12347890"]
+      responses:
+        "200":
+          application/json: {"data": {"principals": [{"type": "user", "id": "1234abc", "roles": [{"id": "marketing_content_contributor_1357fhe", "name": "Marketing content contributor", "description": "View all assets in selected folders and contribute to those folders, without permission to download.", "management_type": "custom", "permission_type": "content", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "policy_parameters": {}, "created_at": 1719475215, "updated_at": 1719475215}]}, {"type": "user", "id": "4567xyz", "roles": [{"id": "campaign_organizer_351766dt", "name": "Campaign organizer", "description": "Share and download permissions on folders.", "management_type": "custom", "permission_type": "content", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "policy_parameters": {}, "created_at": 1719475215, "updated_at": 1719475215}]}]}}
+    InspectExampleAllFolders:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          scope_type: "prodenv"
+          principal_type: "user"
+          param_key: ["folder_id"]
+          param_value: ["asdfjkl12347890"]
+      responses:
+        "200":
+          application/json: {"data": {"principals": [{"type": "user", "id": "1234abc", "roles": [{"id": "marketing_content_contributor_1357fhe", "name": "Marketing content contributor", "description": "View all assets in selected folders and contribute to those folders, without permission to download.", "management_type": "custom", "permission_type": "content", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "policy_parameters": {}, "created_at": 1719475215, "updated_at": 1719475215}]}, {"type": "user", "id": "4567xyz", "roles": [{"id": "campaign_organizer_351766dt", "name": "Campaign organizer", "description": "View and download access to folders containing marketing campaign images and videos.", "management_type": "custom", "permission_type": "content", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "policy_parameters": {}, "created_at": 1719475215, "updated_at": 1719475215}, {"id": "website_admin_2523512", "name": "Website administrator", "description": "Manage assets delivered on the website.", "management_type": "custom", "permission_type": "content", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "policy_parameters": {}, "created_at": 1719475215, "updated_at": 1719475215}]}]}}
+    InspectExampleProdEnv:
+      parameters:
+        path:
+          account_id: "<id>"
+        query:
+          scope_type: "prodenv"
+          principal_type: "user"
+          param_key: ["folder_id"]
+          param_value: ["asdfjkl12347890"]
+      responses:
+        "200":
+          application/json: {"data": {"principals": [{"type": "user", "id": "1234abc", "roles": [{"id": "marketing_content_contributor_1357fhe", "name": "Marketing content contributor", "description": "View all assets in selected folders and contribute to those folders, without permission to download.", "management_type": "custom", "permission_type": "content", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "policy_parameters": {}, "created_at": 1719475215, "updated_at": 1719475215}, {"id": "manage_portals_238haspw", "name": "Brand portal manager", "description": "Manage the curation and sharing of brand portals.", "management_type": "custom", "permission_type": "global", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "created_at": 1719475215, "updated_at": 1719475215}]}, {"type": "apiKey", "id": "a382ltieo893jhioqpg8urp", "roles": [{"id": "upload_manager_351766dt", "name": "Manage upload settings", "description": "Manage settings related to upload management.", "management_type": "custom", "permission_type": "global", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "created_at": 1719475215, "updated_at": 1719475215}]}]}}
+  inspectMultiple:
+    InspectMultipleRequestExample:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "principals": [{"type": "user", "id": "1234abc"}, {"type": "user", "id": "4567xyz"}, {"type": "apiKey", "id": "a382ltieo893jhioqpg8urp"}], "policy_parameters": {}}
+      responses:
+        "200":
+          application/json: {"data": {"principals": [{"type": "user", "id": "<id>", "roles": []}]}}
+        "400":
+          application/json: {}
+        "500":
+          application/json: {}
+    InspectMultipleResponseExample:
+      parameters:
+        path:
+          account_id: "<id>"
+      requestBody:
+        application/json: {"scope_type": "prodenv", "principals": [{"type": "user", "id": "1234abc"}]}
+      responses:
+        "200":
+          application/json: {"data": {"principals": [{"type": "user", "id": "1234abc", "roles": [{"id": "marketing_content_contributor_1357fhe", "name": "Marketing content contributor", "description": "View all assets in selected folders and contribute to those folders, without permission to download.", "management_type": "custom", "permission_type": "content", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "policy_parameters": {}, "created_at": 1719475215, "updated_at": 1719475215}]}, {"type": "user", "id": "4567xyz", "roles": [{"id": "campaign_organizer_351766dt", "name": "Campaign organizer", "description": "Share and download permissions on folders.", "management_type": "custom", "permission_type": "content", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "policy_parameters": {}, "created_at": 1719475215, "updated_at": 1719475215}, {"id": "cld::role::prodenv::reports", "name": "Reports", "description": "View product environment reports and usage metrics.", "management_type": "system", "permission_type": "global", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "created_at": 1719475216, "updated_at": 1719475216}]}, {"type": "apiKey", "id": "a382ltieo893jhioqpg8urp", "roles": [{"id": "upload_manager_351766dt", "name": "Upload manager", "description": "Responsible for managing upload presets and uploading new assets.", "management_type": "custom", "permission_type": "global", "scope_type": "prodenv", "scope_id": "975l29lz02jt0836fhwi", "created_at": 1719475215, "updated_at": 1719475215}]}]}}
+examplesVersion: 1.0.2
+generatedTests: {}

@@ -1,0 +1,9 @@
+# UpdateRolePrincipalsRequest
+
+
+## Fields
+
+| Field                                                                                            | Type                                                                                             | Required                                                                                         | Description                                                                                      |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| `RoleID`                                                                                         | `string`                                                                                         | :heavy_check_mark:                                                                               | A unique identifier for the role.                                                                |
+| `UpdateRolePrincipalsRequest`                                                                    | [components.UpdateRolePrincipalsRequest](../../models/components/updateroleprincipalsrequest.md) | :heavy_check_mark:                                                                               | Principals details.                                                                              |

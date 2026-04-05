@@ -1,0 +1,9 @@
+# Principal
+
+
+## Fields
+
+| Field                                                                        | Type                                                                         | Required                                                                     | Description                                                                  | Example                                                                      |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| `Type`                                                                       | [components.PrincipalTypeEnum](../../models/components/principaltypeenum.md) | :heavy_check_mark:                                                           | The type of principal.                                                       | user                                                                         |
+| `ID`                                                                         | `string`                                                                     | :heavy_check_mark:                                                           | The unique identifier of the principal.                                      | 1234abc                                                                      |

@@ -1,0 +1,10 @@
+# PrincipalRolesInspectData
+
+
+## Fields
+
+| Field                                                                            | Type                                                                             | Required                                                                         | Description                                                                      | Example                                                                          |
+| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| `Type`                                                                           | [components.PrincipalTypeEnum](../../models/components/principaltypeenum.md)     | :heavy_check_mark:                                                               | The type of principal.                                                           | user                                                                             |
+| `ID`                                                                             | `string`                                                                         | :heavy_check_mark:                                                               | The unique identifier of the principal.                                          |                                                                                  |
+| `Roles`                                                                          | [][components.PrincipalRolesData](../../models/components/principalrolesdata.md) | :heavy_check_mark:                                                               | N/A                                                                              |                                                                                  |
