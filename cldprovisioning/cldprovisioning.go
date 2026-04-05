@@ -249,9 +249,9 @@ func WithTimeout(timeout time.Duration) SDKOption {
 // New creates a new instance of the SDK with the provided options
 func New(opts ...SDKOption) *CldProvisioning {
 	sdk := &CldProvisioning{
-		SDKVersion: "0.1.0",
+		SDKVersion: "0.1.1",
 		sdkConfiguration: config.SDKConfiguration{
-			UserAgent:  "speakeasy-sdk/go 0.1.0 2.879.6 0.2.1 github.com/cloudinary/account-provisioning-go/cldprovisioning",
+			UserAgent:  "speakeasy-sdk/go 0.1.1 2.879.6 0.2.1 github.com/cloudinary/account-provisioning-go/cldprovisioning",
 			Globals:    globals.Globals{},
 			ServerList: ServerList,
 			ServerVariables: []map[string]string{

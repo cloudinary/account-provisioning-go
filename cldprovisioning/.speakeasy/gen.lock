@@ -5,12 +5,15 @@ management:
   docVersion: 0.2.1
   speakeasyVersion: 1.761.1
   generationVersion: 2.879.6
-  releaseVersion: 0.1.0
-  configChecksum: 5e7c255e21dc00e809ace6e74f8fb7f6
+  releaseVersion: 0.1.1
+  configChecksum: a198b7105e7d4807bbd8145d71700926
+  repoURL: https://github.com/cloudinary/account-provisioning-go.git
+  repoSubDirectory: cldprovisioning
+  installationURL: https://github.com/cloudinary/account-provisioning-go
 persistentEdits:
-  generation_id: 50a47413-b4c8-43a3-9a71-c248fdb4229a
-  pristine_commit_hash: 83d78edfd08d49da082ed3796b7c7bf3890632fe
-  pristine_tree_hash: b0e028155ad06af64a0a407efe194c36d6318764
+  generation_id: db6ffe1b-1856-4d8f-a7ee-091db5247204
+  pristine_commit_hash: aece7b7d4b7f6bdbcb646a6a739b87b6d422db9b
+  pristine_tree_hash: 5deeea593363fdcaad0295df6369a134a7a5784f
 features:
   go:
     additionalDependencies: 0.1.0
@@ -37,8 +40,8 @@ features:
 trackedFiles:
   .devcontainer/README.md:
     id: b170c0f184ac
-    last_write_checksum: sha1:2ebe16c00912ca4aac209d1971402135bb8c5391
-    pristine_git_object: a91bc1f02231ad21d4ca00ed865125e612eedc0d
+    last_write_checksum: sha1:857aff5e4a2b3bd9f6fd26f8d889b49073ad776a
+    pristine_git_object: 7d6eba6d1d6c1c2d1665bbc3f26393f7106b3b8f
   .devcontainer/devcontainer.json:
     id: b34062a34eb1
     last_write_checksum: sha1:a518b2fc2f92e998593a1dcb935db4ca1eb2e2f1
@@ -65,8 +68,8 @@ trackedFiles:
     pristine_git_object: 943530fd62d5b5716e1095029922821819def05e
   cldprovisioning.go:
     id: 4a8fed741ed3
-    last_write_checksum: sha1:49da6788e6b6fe7055f797fd0bba8581705328ef
-    pristine_git_object: a2b2c8971a2a5f224eb863c2d22157951475da2b
+    last_write_checksum: sha1:996e1f66e2604e93c49a6016e558a872f587628f
+    pristine_git_object: aa7ea6ab4965c7d6636eede54189101e6ea16214
   custompolicies.go:
     id: 8b53c8dfcfeb
     last_write_checksum: sha1:a5385cf1ef8a9a8950a7d1db757013c63ea6bd81

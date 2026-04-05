@@ -14,7 +14,7 @@ targets:
         sourceRevisionDigest: sha256:2ce8e6c4c38aa3d480eb065f2d7f1b92a72080f5c80b1120d7d4238f1b72faf1
         sourceBlobDigest: sha256:fef4b2fab46384b29fca578b28be4a4c303c69c7616906650e3b65c688635781
         codeSamplesNamespace: cloudinary-provisioning-go-code-samples
-        codeSamplesRevisionDigest: sha256:1e0d7c3afa98607195fec1d74ca568d89f74deed00cd35521278842a753a011c
+        codeSamplesRevisionDigest: sha256:fb5b2adc4ed90d1c1d2c08f6609743661288cfa40eac82f03931c1333d783da0
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
