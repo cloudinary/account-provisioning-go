@@ -12,7 +12,7 @@
 
 ## List
 
-Return an array of all product environments, or if conditions are specified,
+Return an array of all product environments, or if conditions are specified, 
 return the relevant product environments.
 
 

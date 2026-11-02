@@ -7,12 +7,6 @@ import (
 	"github.com/cloudinary/account-provisioning-go/cldprovisioning/optionalnullable"
 )
 
-// PolicyParameters - For roles with `permission_type` set to `content`, this defines the type of content the role's policies apply to:
-// - The content type can be: `folder_id` or `collection_id`.
-// - When assigning the role, provide the instance, e.g. `{"folder_id":"asdfjkl12347890"}`. This specification is passed to the `policy_statement` (Cedar).
-type PolicyParameters struct {
-}
-
 type PrincipalRolesData struct {
 	// The unique identifier of the role.
 	ID string `json:"id"`
@@ -32,7 +26,7 @@ type PrincipalRolesData struct {
 	// - The content type can be: `folder_id` or `collection_id`.
 	// - When assigning the role, provide the instance, e.g. `{"folder_id":"asdfjkl12347890"}`. This specification is passed to the `policy_statement` (Cedar).
 	//
-	PolicyParameters optionalnullable.OptionalNullable[PolicyParameters] `json:"policy_parameters,omitzero"`
+	PolicyParameters optionalnullable.OptionalNullable[map[string]any] `json:"policy_parameters,omitzero"`
 	// Creation time of the policy in epoch time.
 	CreatedAt int64 `json:"created_at"`
 	// Last updated time of the policy in epoch time.
@@ -99,7 +93,7 @@ func (p *PrincipalRolesData) GetScopeID() optionalnullable.OptionalNullable[stri
 	return p.ScopeID
 }
 
-func (p *PrincipalRolesData) GetPolicyParameters() optionalnullable.OptionalNullable[PolicyParameters] {
+func (p *PrincipalRolesData) GetPolicyParameters() optionalnullable.OptionalNullable[map[string]any] {
 	if p == nil {
 		return nil
 	}

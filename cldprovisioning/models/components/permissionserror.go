@@ -6,10 +6,6 @@ import (
 	"github.com/cloudinary/account-provisioning-go/cldprovisioning/internal/utils"
 )
 
-// Details - Additional contextual information about the error, which may include relevant data.
-type Details struct {
-}
-
 type PermissionsError struct {
 	// A classification of the error, indicating the general area or type of problem.
 	Category *string `json:"category,omitzero"`
@@ -18,7 +14,7 @@ type PermissionsError struct {
 	// A human-readable message providing a brief explanation of the error and its cause.
 	Message *string `json:"message,omitzero"`
 	// Additional contextual information about the error, which may include relevant data.
-	Details *Details `json:"details,omitzero"`
+	Details map[string]any `json:"details,omitzero"`
 }
 
 func (p PermissionsError) MarshalJSON() ([]byte, error) {
@@ -53,7 +49,7 @@ func (p *PermissionsError) GetMessage() *string {
 	return p.Message
 }
 
-func (p *PermissionsError) GetDetails() *Details {
+func (p *PermissionsError) GetDetails() map[string]any {
 	if p == nil {
 		return nil
 	}

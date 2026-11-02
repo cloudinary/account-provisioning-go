@@ -84,6 +84,7 @@ func (s *ProductEnvironments) List(ctx context.Context, request *operations.GetP
 		defer cancel()
 	}
 
+	ctx = utils.WithOperation(ctx, "getProductEnvironments")
 	req, err := http.NewRequestWithContext(ctx, "GET", opURL, nil)
 	if err != nil {
 		return nil, fmt.Errorf("error creating request: %w", err)
@@ -179,7 +180,7 @@ func (s *ProductEnvironments) List(ctx context.Context, request *operations.GetP
 
 			_, err = s.hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 			return nil, err
-		} else if utils.MatchStatusCodes([]string{"400", "401", "403", "404", "409", "420", "429", "4XX", "5XX"}, httpRes.StatusCode) {
+		} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
 			_httpRes, err := s.hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 			if err != nil {
 				return nil, err
@@ -238,7 +239,7 @@ func (s *ProductEnvironments) List(ctx context.Context, request *operations.GetP
 
 			var out sdkerrors.ErrorResponse
 			if err := utils.UnmarshalJsonFromResponseBody(bytes.NewBuffer(rawBody), &out, ""); err != nil {
-				return nil, err
+				return nil, sdkerrors.NewResponseValidationError("response did not match the declared error schema", httpRes.StatusCode, string(rawBody), httpRes, err)
 			}
 
 			return nil, &out
@@ -331,6 +332,7 @@ func (s *ProductEnvironments) Create(ctx context.Context, request components.Pro
 		defer cancel()
 	}
 
+	ctx = utils.WithOperation(ctx, "createProductEnvironment")
 	req, err := http.NewRequestWithContext(ctx, "POST", opURL, bodyReader)
 	if err != nil {
 		return nil, fmt.Errorf("error creating request: %w", err)
@@ -425,7 +427,7 @@ func (s *ProductEnvironments) Create(ctx context.Context, request components.Pro
 
 			_, err = s.hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 			return nil, err
-		} else if utils.MatchStatusCodes([]string{"400", "401", "403", "409", "420", "429", "4XX", "5XX"}, httpRes.StatusCode) {
+		} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
 			_httpRes, err := s.hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 			if err != nil {
 				return nil, err
@@ -482,7 +484,7 @@ func (s *ProductEnvironments) Create(ctx context.Context, request components.Pro
 
 			var out sdkerrors.ErrorResponse
 			if err := utils.UnmarshalJsonFromResponseBody(bytes.NewBuffer(rawBody), &out, ""); err != nil {
-				return nil, err
+				return nil, sdkerrors.NewResponseValidationError("response did not match the declared error schema", httpRes.StatusCode, string(rawBody), httpRes, err)
 			}
 
 			return nil, &out
@@ -574,6 +576,7 @@ func (s *ProductEnvironments) Get(ctx context.Context, subAccountID string, opts
 		defer cancel()
 	}
 
+	ctx = utils.WithOperation(ctx, "getProductEnvironment")
 	req, err := http.NewRequestWithContext(ctx, "GET", opURL, nil)
 	if err != nil {
 		return nil, fmt.Errorf("error creating request: %w", err)
@@ -665,7 +668,7 @@ func (s *ProductEnvironments) Get(ctx context.Context, subAccountID string, opts
 
 			_, err = s.hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 			return nil, err
-		} else if utils.MatchStatusCodes([]string{"400", "401", "404", "420", "429", "4XX", "5XX"}, httpRes.StatusCode) {
+		} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
 			_httpRes, err := s.hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 			if err != nil {
 				return nil, err
@@ -720,7 +723,7 @@ func (s *ProductEnvironments) Get(ctx context.Context, subAccountID string, opts
 
 			var out sdkerrors.ErrorResponse
 			if err := utils.UnmarshalJsonFromResponseBody(bytes.NewBuffer(rawBody), &out, ""); err != nil {
-				return nil, err
+				return nil, sdkerrors.NewResponseValidationError("response did not match the declared error schema", httpRes.StatusCode, string(rawBody), httpRes, err)
 			}
 
 			return nil, &out
@@ -812,6 +815,7 @@ func (s *ProductEnvironments) Update(ctx context.Context, request operations.Upd
 		defer cancel()
 	}
 
+	ctx = utils.WithOperation(ctx, "updateProductEnvironment")
 	req, err := http.NewRequestWithContext(ctx, "PUT", opURL, bodyReader)
 	if err != nil {
 		return nil, fmt.Errorf("error creating request: %w", err)
@@ -906,7 +910,7 @@ func (s *ProductEnvironments) Update(ctx context.Context, request operations.Upd
 
 			_, err = s.hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 			return nil, err
-		} else if utils.MatchStatusCodes([]string{"400", "401", "403", "404", "409", "420", "429", "4XX", "5XX"}, httpRes.StatusCode) {
+		} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
 			_httpRes, err := s.hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 			if err != nil {
 				return nil, err
@@ -965,7 +969,7 @@ func (s *ProductEnvironments) Update(ctx context.Context, request operations.Upd
 
 			var out sdkerrors.ErrorResponse
 			if err := utils.UnmarshalJsonFromResponseBody(bytes.NewBuffer(rawBody), &out, ""); err != nil {
-				return nil, err
+				return nil, sdkerrors.NewResponseValidationError("response did not match the declared error schema", httpRes.StatusCode, string(rawBody), httpRes, err)
 			}
 
 			return nil, &out
@@ -1148,7 +1152,7 @@ func (s *ProductEnvironments) Delete(ctx context.Context, subAccountID string, o
 
 			_, err = s.hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 			return nil, err
-		} else if utils.MatchStatusCodes([]string{"400", "401", "403", "404", "420", "429", "4XX", "5XX"}, httpRes.StatusCode) {
+		} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
 			_httpRes, err := s.hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 			if err != nil {
 				return nil, err
@@ -1205,7 +1209,7 @@ func (s *ProductEnvironments) Delete(ctx context.Context, subAccountID string, o
 
 			var out sdkerrors.ErrorResponse
 			if err := utils.UnmarshalJsonFromResponseBody(bytes.NewBuffer(rawBody), &out, ""); err != nil {
-				return nil, err
+				return nil, sdkerrors.NewResponseValidationError("response did not match the declared error schema", httpRes.StatusCode, string(rawBody), httpRes, err)
 			}
 
 			return nil, &out

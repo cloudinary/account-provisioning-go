@@ -159,8 +159,12 @@ func main() {
     res, err := s.Users.Create(ctx, operations.CreateUserRequestBody{
         Name: "John",
         Email: "john@example.com",
-        Role: operations.RoleTechnicalAdmin.ToPointer(),
         Enabled: cldprovisioning.Pointer(true),
+        Roles: []components.RoleAssignment{
+            components.RoleAssignment{
+                ID: "media_library_admin",
+            },
+        },
     })
     if err != nil {
         log.Fatal(err)
@@ -284,11 +288,14 @@ func main() {
 
     res, err := s.Users.Update(ctx, operations.UpdateUserRequest{
         UserID: "0abed8dfcc039ea05e2a1d494fd442",
-        UserRequest: components.UserRequest{
+        RequestBody: operations.UpdateUserRequestBody{
             Name: cldprovisioning.Pointer("John"),
             Email: cldprovisioning.Pointer("john@example.com"),
-            Role: components.UserRequestRoleTechnicalAdmin.ToPointer(),
             Enabled: cldprovisioning.Pointer(true),
+            RoleManagement: &components.RoleManagementRequest{
+                Operation: components.OperationAdd,
+                Roles: []components.RoleAssignment{},
+            },
         },
     })
     if err != nil {

@@ -7,7 +7,7 @@ import (
 	"github.com/cloudinary/account-provisioning-go/cldprovisioning/optionalnullable"
 )
 
-type Role struct {
+type UpdateRole struct {
 	// The name of the role.
 	Name string `json:"name"`
 	// A short description of the role.
@@ -19,34 +19,34 @@ type Role struct {
 	SystemPolicyIds []string `json:"system_policy_ids,omitzero"`
 }
 
-func (r Role) MarshalJSON() ([]byte, error) {
-	return utils.MarshalJSON(r, "", false)
+func (u UpdateRole) MarshalJSON() ([]byte, error) {
+	return utils.MarshalJSON(u, "", false)
 }
 
-func (r *Role) UnmarshalJSON(data []byte) error {
-	if err := utils.UnmarshalJSON(data, &r, "", false, nil); err != nil {
+func (u *UpdateRole) UnmarshalJSON(data []byte) error {
+	if err := utils.UnmarshalJSON(data, &u, "", false, nil); err != nil {
 		return err
 	}
 	return nil
 }
 
-func (r *Role) GetName() string {
-	if r == nil {
+func (u *UpdateRole) GetName() string {
+	if u == nil {
 		return ""
 	}
-	return r.Name
+	return u.Name
 }
 
-func (r *Role) GetDescription() optionalnullable.OptionalNullable[string] {
-	if r == nil {
+func (u *UpdateRole) GetDescription() optionalnullable.OptionalNullable[string] {
+	if u == nil {
 		return nil
 	}
-	return r.Description
+	return u.Description
 }
 
-func (r *Role) GetSystemPolicyIds() []string {
-	if r == nil {
+func (u *UpdateRole) GetSystemPolicyIds() []string {
+	if u == nil {
 		return nil
 	}
-	return r.SystemPolicyIds
+	return u.SystemPolicyIds
 }

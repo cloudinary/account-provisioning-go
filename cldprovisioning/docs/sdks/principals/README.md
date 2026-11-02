@@ -167,7 +167,9 @@ func main() {
             components.RoleToManage{
                 ID: "marketing_content_contributor_1357fhe",
                 ScopeID: cldprovisioning.Pointer("975l29lz02jt0836fhwi"),
-                PolicyParameters: &components.RoleToManagePolicyParameters{},
+                PolicyParameters: map[string]any{
+
+                },
             },
         },
     })
@@ -210,7 +212,9 @@ func main() {
             components.RoleToManage{
                 ID: "marketing_content_contributor_1357fhe",
                 ScopeID: cldprovisioning.Pointer("975l29lz02jt0836fhwi"),
-                PolicyParameters: &components.RoleToManagePolicyParameters{},
+                PolicyParameters: map[string]any{
+
+                },
             },
         },
     })
@@ -465,7 +469,9 @@ func main() {
                 ID: "a382ltieo893jhioqpg8urp",
             },
         },
-        PolicyParameters: &components.InspectRequestPolicyParameters{},
+        PolicyParameters: map[string]any{
+            "folder_id": "asdfjkl12347890",
+        },
     })
     if err != nil {
         log.Fatal(err)

@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/cloudinary/account-provisioning-go/cldprovisioning/internal/utils"
+	"github.com/cloudinary/account-provisioning-go/cldprovisioning/models/components"
 )
 
 type CreateUserGlobals struct {
@@ -20,7 +21,9 @@ func (c *CreateUserGlobals) GetAccountID() *string {
 	return c.AccountID
 }
 
-// Role - The role to assign.
+// Role - The legacy role to assign. Deprecated: use `roles` (create) or `role_management` (update) instead. Can't be combined with `roles` or `role_management`.
+//
+// Deprecated: Use `roles` (create) or `role_management` (update) instead..
 type Role string
 
 const (
@@ -68,7 +71,9 @@ type CreateUserRequestBody struct {
 	Name string `json:"name"`
 	// A unique email address, which serves as the login name and notification address.
 	Email string `json:"email"`
-	// The role to assign.
+	// The legacy role to assign. Deprecated: use `roles` (create) or `role_management` (update) instead. Can't be combined with `roles` or `role_management`.
+	//
+	// Deprecated: Use `roles` (create) or `role_management` (update) instead..
 	Role *Role `json:"role,omitzero"`
 	// A list of product environment IDs that this user can access. Ignored if the role is `master_admin`.
 	// **Default**: all product environments.
@@ -77,6 +82,8 @@ type CreateUserRequestBody struct {
 	// Whether the user is enabled. **Default**: true.
 	//
 	Enabled *bool `json:"enabled,omitzero"`
+	// The roles to assign. Can't be sent together with `role`.
+	Roles []components.RoleAssignment `json:"roles,omitzero"`
 }
 
 func (c CreateUserRequestBody) MarshalJSON() ([]byte, error) {
@@ -123,4 +130,11 @@ func (c *CreateUserRequestBody) GetEnabled() *bool {
 		return nil
 	}
 	return c.Enabled
+}
+
+func (c *CreateUserRequestBody) GetRoles() []components.RoleAssignment {
+	if c == nil {
+		return nil
+	}
+	return c.Roles
 }

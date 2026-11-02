@@ -4,7 +4,7 @@
 
 All roles include one or more predefined **system policies**, and can be applied to principals to enforce these policies.
 
-You can **manage custom roles**, where you select the system policies.
+You can **manage custom roles**, where you select the system policies. 
 
 You can **view system roles**, which contain a fixed set of system policies and are provided by Cloudinary.
 
@@ -561,7 +561,7 @@ func main() {
 
     res, err := s.Roles.Update(ctx, operations.UpdateRoleRequest{
         RoleID: "<id>",
-        Role: components.Role{
+        UpdateRole: components.UpdateRole{
             Name: "Upload manager",
             Description: optionalnullable.From(cldprovisioning.Pointer("Responsible for managing upload presets and uploading new assets.")),
             SystemPolicyIds: []string{
@@ -606,7 +606,7 @@ func main() {
 
     res, err := s.Roles.Update(ctx, operations.UpdateRoleRequest{
         RoleID: "<id>",
-        Role: components.Role{
+        UpdateRole: components.UpdateRole{
             Name: "Upload manager",
             Description: optionalnullable.From(cldprovisioning.Pointer("Responsible for managing upload presets and uploading new assets.")),
             SystemPolicyIds: []string{
@@ -651,7 +651,7 @@ func main() {
 
     res, err := s.Roles.Update(ctx, operations.UpdateRoleRequest{
         RoleID: "<id>",
-        Role: components.Role{
+        UpdateRole: components.UpdateRole{
             Name: "Upload manager",
             Description: optionalnullable.From(cldprovisioning.Pointer("Responsible for managing upload presets and uploading new assets.")),
             SystemPolicyIds: []string{
@@ -696,7 +696,7 @@ func main() {
 
     res, err := s.Roles.Update(ctx, operations.UpdateRoleRequest{
         RoleID: "<id>",
-        Role: components.Role{
+        UpdateRole: components.UpdateRole{
             Name: "Upload manager",
             Description: optionalnullable.From(cldprovisioning.Pointer("Responsible for managing uploads and uploading new assets.")),
             SystemPolicyIds: []string{
@@ -940,7 +940,9 @@ func main() {
                     PrincipalType: components.PrincipalTypeEnumUser,
                     PrincipalID: "1234abc",
                     ScopeID: optionalnullable.From(cldprovisioning.Pointer("975l29lz02jt0836fhwi")),
-                    PolicyParameters: &components.UpdateRolePrincipalPolicyParameters{},
+                    PolicyParameters: map[string]any{
+
+                    },
                 },
             },
         },
@@ -985,7 +987,9 @@ func main() {
                     PrincipalType: components.PrincipalTypeEnumUser,
                     PrincipalID: "1234abc",
                     ScopeID: optionalnullable.From(cldprovisioning.Pointer("975l29lz02jt0836fhwi")),
-                    PolicyParameters: &components.UpdateRolePrincipalPolicyParameters{},
+                    PolicyParameters: map[string]any{
+
+                    },
                 },
             },
         },

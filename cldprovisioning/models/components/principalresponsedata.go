@@ -7,16 +7,13 @@ import (
 	"github.com/cloudinary/account-provisioning-go/cldprovisioning/optionalnullable"
 )
 
-type PrincipalResponseDataPolicyParameters struct {
-}
-
 type PrincipalResponseData struct {
 	// The unique identifier of the principal.
 	ID string `json:"id"`
 	// The type of principal.
-	Type             PrincipalTypeEnum                      `json:"type"`
-	RoleID           *string                                `json:"role_id,omitzero"`
-	PolicyParameters *PrincipalResponseDataPolicyParameters `json:"policy_parameters,omitzero"`
+	Type             PrincipalTypeEnum `json:"type"`
+	RoleID           *string           `json:"role_id,omitzero"`
+	PolicyParameters map[string]any    `json:"policy_parameters,omitzero"`
 	// Specifies where the role/policy is applied, either at the account level or within product environments.
 	ScopeType *ScopeTypeEnum                            `json:"scope_type,omitzero"`
 	ScopeID   optionalnullable.OptionalNullable[string] `json:"scope_id,omitzero"`
@@ -56,7 +53,7 @@ func (p *PrincipalResponseData) GetRoleID() *string {
 	return p.RoleID
 }
 
-func (p *PrincipalResponseData) GetPolicyParameters() *PrincipalResponseDataPolicyParameters {
+func (p *PrincipalResponseData) GetPolicyParameters() map[string]any {
 	if p == nil {
 		return nil
 	}

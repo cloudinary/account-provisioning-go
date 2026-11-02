@@ -182,7 +182,7 @@ func (s *CustomPolicies) List(ctx context.Context, request *operations.GetCustom
 
 			_, err = s.hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 			return nil, err
-		} else if utils.MatchStatusCodes([]string{"401", "403", "4XX", "500", "5XX"}, httpRes.StatusCode) {
+		} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
 			_httpRes, err := s.hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 			if err != nil {
 				return nil, err
@@ -231,7 +231,7 @@ func (s *CustomPolicies) List(ctx context.Context, request *operations.GetCustom
 
 			var out sdkerrors.PermissionsErrorResponse
 			if err := utils.UnmarshalJsonFromResponseBody(bytes.NewBuffer(rawBody), &out, ""); err != nil {
-				return nil, err
+				return nil, sdkerrors.NewResponseValidationError("response did not match the declared error schema", httpRes.StatusCode, string(rawBody), httpRes, err)
 			}
 
 			return nil, &out
@@ -252,7 +252,7 @@ func (s *CustomPolicies) List(ctx context.Context, request *operations.GetCustom
 
 			var out sdkerrors.PermissionsErrorResponse
 			if err := utils.UnmarshalJsonFromResponseBody(bytes.NewBuffer(rawBody), &out, ""); err != nil {
-				return nil, err
+				return nil, sdkerrors.NewResponseValidationError("response did not match the declared error schema", httpRes.StatusCode, string(rawBody), httpRes, err)
 			}
 
 			return nil, &out
@@ -291,7 +291,7 @@ func (s *CustomPolicies) List(ctx context.Context, request *operations.GetCustom
 // Create a new custom policy with a statement defined in Cedar. This policy specifies permissions for a principal, allowing a specific action on a designated resource, within a particular scope.
 //
 // https://cloudinary.com/documentation/permissions_api_guide#create_a_policy_statement - Learn more about creating a new custom policy
-func (s *CustomPolicies) Create(ctx context.Context, request components.CustomPolicy, opts ...operations.Option) (*components.CustomPolicyResponse, error) {
+func (s *CustomPolicies) Create(ctx context.Context, request components.CreateCustomPolicy, opts ...operations.Option) (*components.CustomPolicyResponse, error) {
 	globals := operations.CreateCustomPolicyGlobals{
 		AccountID: s.sdkConfiguration.Globals.AccountID,
 	}
@@ -438,7 +438,7 @@ func (s *CustomPolicies) Create(ctx context.Context, request components.CustomPo
 
 			_, err = s.hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 			return nil, err
-		} else if utils.MatchStatusCodes([]string{"400", "401", "403", "409", "4XX", "500", "5XX"}, httpRes.StatusCode) {
+		} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
 			_httpRes, err := s.hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 			if err != nil {
 				return nil, err
@@ -491,7 +491,7 @@ func (s *CustomPolicies) Create(ctx context.Context, request components.CustomPo
 
 			var out sdkerrors.PermissionsErrorResponse
 			if err := utils.UnmarshalJsonFromResponseBody(bytes.NewBuffer(rawBody), &out, ""); err != nil {
-				return nil, err
+				return nil, sdkerrors.NewResponseValidationError("response did not match the declared error schema", httpRes.StatusCode, string(rawBody), httpRes, err)
 			}
 
 			return nil, &out
@@ -512,7 +512,7 @@ func (s *CustomPolicies) Create(ctx context.Context, request components.CustomPo
 
 			var out sdkerrors.PermissionsErrorResponse
 			if err := utils.UnmarshalJsonFromResponseBody(bytes.NewBuffer(rawBody), &out, ""); err != nil {
-				return nil, err
+				return nil, sdkerrors.NewResponseValidationError("response did not match the declared error schema", httpRes.StatusCode, string(rawBody), httpRes, err)
 			}
 
 			return nil, &out
@@ -693,7 +693,7 @@ func (s *CustomPolicies) Get(ctx context.Context, policyID string, opts ...opera
 
 			_, err = s.hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 			return nil, err
-		} else if utils.MatchStatusCodes([]string{"401", "403", "404", "4XX", "5XX"}, httpRes.StatusCode) {
+		} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
 			_httpRes, err := s.hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 			if err != nil {
 				return nil, err
@@ -744,7 +744,7 @@ func (s *CustomPolicies) Get(ctx context.Context, policyID string, opts ...opera
 
 			var out sdkerrors.PermissionsErrorResponse
 			if err := utils.UnmarshalJsonFromResponseBody(bytes.NewBuffer(rawBody), &out, ""); err != nil {
-				return nil, err
+				return nil, sdkerrors.NewResponseValidationError("response did not match the declared error schema", httpRes.StatusCode, string(rawBody), httpRes, err)
 			}
 
 			return nil, &out
@@ -930,7 +930,7 @@ func (s *CustomPolicies) Update(ctx context.Context, request operations.UpdateCu
 
 			_, err = s.hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 			return nil, err
-		} else if utils.MatchStatusCodes([]string{"400", "401", "403", "404", "409", "4XX", "500", "5XX"}, httpRes.StatusCode) {
+		} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
 			_httpRes, err := s.hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 			if err != nil {
 				return nil, err
@@ -985,7 +985,7 @@ func (s *CustomPolicies) Update(ctx context.Context, request operations.UpdateCu
 
 			var out sdkerrors.PermissionsErrorResponse
 			if err := utils.UnmarshalJsonFromResponseBody(bytes.NewBuffer(rawBody), &out, ""); err != nil {
-				return nil, err
+				return nil, sdkerrors.NewResponseValidationError("response did not match the declared error schema", httpRes.StatusCode, string(rawBody), httpRes, err)
 			}
 
 			return nil, &out
@@ -1006,7 +1006,7 @@ func (s *CustomPolicies) Update(ctx context.Context, request operations.UpdateCu
 
 			var out sdkerrors.PermissionsErrorResponse
 			if err := utils.UnmarshalJsonFromResponseBody(bytes.NewBuffer(rawBody), &out, ""); err != nil {
-				return nil, err
+				return nil, sdkerrors.NewResponseValidationError("response did not match the declared error schema", httpRes.StatusCode, string(rawBody), httpRes, err)
 			}
 
 			return nil, &out
@@ -1187,7 +1187,7 @@ func (s *CustomPolicies) Delete(ctx context.Context, policyID string, opts ...op
 
 			_, err = s.hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 			return err
-		} else if utils.MatchStatusCodes([]string{"401", "403", "404", "4XX", "5XX"}, httpRes.StatusCode) {
+		} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
 			_httpRes, err := s.hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 			if err != nil {
 				return err
@@ -1219,7 +1219,7 @@ func (s *CustomPolicies) Delete(ctx context.Context, policyID string, opts ...op
 
 			var out sdkerrors.PermissionsErrorResponse
 			if err := utils.UnmarshalJsonFromResponseBody(bytes.NewBuffer(rawBody), &out, ""); err != nil {
-				return err
+				return sdkerrors.NewResponseValidationError("response did not match the declared error schema", httpRes.StatusCode, string(rawBody), httpRes, err)
 			}
 
 			return &out

@@ -8,7 +8,7 @@
 
 ## Get
 
-Retrieve billing usage metrics for your account and product environments,
+Retrieve billing usage metrics for your account and product environments, 
 including storage, bandwidth, impressions, and transformations.
 
 If `year` is provided:
