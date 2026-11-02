@@ -3,6 +3,9 @@
 package operations
 
 import (
+	"encoding/json"
+	"fmt"
+	"github.com/cloudinary/account-provisioning-go/cldprovisioning/internal/utils"
 	"github.com/cloudinary/account-provisioning-go/cldprovisioning/models/components"
 )
 
@@ -18,11 +21,129 @@ func (u *UpdateUserGlobals) GetAccountID() *string {
 	return u.AccountID
 }
 
+// UpdateUserRole - The legacy role to assign. Deprecated: use `roles` (create) or `role_management` (update) instead. Can't be combined with `roles` or `role_management`.
+//
+// Deprecated: Use `roles` (create) or `role_management` (update) instead..
+type UpdateUserRole string
+
+const (
+	UpdateUserRoleMasterAdmin       UpdateUserRole = "master_admin"
+	UpdateUserRoleAdmin             UpdateUserRole = "admin"
+	UpdateUserRoleBilling           UpdateUserRole = "billing"
+	UpdateUserRoleTechnicalAdmin    UpdateUserRole = "technical_admin"
+	UpdateUserRoleReports           UpdateUserRole = "reports"
+	UpdateUserRoleMediaLibraryAdmin UpdateUserRole = "media_library_admin"
+	UpdateUserRoleMediaLibraryUser  UpdateUserRole = "media_library_user"
+)
+
+func (e UpdateUserRole) ToPointer() *UpdateUserRole {
+	return &e
+}
+func (e *UpdateUserRole) UnmarshalJSON(data []byte) error {
+	var v string
+	if err := json.Unmarshal(data, &v); err != nil {
+		return err
+	}
+	switch v {
+	case "master_admin":
+		fallthrough
+	case "admin":
+		fallthrough
+	case "billing":
+		fallthrough
+	case "technical_admin":
+		fallthrough
+	case "reports":
+		fallthrough
+	case "media_library_admin":
+		fallthrough
+	case "media_library_user":
+		*e = UpdateUserRole(v)
+		return nil
+	default:
+		return fmt.Errorf("invalid value for UpdateUserRole: %v", v)
+	}
+}
+
+// UpdateUserRequestBody - User details to update.
+type UpdateUserRequestBody struct {
+	// The user's name.
+	Name *string `json:"name,omitzero"`
+	// A unique email address, which serves as the login name and notification address.
+	Email *string `json:"email,omitzero"`
+	// The legacy role to assign. Deprecated: use `roles` (create) or `role_management` (update) instead. Can't be combined with `roles` or `role_management`.
+	//
+	// Deprecated: Use `roles` (create) or `role_management` (update) instead..
+	Role *UpdateUserRole `json:"role,omitzero"`
+	// A list of product environment IDs that this user can access. Ignored if the role is `master_admin`.
+	// **Default**: all product environments.
+	//
+	SubAccountIds []string `json:"sub_account_ids,omitzero"`
+	// Whether the user is enabled. **Default**: true.
+	//
+	Enabled *bool `json:"enabled,omitzero"`
+	// A role management operation and the roles it applies to.
+	RoleManagement *components.RoleManagementRequest `json:"role_management,omitzero"`
+}
+
+func (u UpdateUserRequestBody) MarshalJSON() ([]byte, error) {
+	return utils.MarshalJSON(u, "", false)
+}
+
+func (u *UpdateUserRequestBody) UnmarshalJSON(data []byte) error {
+	if err := utils.UnmarshalJSON(data, &u, "", false, nil); err != nil {
+		return err
+	}
+	return nil
+}
+
+func (u *UpdateUserRequestBody) GetName() *string {
+	if u == nil {
+		return nil
+	}
+	return u.Name
+}
+
+func (u *UpdateUserRequestBody) GetEmail() *string {
+	if u == nil {
+		return nil
+	}
+	return u.Email
+}
+
+func (u *UpdateUserRequestBody) GetRole() *UpdateUserRole {
+	if u == nil {
+		return nil
+	}
+	return u.Role
+}
+
+func (u *UpdateUserRequestBody) GetSubAccountIds() []string {
+	if u == nil {
+		return nil
+	}
+	return u.SubAccountIds
+}
+
+func (u *UpdateUserRequestBody) GetEnabled() *bool {
+	if u == nil {
+		return nil
+	}
+	return u.Enabled
+}
+
+func (u *UpdateUserRequestBody) GetRoleManagement() *components.RoleManagementRequest {
+	if u == nil {
+		return nil
+	}
+	return u.RoleManagement
+}
+
 type UpdateUserRequest struct {
 	// The ID of the user.
 	UserID string `pathParam:"style=simple,explode=false,name=user_id"`
 	// User details to update.
-	UserRequest components.UserRequest `request:"mediaType=application/json"`
+	RequestBody UpdateUserRequestBody `request:"mediaType=application/json"`
 }
 
 func (u *UpdateUserRequest) GetUserID() string {
@@ -32,9 +153,9 @@ func (u *UpdateUserRequest) GetUserID() string {
 	return u.UserID
 }
 
-func (u *UpdateUserRequest) GetUserRequest() components.UserRequest {
+func (u *UpdateUserRequest) GetRequestBody() UpdateUserRequestBody {
 	if u == nil {
-		return components.UserRequest{}
+		return UpdateUserRequestBody{}
 	}
-	return u.UserRequest
+	return u.RequestBody
 }

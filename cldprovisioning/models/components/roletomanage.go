@@ -6,17 +6,13 @@ import (
 	"github.com/cloudinary/account-provisioning-go/cldprovisioning/internal/utils"
 )
 
-// RoleToManagePolicyParameters - Defines the content instance that the role applies to. Specify the content type (`folder_id` or `collection_id`) and its corresponding ID. For example, `{"folder_id":"asdfjkl12347890"}`. This specification is passed to the `policy_statement` (Cedar).
-type RoleToManagePolicyParameters struct {
-}
-
 type RoleToManage struct {
 	// The unique identifier of the role you want to assign.
 	ID string `json:"id"`
 	// The ID of a specific product environment where the policy is applied. This parameter is only relevant if `scope_type` is "prodenv".
 	ScopeID *string `json:"scope_id,omitzero"`
 	// Defines the content instance that the role applies to. Specify the content type (`folder_id` or `collection_id`) and its corresponding ID. For example, `{"folder_id":"asdfjkl12347890"}`. This specification is passed to the `policy_statement` (Cedar).
-	PolicyParameters *RoleToManagePolicyParameters `json:"policy_parameters,omitzero"`
+	PolicyParameters map[string]any `json:"policy_parameters,omitzero"`
 }
 
 func (r RoleToManage) MarshalJSON() ([]byte, error) {
@@ -44,7 +40,7 @@ func (r *RoleToManage) GetScopeID() *string {
 	return r.ScopeID
 }
 
-func (r *RoleToManage) GetPolicyParameters() *RoleToManagePolicyParameters {
+func (r *RoleToManage) GetPolicyParameters() map[string]any {
 	if r == nil {
 		return nil
 	}

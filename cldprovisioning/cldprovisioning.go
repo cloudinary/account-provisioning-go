@@ -2,7 +2,7 @@
 
 package cldprovisioning
 
-// Generated from OpenAPI doc version 0.2.1 and generator version 2.879.6
+// Generated from OpenAPI doc version 0.2.2 and generator version 2.954.8
 
 import (
 	"context"
@@ -249,11 +249,14 @@ func WithTimeout(timeout time.Duration) SDKOption {
 // New creates a new instance of the SDK with the provided options
 func New(opts ...SDKOption) *CldProvisioning {
 	sdk := &CldProvisioning{
-		SDKVersion: "0.1.0",
+		SDKVersion: "0.2.0",
 		sdkConfiguration: config.SDKConfiguration{
-			UserAgent:  "speakeasy-sdk/go 0.1.0 2.879.6 0.2.1 github.com/cloudinary/account-provisioning-go/cldprovisioning",
-			Globals:    globals.Globals{},
-			ServerList: ServerList,
+			UserAgent:         "speakeasy-sdk/go 0.2.0 2.954.8 0.2.2 github.com/cloudinary/account-provisioning-go/cldprovisioning",
+			SDKVersion:        "0.2.0",
+			GenVersion:        "2.954.8",
+			OpenAPIDocVersion: "0.2.2",
+			Globals:           globals.Globals{},
+			ServerList:        ServerList,
 			ServerVariables: []map[string]string{
 				{
 					"region": "api",

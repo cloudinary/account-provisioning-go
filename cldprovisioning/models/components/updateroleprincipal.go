@@ -7,10 +7,6 @@ import (
 	"github.com/cloudinary/account-provisioning-go/cldprovisioning/optionalnullable"
 )
 
-// UpdateRolePrincipalPolicyParameters - For roles with `permission_type` set to `content`, provide the ID of the specific folder or collection you want the role to apply to, for example, `{"folder_id":"asdfjkl12347890"}`. This specification is passed to the `policy_statement`, written in Cedar language.
-type UpdateRolePrincipalPolicyParameters struct {
-}
-
 type UpdateRolePrincipal struct {
 	// The type of principal.
 	PrincipalType PrincipalTypeEnum `json:"principal_type"`
@@ -19,7 +15,7 @@ type UpdateRolePrincipal struct {
 	// The ID of a specific product environment where the role is applied. This parameter is only relevant if `scope_type` is "prodenv".
 	ScopeID optionalnullable.OptionalNullable[string] `json:"scope_id,omitzero"`
 	// For roles with `permission_type` set to `content`, provide the ID of the specific folder or collection you want the role to apply to, for example, `{"folder_id":"asdfjkl12347890"}`. This specification is passed to the `policy_statement`, written in Cedar language.
-	PolicyParameters *UpdateRolePrincipalPolicyParameters `json:"policy_parameters,omitzero"`
+	PolicyParameters map[string]any `json:"policy_parameters,omitzero"`
 }
 
 func (u UpdateRolePrincipal) MarshalJSON() ([]byte, error) {
@@ -54,7 +50,7 @@ func (u *UpdateRolePrincipal) GetScopeID() optionalnullable.OptionalNullable[str
 	return u.ScopeID
 }
 
-func (u *UpdateRolePrincipal) GetPolicyParameters() *UpdateRolePrincipalPolicyParameters {
+func (u *UpdateRolePrincipal) GetPolicyParameters() map[string]any {
 	if u == nil {
 		return nil
 	}

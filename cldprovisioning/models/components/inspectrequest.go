@@ -6,16 +6,13 @@ import (
 	"github.com/cloudinary/account-provisioning-go/cldprovisioning/internal/utils"
 )
 
-type InspectRequestPolicyParameters struct {
-}
-
 type InspectRequest struct {
 	// Specifies where the role/policy is applied, either at the account level or within product environments.
-	ScopeType        ScopeTypeEnum                   `json:"scope_type"`
-	ScopeID          *string                         `json:"scope_id,omitzero"`
-	Principals       []Principal                     `json:"principals"`
-	PolicyParameters *InspectRequestPolicyParameters `json:"policy_parameters,omitzero"`
-	Cursor           *string                         `json:"cursor,omitzero"`
+	ScopeType        ScopeTypeEnum  `json:"scope_type"`
+	ScopeID          *string        `json:"scope_id,omitzero"`
+	Principals       []Principal    `json:"principals"`
+	PolicyParameters map[string]any `json:"policy_parameters,omitzero"`
+	Cursor           *string        `json:"cursor,omitzero"`
 }
 
 func (i InspectRequest) MarshalJSON() ([]byte, error) {
@@ -50,7 +47,7 @@ func (i *InspectRequest) GetPrincipals() []Principal {
 	return i.Principals
 }
 
-func (i *InspectRequest) GetPolicyParameters() *InspectRequestPolicyParameters {
+func (i *InspectRequest) GetPolicyParameters() map[string]any {
 	if i == nil {
 		return nil
 	}

@@ -109,7 +109,7 @@ func main() {
         }),
     )
 
-    res, err := s.CustomPolicies.Create(ctx, components.CustomPolicy{
+    res, err := s.CustomPolicies.Create(ctx, components.CreateCustomPolicy{
         PolicyStatement: "permit(principal == Cloudinary::APIKey::\\\"1234\\\",action==Cloudinary::Action::\\\"read\\\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\\\"asdfjkl12347890\\\")} ;\n",
         Description: optionalnullable.From(cldprovisioning.Pointer("Permit read access to the Clothing folder with external ID asdfjkl12347890.")),
         ScopeType: components.ScopeTypeEnumProdenv,
@@ -149,7 +149,7 @@ func main() {
         }),
     )
 
-    res, err := s.CustomPolicies.Create(ctx, components.CustomPolicy{
+    res, err := s.CustomPolicies.Create(ctx, components.CreateCustomPolicy{
         PolicyStatement: "permit(principal == Cloudinary::APIKey::\"1234\",action==Cloudinary::Action::\"read\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\"asdfjkl12347890\")} ;",
         Description: optionalnullable.From(cldprovisioning.Pointer("Permit read access to the Clothing folder with external ID asdfjkl12347890.")),
         ScopeType: components.ScopeTypeEnumProdenv,
@@ -189,7 +189,7 @@ func main() {
         }),
     )
 
-    res, err := s.CustomPolicies.Create(ctx, components.CustomPolicy{
+    res, err := s.CustomPolicies.Create(ctx, components.CreateCustomPolicy{
         PolicyStatement: "permit(principal == Cloudinary::APIKey::\\\"1234\\\",action==Cloudinary::Action::\\\"read\\\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\\\"asdfjkl12347890\\\")} ;\n",
         Description: optionalnullable.From(cldprovisioning.Pointer("Permit read access to the Clothing folder with external ID asdfjkl12347890.")),
         ScopeType: components.ScopeTypeEnumProdenv,
@@ -229,7 +229,7 @@ func main() {
         }),
     )
 
-    res, err := s.CustomPolicies.Create(ctx, components.CustomPolicy{
+    res, err := s.CustomPolicies.Create(ctx, components.CreateCustomPolicy{
         PolicyStatement: "permit(principal == Cloudinary::APIKey::\\\"1234\\\",action==Cloudinary::Action::\\\"read\\\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\\\"asdfjkl12347890\\\")} ;\n",
         Description: optionalnullable.From(cldprovisioning.Pointer("Permit read access to the Clothing folder with external ID asdfjkl12347890.")),
         ScopeType: components.ScopeTypeEnumProdenv,
@@ -269,7 +269,7 @@ func main() {
         }),
     )
 
-    res, err := s.CustomPolicies.Create(ctx, components.CustomPolicy{
+    res, err := s.CustomPolicies.Create(ctx, components.CreateCustomPolicy{
         PolicyStatement: "permit(principal == Cloudinary::APIKey::\\\"1234\\\",action==Cloudinary::Action::\\\"read\\\",resource is Cloudinary::Folder ) when {resource.ancestor_ids.contains(\\\"asdfjkl12347890\\\")} ;\n",
         Description: optionalnullable.From(cldprovisioning.Pointer("Permit read access to the Clothing folder with external ID asdfjkl12347890.")),
         ScopeType: components.ScopeTypeEnumProdenv,
@@ -287,11 +287,11 @@ func main() {
 
 ### Parameters
 
-| Parameter                                                          | Type                                                               | Required                                                           | Description                                                        |
-| ------------------------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------ |
-| `ctx`                                                              | [context.Context](https://pkg.go.dev/context#Context)              | :heavy_check_mark:                                                 | The context to use for the request.                                |
-| `request`                                                          | [components.CustomPolicy](../../models/components/custompolicy.md) | :heavy_check_mark:                                                 | The request object to use for the request.                         |
-| `opts`                                                             | [][operations.Option](../../models/operations/option.md)           | :heavy_minus_sign:                                                 | The options for this request.                                      |
+| Parameter                                                                      | Type                                                                           | Required                                                                       | Description                                                                    |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| `ctx`                                                                          | [context.Context](https://pkg.go.dev/context#Context)                          | :heavy_check_mark:                                                             | The context to use for the request.                                            |
+| `request`                                                                      | [components.CreateCustomPolicy](../../models/components/createcustompolicy.md) | :heavy_check_mark:                                                             | The request object to use for the request.                                     |
+| `opts`                                                                         | [][operations.Option](../../models/operations/option.md)                       | :heavy_minus_sign:                                                             | The options for this request.                                                  |
 
 ### Response
 

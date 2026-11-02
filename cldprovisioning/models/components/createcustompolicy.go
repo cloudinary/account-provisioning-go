@@ -7,7 +7,7 @@ import (
 	"github.com/cloudinary/account-provisioning-go/cldprovisioning/optionalnullable"
 )
 
-type CustomPolicy struct {
+type CreateCustomPolicy struct {
 	// A Cedar statement that permits or forbids a principal to perform an action on a resource. Refer to the [Permissions API guide](permissions_api_guide) for more information.
 	PolicyStatement string `json:"policy_statement"`
 	// A short description of the policy.
@@ -26,53 +26,53 @@ type CustomPolicy struct {
 	Enabled optionalnullable.OptionalNullable[bool] `default:"true" json:"enabled"`
 }
 
-func (c CustomPolicy) MarshalJSON() ([]byte, error) {
+func (c CreateCustomPolicy) MarshalJSON() ([]byte, error) {
 	return utils.MarshalJSON(c, "", false)
 }
 
-func (c *CustomPolicy) UnmarshalJSON(data []byte) error {
+func (c *CreateCustomPolicy) UnmarshalJSON(data []byte) error {
 	if err := utils.UnmarshalJSON(data, &c, "", false, nil); err != nil {
 		return err
 	}
 	return nil
 }
 
-func (c *CustomPolicy) GetPolicyStatement() string {
+func (c *CreateCustomPolicy) GetPolicyStatement() string {
 	if c == nil {
 		return ""
 	}
 	return c.PolicyStatement
 }
 
-func (c *CustomPolicy) GetDescription() optionalnullable.OptionalNullable[string] {
+func (c *CreateCustomPolicy) GetDescription() optionalnullable.OptionalNullable[string] {
 	if c == nil {
 		return nil
 	}
 	return c.Description
 }
 
-func (c *CustomPolicy) GetScopeType() ScopeTypeEnum {
+func (c *CreateCustomPolicy) GetScopeType() ScopeTypeEnum {
 	if c == nil {
 		return ScopeTypeEnum("")
 	}
 	return c.ScopeType
 }
 
-func (c *CustomPolicy) GetScopeID() optionalnullable.OptionalNullable[string] {
+func (c *CreateCustomPolicy) GetScopeID() optionalnullable.OptionalNullable[string] {
 	if c == nil {
 		return nil
 	}
 	return c.ScopeID
 }
 
-func (c *CustomPolicy) GetName() string {
+func (c *CreateCustomPolicy) GetName() string {
 	if c == nil {
 		return ""
 	}
 	return c.Name
 }
 
-func (c *CustomPolicy) GetEnabled() optionalnullable.OptionalNullable[bool] {
+func (c *CreateCustomPolicy) GetEnabled() optionalnullable.OptionalNullable[bool] {
 	if c == nil {
 		return nil
 	}

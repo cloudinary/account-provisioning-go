@@ -22,7 +22,7 @@ type UpdateRoleRequest struct {
 	// A unique identifier for the role.
 	RoleID string `pathParam:"style=simple,explode=false,name=role_id"`
 	// Role details
-	Role components.Role `request:"mediaType=application/json"`
+	UpdateRole components.UpdateRole `request:"mediaType=application/json"`
 }
 
 func (u *UpdateRoleRequest) GetRoleID() string {
@@ -32,9 +32,9 @@ func (u *UpdateRoleRequest) GetRoleID() string {
 	return u.RoleID
 }
 
-func (u *UpdateRoleRequest) GetRole() components.Role {
+func (u *UpdateRoleRequest) GetUpdateRole() components.UpdateRole {
 	if u == nil {
-		return components.Role{}
+		return components.UpdateRole{}
 	}
-	return u.Role
+	return u.UpdateRole
 }
